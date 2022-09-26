@@ -1,15 +1,19 @@
 package Runner;
 
+
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
+
+import Utilities.UtilitiesBase;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/java/Features", glue = { "StepDefinitions" }, plugin = { "pretty",
-		"json:target/cucumber.json", "junit:target/cucumber.xml" })
+		"json:target/cucumber.json", "junit:target/cucumber.xml" },
+		tags="@low1")
 
 public class Runner {
 	@AfterClass
@@ -18,7 +22,8 @@ public class Runner {
 		String path = System.getProperty("user.dir") + "/target/cucumber.json";
 		jsonFiles.add(path);
 
-		Utilities.Utilities.generateReport("Test Report", jsonFiles);
+		UtilitiesBase.generateReport("Test Report", jsonFiles);
 	}
 
+	
 }

@@ -10,7 +10,7 @@ import net.masterthought.cucumber.Reportable;
 import net.masterthought.cucumber.json.support.Status;
 import net.masterthought.cucumber.presentation.PresentationMode;
 
-public class Utilities {
+public class UtilitiesBase {
 	public static void generateReport(String projectName, List<String> jsonFiles) {
 		File reportOutputDirectory = new File("target");
 		String buildNumber = "1";
