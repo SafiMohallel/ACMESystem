@@ -24,6 +24,9 @@ public class Login extends BaseClass {
 	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement loginButton;
 
+	@FindBy(xpath = "//*[@class='invalid-feedback']/strong")
+	private WebElement alertLabel;
+	
 	public void userNameSetData(String userNameData) {
 		userName.clear();
 		userName.sendKeys(userNameData);
@@ -32,6 +35,10 @@ public class Login extends BaseClass {
 	public void PasswordSetData(String passwordData) {
 		password.clear();
 		password.sendKeys(passwordData);
+	}
+
+	public String alretGetData() {
+		return alertLabel.getText();
 	}
 
 	public void loginButtonClick() {

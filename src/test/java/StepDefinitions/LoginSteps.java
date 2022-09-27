@@ -30,21 +30,22 @@ public class LoginSteps  {
 	 
 	 @Then("The page title should be is {string}")
 	 public void the_page_title_should_be_is(String string) {
-		 Assert.assertEquals(driver.getTitle(), "Erwaaaa");
+		 Assert.assertEquals(driver.getTitle(), string);
 	 }
 	 
 	 @When("The user enter an email not registered before {string}")
 	 public void the_user_enter_an_email_not_registered_before(String string) {
-		 login.userNameSetData ("s.mahallel99999@gmail.com");
+		 login.userNameSetData (string);
 
 	 }
 	 @When("The user enter an invalid password {string}")
 	 public void the_user_enter_an_invalid_password(String string) {
-		 login.PasswordSetData ("0123456");
+		 login.PasswordSetData (string);
 
 	 }
 	 @Then("The system appear an error message {string}")
 	 public void the_system_appear_an_error_message(String string) {
 		 login.loginButtonClick();
+		 Assert.assertEquals( login.alretGetData(), string);
 	 }
 }

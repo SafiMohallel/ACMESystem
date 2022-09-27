@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="13.407">
-    <testcase classname="Login" name="Check the page title" time="8.467">
-        <failure message="expected:&lt;[ACME System 1 - Log In]&gt; but was:&lt;[Erwaaaa]&gt;" type="org.junit.ComparisonFailure">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="7.224">
+    <testcase classname="Login" name="Check the page title" time="2.967">
+        <system-out>
             <![CDATA[Given The user open the login page..........................................passed
-Then The page title should be is "ACME System 1 -  Log In"..................failed
-
-StackTrace:
-org.junit.ComparisonFailure: expected:<[ACME System 1 - Log In]> but was:<[Erwaaaa]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at StepDefinitions.LoginSteps.the_page_title_should_be_is(LoginSteps.java:33)
-	at ✽.The page title should be is "ACME System 1 -  Log In"(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Login.feature:7)
+Then The page title should be is "ACME System 1 - Log In"...................passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
-    <testcase classname="Login" name="Enter a wrong password for the email registered before" time="4.815">
+    <testcase classname="Login" name="Enter a wrong password for the email registered before" time="4.178">
         <system-out>
             <![CDATA[Given The user open the login page..........................................passed
 When The user enter an email not registered before "s.mahallel99@gmail.com".passed

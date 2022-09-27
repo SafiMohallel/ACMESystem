@@ -4,7 +4,7 @@ Feature: Login
 @low1     
 Scenario:  Check the page title 
     Given  The user open the login page
-    Then   The page title should be is "ACME System 1 -  Log In"
+    Then   The page title should be is "ACME System 1 - Log In"
     
 @medium     
 Scenario:  Check the intial status of remember me check box
