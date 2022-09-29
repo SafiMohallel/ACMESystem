@@ -16,7 +16,7 @@ public class Login extends BaseClass {
 	    }
 	 
 	@FindBy(id = "email")
-	private WebElement userName;
+	private WebElement email;
 
 	@FindBy(id = "password")
 	private WebElement password;
@@ -27,20 +27,24 @@ public class Login extends BaseClass {
 	@FindBy(xpath = "//*[@class='invalid-feedback']/strong")
 	private WebElement alertLabel;
 	
-	public void userNameSetData(String userNameData) {
-		userName.clear();
-		userName.sendKeys(userNameData);
+	public void setEmailData(String emailData) {
+		email.clear();
+		email.sendKeys(emailData);
 	}
 
-	public void PasswordSetData(String passwordData) {
+	public void setPasswordData(String passwordData) {
 		password.clear();
 		password.sendKeys(passwordData);
 	}
 
-	public String alretGetData() {
+	public String getAlretData() {
 		return alertLabel.getText();
 	}
 
+	public String getEmailTooltipData() {
+		return email.getAttribute("validationMessage");
+	}
+	
 	public void loginButtonClick() {
 		loginButton.click();
 	}

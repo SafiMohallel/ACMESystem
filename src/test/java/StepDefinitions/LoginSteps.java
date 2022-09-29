@@ -2,7 +2,10 @@ package StepDefinitions;
 
 
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Pages.Login;
@@ -35,17 +38,29 @@ public class LoginSteps  {
 	 
 	 @When("The user enter an email not registered before {string}")
 	 public void the_user_enter_an_email_not_registered_before(String string) {
-		 login.userNameSetData (string);
+		 login.setEmailData (string);
 
 	 }
 	 @When("The user enter an invalid password {string}")
 	 public void the_user_enter_an_invalid_password(String string) {
-		 login.PasswordSetData (string);
+		 login.setPasswordData (string);
 
 	 }
 	 @Then("The system appear an error message {string}")
 	 public void the_system_appear_an_error_message(String string) {
 		 login.loginButtonClick();
-		 Assert.assertEquals( login.alretGetData(), string);
+		 Assert.assertEquals( login.getAlretData(), string);
+	 }
+
+	 @When("The user enter empty value in email field {string}")
+	 public void the_user_enter_empty_value_in_email_field(String string) {
+		 login.setEmailData (string);
+	 }
+	 
+	 @Then("The system appear an error email tooltip {string}")
+	 public void the_system_appear_an_error_tooltip(String string) {
+		 login.loginButtonClick();
+		 System.out.println("7777777777777777777777777777777777777777777777777777777777777777"+login.getEmailTooltipData());
+		 Assert.assertEquals( login.getEmailTooltipData(), string);
 	 }
 }
