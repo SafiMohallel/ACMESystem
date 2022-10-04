@@ -1,5 +1,6 @@
 Feature: Register
- 
+
+@not-implemented-yet
 @low 
  Scenario Outline:  Enter empty value in email field
     Given  The user open the registration page
@@ -10,6 +11,7 @@ Feature: Register
       | email           | error message               | 
       |                 | Please fill out this field  | 
 
+@not-implemented-yet
 @low 
 Scenario Outline:  Enter empty value in password field
     Given  The user open the registration page
@@ -19,7 +21,8 @@ Scenario Outline:  Enter empty value in password field
     Examples: 
       | password           | error message               | 
       |                    | Please fill out this field  | 
- 
+
+@not-implemented-yet 
 @low 
 Scenario Outline:  Enter invalid value password field
     Given  The user open the registration page
@@ -29,7 +32,7 @@ Scenario Outline:  Enter invalid value password field
     Examples: 
       | password           | error message               | 
       | abc                | The password must be at least 8 characters  | 
- 
+@not-implemented-yet
 @low       
 Scenario Outline:  Enter empty value in retype password field
     Given  The user open the registration page
@@ -40,6 +43,7 @@ Scenario Outline:  Enter empty value in retype password field
       | retypePassword  | error message               | 
       |                 | Please fill out this field  | 
 
+@not-implemented-yet
 @medium                  
 Scenario Outline:  Enter invaled email formate in email field
     Given  The user open the registration page
@@ -51,7 +55,8 @@ Scenario Outline:  Enter invaled email formate in email field
       | testets      | Please enter true Email  | 
       | test@test    | Please enter true Email  | 
       | test.test    | Please enter true Email  | 
-      
+
+@not-implemented-yet     
 @important        
 Scenario Outline:  Registration with a valid email exists before
     Given  The user open the registration page
@@ -61,7 +66,8 @@ Scenario Outline:  Registration with a valid email exists before
     Examples: 
       | email                    | error message                     | 
       | s.mahallel99@gmail.com   | The email has already been taken. | 
-      
+
+@not-implemented-yet     
 @medium       
 Scenario Outline:  Enter differnt password from retype password
     Given  The user open the registration page
@@ -72,7 +78,8 @@ Scenario Outline:  Enter differnt password from retype password
     Examples: 
       | password        | retypepassword | error message  
       | 123456          | 1234567        | The password confirmation does not match.
-      
+
+@not-implemented-yet      
 @medium      
 Scenario Outline:  Uncheck the Term and privacy check box
     Given  The user open the registration page
@@ -85,7 +92,8 @@ Scenario Outline:  Uncheck the Term and privacy check box
     Examples: 
       | email                     | password    | retypepassword | error message  
       | s.mahallel99@gmail.comb   | 123456789a  | 123456789a     | The terms ofuse and privacy policy should be checked
-      
+
+@not-implemented-yet    
 @medium 
 Scenario Outline:  Uncheck the captcha check box
     Given  The user open the registration page
@@ -100,6 +108,7 @@ Scenario Outline:  Uncheck the captcha check box
       | email                     | password    | retypepassword | error message  
       | s.mahallel99@gmail.comb   | 123456789a  | 123456789a     | Please validate that you are a human!
       
+@not-implemented-yet
 @medium     
 Scenario:  Check the intial status of the check boxes
     Given  The user open the registration page
@@ -107,24 +116,28 @@ Scenario:  Check the intial status of the check boxes
     Then   The terms ofuse and privacy polic check box is unchecked
     And    The captcha check box is unchecked
 
+@not-implemented-yet
 @medium     
 Scenario:  Check the Copyright year
     Given  The user open the registration page
     When   The user does not enter any data
     Then   The Copyright year should be "copyright year"
 
+@not-implemented-yet
 @medium     
 Scenario:  Check the label text 
     Given  The user open the registration page
     When   The user does not enter any data
     Then   The label text should be is "label text"
 
+@not-implemented-yet
 @low     
 Scenario:  Check the page title 
     Given  The user open the registration page
     When   The user does not enter any data
     Then   The page title should be is "title text"
        
+@not-implemented-yet
 @important      
 Scenario Outline:  Enter true values in all fields
   Given    The user open the registration page

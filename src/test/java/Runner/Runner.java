@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/java/Features", glue = { "StepDefinitions" }, plugin = { "pretty",
 		"json:target/cucumber.json", "junit:target/cucumber.xml" },
-		tags="@currentTrace")
+		tags="@current-implementation")
 
 public class Runner {
 	@AfterClass

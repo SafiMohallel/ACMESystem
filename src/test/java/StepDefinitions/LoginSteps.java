@@ -1,13 +1,10 @@
 package StepDefinitions;
 
 
+import java.util.Calendar;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import Pages.Login;
 import Utilities.PropertiesReader;
 import io.cucumber.java.en.Given;
@@ -47,7 +44,7 @@ public class LoginSteps  {
 
 	 }
 	 @Then("The system appear an error message {string}")
-	 public void the_system_appear_an_error_message(String string) {
+	 public void the_system_appear_an_error_message(String string) throws InterruptedException {
 		 login.loginButtonClick();
 		 Assert.assertEquals( login.getAlretData(), string);
 	 }
@@ -58,9 +55,20 @@ public class LoginSteps  {
 	 }
 	 
 	 @Then("The system appear an error email tooltip {string}")
-	 public void the_system_appear_an_error_tooltip(String string) {
+	 public void the_system_appear_an_error_tooltip(String string) throws InterruptedException {
 		 login.loginButtonClick();
-		 System.out.println("7777777777777777777777777777777777777777777777777777777777777777"+login.getEmailTooltipData());
 		 Assert.assertEquals( login.getEmailTooltipData(), string);
+	 }
+	 
+	 @Then("The remember me  check box is unchecked")
+	 public void the_remember_me_check_box_is_unchecked() {
+		 Assert.assertEquals(login.getRememberMeCheckBoxStatus(), false);
+	 }
+	 
+	 @Then("The Copyright year should be {string}+the actual year +{string}")
+	 public void the_copyright_year_should_be_the_actual_year(String string, String string2) {
+		 Assert.assertEquals(login.getCopyrightText().substring(0, login.getCopyrightText().indexOf("©")+2), string);
+		 Assert.assertEquals(login.getCopyrightText().substring(login.getCopyrightText().indexOf("©")+2,login.getCopyrightText().indexOf("©")+6),Calendar.getInstance().get(Calendar.YEAR)+"");
+		 Assert.assertEquals(login.getCopyrightText().substring(login.getCopyrightText().indexOf("©")+6), string2);
 	 }
 }

@@ -27,6 +27,12 @@ public class Login extends BaseClass {
 	@FindBy(xpath = "//*[@class='invalid-feedback']/strong")
 	private WebElement alertLabel;
 	
+	@FindBy(xpath = "//*[@Class='form-check-input']")
+	private WebElement rememberMeCheckBox;
+	
+	@FindBy(xpath = "//p[1]")
+	private WebElement copyrightText;
+	
 	public void setEmailData(String emailData) {
 		email.clear();
 		email.sendKeys(emailData);
@@ -45,8 +51,17 @@ public class Login extends BaseClass {
 		return email.getAttribute("validationMessage");
 	}
 	
-	public void loginButtonClick() {
+	public boolean getRememberMeCheckBoxStatus() {
+		return rememberMeCheckBox.isSelected();
+	}
+	
+	public String getCopyrightText(){
+		return copyrightText.getText();
+	}
+	
+	public void loginButtonClick() throws InterruptedException {
 		loginButton.click();
+		Thread.sleep(200);
 	}
 }
 

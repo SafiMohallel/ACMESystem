@@ -1,21 +1,24 @@
 Feature: Dashboard
  
-
+@not-implemented-yet
 @low     
 Scenario:  Check the page title 
     Given  The user open the dashboard page
     Then   The page title should be is "ACME System 1 -  Dashboard"
 
+@not-implemented-yet
 @medium     
 Scenario:  Check the Copyright year
     Given  The user open the dashboard page
     Then   The Copyright year should be the actual year
 
+@not-implemented-yet
 @medium     
 Scenario:  Check the label text 
     Given  The user open the dashboard page
     Then   The label text should be is "Dashboard" and "Welcome, " plus "s.mahallel9999@gmail.com" plus " to System 1."
-    
+
+@not-implemented-yet   
 @important 
 Scenario Outline:  Check the buttons text and tool tip
     Given  The user open the dashboard page
@@ -47,7 +50,7 @@ Scenario Outline:  Check the buttons text and tool tip
       | Bank                | Add Account                  |                              |                             |                            |                      |                    |                      |                     |                     |
       | Customer Service    |                              |                              |                             |                            |                      |                    |                      |                     |                     |
       
-    
+@not-implemented-yet   
 @important 
 Scenario Outline:  Check the buttons redirect to other page
     Given  The user open the dashboard page
@@ -60,7 +63,7 @@ Scenario Outline:  Check the buttons redirect to other page
       | Employees           | employees
       | Customer Service    | callcenter
       
-      
+@not-implemented-yet      
 @important 
 Scenario:   Check the logout link
     Given   The user open the dashboard page
@@ -68,12 +71,14 @@ Scenario:   Check the logout link
     Then    The system sign out
     And     The system redirect to the login page
 
+@not-implemented-yet
 @medium 
 Scenario:   Check the home link
     Given   The user open the dashboard page
     When    The user clicks on the home link
     Then    The system do nothing
-    
+
+@not-implemented-yet   
 @medium 
 Scenario:   Check the switch to old theme link
     Given   The user open the dashboard page

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.669">
-    <testcase classname="Login" name="Enter empty value in email field" time="14.588">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.243">
+    <testcase classname="Login" name="Check the Copyright year" time="13.171">
         <system-out>
             <![CDATA[Given The user open the login page..........................................passed
-When The user enter empty value in email field ""...........................passed
-Then The system appear an error email tooltip "Please fill out this field.".passed
+Then The Copyright year should be "Copyright © "+the actual year +" ACME Systems".passed
 ]]>
         </system-out>
     </testcase>
