@@ -55,6 +55,11 @@ public class Login extends BaseClass {
 		return rememberMeCheckBox.isSelected();
 	}
 	
+	public void rememberMeCheckBoxClick() throws InterruptedException {
+		rememberMeCheckBox.click();
+		Thread.sleep(200);
+	}
+	
 	public String getCopyrightText(){
 		return copyrightText.getText();
 	}

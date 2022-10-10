@@ -37,31 +37,31 @@ Scenario:  Check the intial status of remember me check box
     Then   The remember me  check box is unchecked
 
 
-@current-implementation   
+@implemented
 @medium 
 Scenario:  Check the Copyright year
     Given  The user open the login page
     Then   The Copyright year should be "Copyright © "+the actual year +" ACME Systems" 
 
+@implemented
+@important      
+Scenario Outline:  Enter with valid email and password
+    Given    The user open the login page
+    When   The user enter a valid username "<email>"
+    And    The user enter a valid password "<password>"
+    And    The user check the remeber me check box
+    Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
+
+      Examples: 
+      | email                      | password    |
+      | s.mahallel99@gmail.com     | 123456789a  |
+      
 @not-implemented-yet
 @medium     
 Scenario:  Check the label text 
     Given  The user open the login page
     Then   The label texts should be "Login" and "Home" and "To continue, please authenticate here" and  "Email:" and "Password:"
-    
-@not-implemented-yet
-@important      
-Scenario Outline:  Enter with valid email and password
-  Given    The user open the login page
-    When   The user enter a valid username "<email>"
-    And    The user enter a valid password "<password>"
-    And    The user check the remeber me check box
-    Then   The system should redirect to the dashboard page
-
-      Examples: 
-      | email                     | password
-      | s.mahallel99@gmail.comb   | 123456789a   
-          
+       
 @not-implemented-yet
 @low 
 Scenario Outline:  Enter empty value in password field

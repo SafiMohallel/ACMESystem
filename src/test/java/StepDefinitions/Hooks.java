@@ -7,10 +7,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
-import Utilities.BaseClass;
 import Utilities.PropertiesReader;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -18,7 +15,6 @@ import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Hooks {
-	private BaseClass base;
     public static WebDriver driver;
 
     @Before()

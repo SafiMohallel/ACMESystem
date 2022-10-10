@@ -22,7 +22,6 @@ public class LoginSteps  {
         this.wait = new WebDriverWait(driver, propertiesReader.getTimeout());
     }
 	
-	
 	 @Given("The user open the login page")
 	 public void the_user_open_the_login_page() {
 		 login = new Login(driver, wait);
@@ -66,9 +65,30 @@ public class LoginSteps  {
 	 }
 	 
 	 @Then("The Copyright year should be {string}+the actual year +{string}")
-	 public void the_copyright_year_should_be_the_actual_year(String string, String string2) {
+	 public void the_copyright_year_should_be_the_actual_year(String string, String string2) {	 
 		 Assert.assertEquals(login.getCopyrightText().substring(0, login.getCopyrightText().indexOf("©")+2), string);
 		 Assert.assertEquals(login.getCopyrightText().substring(login.getCopyrightText().indexOf("©")+2,login.getCopyrightText().indexOf("©")+6),Calendar.getInstance().get(Calendar.YEAR)+"");
 		 Assert.assertEquals(login.getCopyrightText().substring(login.getCopyrightText().indexOf("©")+6), string2);
+	 }
+
+	 @When("The user enter a valid username {string}")
+	 public void the_user_enter_a_valid_username(String string) {
+		 login.setEmailData (string);
+	 }
+	 
+	 @When("The user enter a valid password {string}")
+	 public void the_user_enter_a_valid_password(String string) {
+		 login.setPasswordData (string);
+	 }
+	 
+	 @When("The user check the remeber me check box")
+	 public void the_user_check_the_remeber_me_check_box() throws InterruptedException {
+		 login.rememberMeCheckBoxClick();
+	 }
+	 
+	 @Then("The system should redirect to the dashboard page with the title {string}")
+	 public void the_system_should_redirect_to_the_dashboard_page_with_the_title(String string) throws InterruptedException {
+		 login.loginButtonClick();
+		 Assert.assertEquals( string, driver.getTitle());
 	 }
 }

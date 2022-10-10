@@ -1,11 +1,19 @@
 Feature: Work Item
 
-@not-implemented-yet
+@current-implementation 
 @Autom  
 Scenario:  Check the items of type WI3 
+    Given    The user open the login page
+    When   The user enter a valid username "<email>"
+    And    The user enter a valid password "<password>"
+    And    The user check the remeber me check box
+    Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
     Given  The user open the Work Items
     And    check that only 4 items of type "WI3" is presented
-    
+      Examples: 
+      | email                      | password    |
+      | s.mahallel99@gmail.com     | 123456789a  |
+      
 @not-implemented-yet
 @medium     
 Scenario:  Check that item details shows the right values
