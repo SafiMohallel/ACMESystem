@@ -17,6 +17,11 @@ Scenario:  Check the items of type WI3
 @not-implemented-yet
 @medium     
 Scenario:  Check that item details shows the right values
+    Given    The user open the login page
+    When   The user enter a valid username "<email>"
+    And    The user enter a valid password "<password>"
+    And    The user check the remeber me check box
+    Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
     Given  The user open the Work Items
     And    Choose a random item and save the data of random item
     When   Click symbol search
@@ -32,7 +37,10 @@ Scenario:  Check that item details shows the right values
     Then   Then an alert with following appears "Work Item was updated accordingly"
     Given  The user navigate back to work item table and check the status of random selected item
     Then   The item status is changed to "Rejected"
-
+  		Examples: 
+      | email                      | password    |
+      | s.mahallel99@gmail.com     | 123456789a  |
+      
 @not-implemented-yet
 @important      
 Scenario Outline:  Change items status

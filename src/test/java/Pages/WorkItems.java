@@ -27,4 +27,15 @@ public class WorkItems extends BaseClass{
 	public int getTypesLenght() {
 		return type.size();
 	}
+	
+	@FindBy(xpath = "//*[@class='page-numbers']")
+	private List<WebElement> pageNumber;
+
+	public void clickPgeNumberData(int index) {
+		pageNumber.get(index).click();
+	}
+	
+	public int getpageNumberLenght() {
+		return pageNumber.size();
+	}
 }
