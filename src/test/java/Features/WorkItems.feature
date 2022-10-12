@@ -1,6 +1,6 @@
 Feature: Work Item
 
-@current-implementation 
+@implemented
 @Autom  
 Scenario:  Check the items of type WI3 
     Given    The user open the login page
@@ -14,7 +14,7 @@ Scenario:  Check the items of type WI3
       | email                      | password    |
       | s.mahallel99@gmail.com     | 123456789a  |
       
-@not-implemented-yet
+@current-implementation
 @medium     
 Scenario:  Check that item details shows the right values
     Given    The user open the login page
