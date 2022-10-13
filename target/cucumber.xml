@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.912">
-    <testcase classname="Work Item" name="Check that item details shows the right values" time="21.805">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="24.607">
+    <testcase classname="Work Item" name="Check that item details shows the right values" time="24.512">
         <system-out>
             <![CDATA[Given The user open the login page..........................................passed
 When The user enter a valid username "s.mahallel99@gmail.com"...............passed
@@ -10,7 +10,7 @@ Then The system should redirect to the dashboard page with the title "ACME Syste
 Given The user open the Work Items..........................................passed
 And Choose a random item and save the data of random item...................passed
 When Click symbol search....................................................passed
-Then Work Item details appear...............................................passed
+Then Work Item details appear with the header "Work Items - Work Item Details".passed
 And The url contain the the WIID of the seleced random item.................passed
 And Under Work Item Details section shows the right data (WIID_Type_Status_Date) of selected random item.passed
 When User click on button Update Work Item..................................passed

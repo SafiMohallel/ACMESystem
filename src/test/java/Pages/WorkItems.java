@@ -16,24 +16,13 @@ public class WorkItems extends BaseClass{
 		super(driver, wait);
         PageFactory.initElements(driver, this);
 	}
-	
-	@FindBy(xpath = "//*[@class='table']/tbody/tr/td[4]")
-	private List<WebElement> type;
 
-	public String getTypeData(int index) {
-		return type.get(index).getText();
-	}
-	
-	public int getTypesLenght() {
-		return type.size();
-	}
-	
 	@FindBy(xpath = "//*[@class='page-numbers']")
 	private List<WebElement> pageNumber;
 
 	public void clickPgeNumberData(int index) throws InterruptedException {
 		pageNumber.get(index).click();
-		Thread.sleep(200);
+		Thread.sleep(500);
 	}
 	
 	public int getpageNumberLenght() {
@@ -54,6 +43,17 @@ public class WorkItems extends BaseClass{
 		return description.get(index).getText();
 	}
 	
+	@FindBy(xpath = "//*[@class='table']/tbody/tr/td[4]")
+	private List<WebElement> type;
+
+	public String getTypeData(int index) {
+		return type.get(index).getText();
+	}
+	
+	public int getTypesLenght() {
+		return type.size();
+	}
+	
 	@FindBy(xpath = "//*[@class='table']/tbody/tr/td[5]")
 	private List<WebElement> status;
 
@@ -68,11 +68,37 @@ public class WorkItems extends BaseClass{
 		return date.get(index).getText();
 	}
 	
-	@FindBy(xpath = "//*[@class='table']/tbody/tr/td[1]/a/button")
+	@FindBy(xpath = "//*[@class='table']/tbody/tr/td[1]/a[1]/button[1]/i[1]")
 	private List<WebElement> searchIcon;
 
 	public void clickSearchIcon(int index) throws InterruptedException {
 		searchIcon.get(index).click();
-		Thread.sleep(200);
+		Thread.sleep(500);
+	}
+	
+	@FindBy(xpath = "//*[@class='page-header']")
+	private WebElement workItemsHeaderTitle;
+	
+	public String getWorkItemsHeaderTitleData() {
+		return workItemsHeaderTitle.getText();
+	}
+	
+	@FindBy(xpath = "//*[@class='panel-body']//div[2]//p[1]")
+	private WebElement workItemDetailsString;
+	
+	public String getDetailWIIDData() {
+		return workItemDetailsString.getText().substring(workItemDetailsString.getText().indexOf("WIID: ")+6,workItemDetailsString.getText().indexOf("Type: ")).trim();
+	}
+	
+	public String getDetailTypeData() {
+		return workItemDetailsString.getText().substring(workItemDetailsString.getText().indexOf("Type: ")+6,workItemDetailsString.getText().indexOf("Status: ")).trim();
+	}
+	
+	public String getDetailStatusData() {
+		return workItemDetailsString.getText().substring(workItemDetailsString.getText().indexOf("Status: ")+8,workItemDetailsString.getText().indexOf("Date: ")).trim();
+	}
+	
+	public String getDetailDateData() {
+		return workItemDetailsString.getText().substring(workItemDetailsString.getText().indexOf("Date: ")+6).trim();
 	}
 }

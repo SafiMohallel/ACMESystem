@@ -51,32 +51,43 @@ public class WorkItemsSteps {
     }
 
     @Given("Choose a random item and save the data of random item")
-    public void choose_a_random_item_and_save_the_data_of_random_item() {
+    public void choose_a_random_item_and_save_the_data_of_random_item() throws InterruptedException {
     	Random random = new Random();
     	randomNumber=random.nextInt(10);
-    	
+
+    	wIID=description=type=status=date ="";
+    	 
     	wIID= workItems.getWIIDData(randomNumber);
     	description= workItems.getDescriptionData(randomNumber);
     	type= workItems.getTypeData(randomNumber);
     	status= workItems.getStatusData(randomNumber);
     	date= workItems.getDateData(randomNumber);
+    	Thread.sleep(700);
     }
     
     @When("Click symbol search")
     public void click_symbol_search() throws InterruptedException {
+    	Thread.sleep(300);
     	workItems.clickSearchIcon(randomNumber);
     }
     
-    @Then("Work Item details appear")
-    public void work_item_details_appear() {
+    @Then("Work Item details appear with the header {string}")
+    public void work_item_details_appear_with_the_header(String string) {
+    	Assert.assertEquals(workItems.getWorkItemsHeaderTitleData(), string); 
     }
-    
+
     @Then("The url contain the the WIID of the seleced random item")
     public void the_url_contain_the_the_wiid_of_the_seleced_random_item() {
+    	Assert.assertEquals(driver.getCurrentUrl().substring(driver.getCurrentUrl().lastIndexOf("/")+1).trim(), wIID); 
     }
     
     @Then("Under Work Item Details section shows the right data \\(WIID_Type_Status_Date) of selected random item")
-    public void under_work_item_details_section_shows_the_right_data_wiid_type_status_date_of_selected_random_item() {
+    public void under_work_item_details_section_shows_the_right_data_wiid_type_status_date_of_selected_random_item() throws InterruptedException {
+    	Thread.sleep(300);
+    	Assert.assertEquals(workItems.getDetailWIIDData(), wIID); 
+    	Assert.assertEquals(workItems.getDetailTypeData(), description); 
+    	Assert.assertEquals(workItems.getDetailStatusData(), status); 
+    	Assert.assertEquals(workItems.getDetailDateData(), date); 
     }
     
     @When("User click on button Update Work Item")

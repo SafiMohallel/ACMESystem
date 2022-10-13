@@ -25,7 +25,7 @@ Scenario:  Check that item details shows the right values
     Given  The user open the Work Items
     And    Choose a random item and save the data of random item
     When   Click symbol search
-    Then   Work Item details appear
+    Then   Work Item details appear with the header "Work Items - Work Item Details"
     And    The url contain the the WIID of the seleced random item
     And    Under Work Item Details section shows the right data (WIID_Type_Status_Date) of selected random item
     When   User click on button Update Work Item
