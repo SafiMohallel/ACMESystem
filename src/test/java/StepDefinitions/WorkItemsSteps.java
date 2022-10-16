@@ -1,9 +1,13 @@
 package StepDefinitions;
 
+import java.util.Iterator;
 import java.util.Random;
+import java.util.Set;
 
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Pages.*;
@@ -20,7 +24,8 @@ public class WorkItemsSteps {
     Dashboard dashboard;
     static String wIID,description,type,status,date;
     static int randomNumber;
-	
+    static String MainWindow,ChildWindow;
+    
     public WorkItemsSteps() throws Exception {
         PropertiesReader propertiesReader = new PropertiesReader();
         this.wait = new WebDriverWait(driver, propertiesReader.getTimeout());
@@ -91,30 +96,57 @@ public class WorkItemsSteps {
     }
     
     @When("User click on button Update Work Item")
-    public void user_click_on_button_update_work_item() {
+    public void user_click_on_button_update_work_item() throws InterruptedException {
+    	workItems.clickUpdateWorkItemButton();
+    }
+   
+    @Then("A new windows pop Up with the header {string}")
+    public void a_new_windows_pop_up_with_the_header(String string) {
+    	 MainWindow=driver.getWindowHandle();						
+         Set<String> stWindowHandles=driver.getWindowHandles();		
+         Iterator<String> istWindowHandles=stWindowHandles.iterator();		
+         		
+         while(istWindowHandles.hasNext())			
+         {		
+             ChildWindow=istWindowHandles.next();			
+             if(!MainWindow.equalsIgnoreCase(ChildWindow))			  		
+                     driver.switchTo().window(ChildWindow);	 	
+         }	
+       	 Assert.assertEquals(driver.getTitle(), string); 
     }
     
-    @Then("A new windows pop Up")
-    public void a_new_windows_pop_up() {
-    }
     @Given("The User change the status of the item to rejected")
-    public void the_user_change_the_status_of_the_item_to_rejected() {
+    public void the_user_change_the_status_of_the_item_to_rejected() throws InterruptedException {
+    	workItems.clickDdlStatus();
+    	workItems.clickStausOptions(3);//Open , we should use 2 to rejected
     }
-    
+        
     @When("The user click on Update Work Item")
-    public void the_user_click_on_update_work_item() {
+    public void the_user_click_on_update_work_item() throws InterruptedException {
+    	workItems.clickUpdateWorkItemInnerButton();
     }
     
-    @Then("Then an alert with following appears {string}")
-    public void then_an_alert_with_following_appears(String string) {
+    @Then("An alert with following appears {string}")
+    public void an_alert_with_following_appears(String string) {
+    	WebDriverWait wait = new WebDriverWait(driver, 2);
+    	wait.until(ExpectedConditions.alertIsPresent());
+    	Alert alert = driver.switchTo().alert();
+      	Assert.assertEquals(alert.getText(), string); 
+    	alert.accept();
     }
     
-    @Given("The user add comment and click again on Update Work Item")
-    public void the_user_add_comment_and_click_again_on_update_work_item() {
+    @Given("The user add comment {string} and click again on Update Work Item")
+    public void the_user_add_comment_and_click_again_on_update_work_item(String string) throws InterruptedException {
+    	workItems.setComment(string);
+    	workItems.clickUpdateWorkItemInnerButton();
     }
-    
+
     @Given("The user navigate back to work item table and check the status of random selected item")
     public void the_user_navigate_back_to_work_item_table_and_check_the_status_of_random_selected_item() {
+    	driver.close();
+    	driver.switchTo().window(MainWindow);
+    	driver.navigate().back();
+    	driver.navigate().refresh();
     }
     
     @Then("The item status is changed to {string}")

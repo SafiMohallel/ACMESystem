@@ -29,12 +29,12 @@ Scenario:  Check that item details shows the right values
     And    The url contain the the WIID of the seleced random item
     And    Under Work Item Details section shows the right data (WIID_Type_Status_Date) of selected random item
     When   User click on button Update Work Item
-    Then   A new windows pop Up
+    Then   A new windows pop Up with the header "ACME System 1"
     Given  The User change the status of the item to rejected
     When   The user click on Update Work Item
-    Then   Then an alert with following appears "Please fill in the complete update form!"
-    Given  The user add comment and click again on Update Work Item
-    Then   Then an alert with following appears "Work Item was updated accordingly"
+    Then   An alert with following appears "Please fill in the complete update form!"
+    Given  The user add comment "test comment" and click again on Update Work Item
+    Then   An alert with following appears "Work Item was updated accordingly"
     Given  The user navigate back to work item table and check the status of random selected item
     Then   The item status is changed to "Rejected"
   		Examples: 

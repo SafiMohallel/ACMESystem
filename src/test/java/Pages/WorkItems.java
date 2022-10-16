@@ -101,4 +101,43 @@ public class WorkItems extends BaseClass{
 	public String getDetailDateData() {
 		return workItemDetailsString.getText().substring(workItemDetailsString.getText().indexOf("Date: ")+6).trim();
 	}
+	
+	@FindBy(xpath = "//*[@class='btn btn-default']")
+	private WebElement  updateWorkItemButton;
+
+	public void clickUpdateWorkItemButton() throws InterruptedException {
+		updateWorkItemButton.click();
+		Thread.sleep(500);
+	}
+	
+	@FindBy(xpath = "//*[@class='btn dropdown-toggle bs-placeholder btn-default']")
+	private WebElement  ddlStatus;
+
+	public void clickDdlStatus() throws InterruptedException {
+		ddlStatus.click();
+		Thread.sleep(500);
+	}
+	
+	@FindBy(xpath = "//*[@class='dropdown-menu inner']/li")
+	private List<WebElement> stausOptions;
+
+	public void clickStausOptions(int index) throws InterruptedException {
+		stausOptions.get(index).click();
+		Thread.sleep(500);
+	}
+	
+	@FindBy(id = "newComment")
+	private WebElement  txtComment;
+
+	public void setComment(String comment){
+		txtComment.sendKeys(comment);
+	}
+	
+	@FindBy(id = "buttonUpdate")
+	private WebElement  clickUpdateWorkItemInnerButton;
+
+	public void clickUpdateWorkItemInnerButton() throws InterruptedException {
+		clickUpdateWorkItemInnerButton.click();
+		Thread.sleep(500);
+	}
 }
