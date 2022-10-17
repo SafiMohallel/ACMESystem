@@ -118,7 +118,7 @@ public class WorkItemsSteps {
     @Given("The User change the status of the item to rejected")
     public void the_user_change_the_status_of_the_item_to_rejected() throws InterruptedException {
     	workItems.clickDdlStatus();
-    	workItems.clickStausOptions(3);//Open , we should use 2 to rejected
+    	workItems.clickStausOptions(2);//1 Open, 3 Completed , we should use 2 to Rejected
     }
         
     @When("The user click on Update Work Item")
@@ -151,5 +151,7 @@ public class WorkItemsSteps {
     
     @Then("The item status is changed to {string}")
     public void the_item_status_is_changed_to(String string) {
+    	status= workItems.getStatusData(randomNumber);
+      	Assert.assertEquals(status, string); 
     }
 }
