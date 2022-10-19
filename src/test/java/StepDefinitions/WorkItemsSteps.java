@@ -18,7 +18,8 @@ import io.cucumber.java.en.When;
 
 public class WorkItemsSteps {
 	private WebDriver driver = Hooks.driver;
-    private WebDriverWait wait;
+    private WebDriverWait wait = Hooks.wait;
+    
     WorkItems workItems;
     Login login;
     Dashboard dashboard;
@@ -44,7 +45,7 @@ public class WorkItemsSteps {
 
 		for (int pagesCounter = 0 ; pagesCounter<workItems.getpageNumberLenght()-1;pagesCounter++)
     	{
-    		workItems.clickPgeNumberData(pagesCounter);
+    		workItems.clickPgeNumberData(pagesCounter,wait);
     		for (int cellsCounter = 0 ; cellsCounter<workItems.getTypesLenght();cellsCounter++)
         	{
         		if (workItems.getTypeData(cellsCounter).equals("WI3"))
@@ -73,7 +74,7 @@ public class WorkItemsSteps {
     @When("Click symbol search")
     public void click_symbol_search() throws InterruptedException {
     	Thread.sleep(300);
-    	workItems.clickSearchIcon(randomNumber);
+    	workItems.clickSearchIcon(randomNumber,wait);
     }
     
     @Then("Work Item details appear with the header {string}")
@@ -97,7 +98,7 @@ public class WorkItemsSteps {
     
     @When("User click on button Update Work Item")
     public void user_click_on_button_update_work_item() throws InterruptedException {
-    	workItems.clickUpdateWorkItemButton();
+    	workItems.clickUpdateWorkItemButton(wait);
     }
    
     @Then("A new windows pop Up with the header {string}")
@@ -117,13 +118,13 @@ public class WorkItemsSteps {
     
     @Given("The User change the status of the item to rejected")
     public void the_user_change_the_status_of_the_item_to_rejected() throws InterruptedException {
-    	workItems.clickDdlStatus();
-    	workItems.clickStausOptions(2);//1 Open, 3 Completed , we should use 2 to Rejected
+    	workItems.clickDdlStatus(wait);
+    	workItems.clickStausOptions(2,wait);//1 Open, 3 Completed , we should use 2 to Rejected
     }
         
     @When("The user click on Update Work Item")
     public void the_user_click_on_update_work_item() throws InterruptedException {
-    	workItems.clickUpdateWorkItemInnerButton();
+    	workItems.clickUpdateWorkItemInnerButton(wait);
     }
     
     @Then("An alert with following appears {string}")
@@ -138,7 +139,7 @@ public class WorkItemsSteps {
     @Given("The user add comment {string} and click again on Update Work Item")
     public void the_user_add_comment_and_click_again_on_update_work_item(String string) throws InterruptedException {
     	workItems.setComment(string);
-    	workItems.clickUpdateWorkItemInnerButton();
+    	workItems.clickUpdateWorkItemInnerButton(wait);
     }
 
     @Given("The user navigate back to work item table and check the status of random selected item")

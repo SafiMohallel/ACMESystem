@@ -8,6 +8,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import Utilities.PropertiesReader;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -16,6 +18,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Hooks {
     public static WebDriver driver;
+    public static WebDriverWait wait;
 
     @Before()
     public void openBrowser() throws Exception {
@@ -36,6 +39,7 @@ public class Hooks {
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         driver.get(PropertiesReader.getValue("url"));
+        wait = new WebDriverWait(driver,30);
     }
 
     @After

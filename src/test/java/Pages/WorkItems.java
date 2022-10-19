@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Utilities.BaseClass;
@@ -20,7 +21,8 @@ public class WorkItems extends BaseClass{
 	@FindBy(xpath = "//*[@class='page-numbers']")
 	private List<WebElement> pageNumber;
 
-	public void clickPgeNumberData(int index) throws InterruptedException {
+	public void clickPgeNumberData(int index,WebDriverWait wait) throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(pageNumber.get(index)));
 		pageNumber.get(index).click();
 		Thread.sleep(500);
 	}
@@ -71,7 +73,8 @@ public class WorkItems extends BaseClass{
 	@FindBy(xpath = "//*[@class='table']/tbody/tr/td[1]/a[1]/button[1]/i[1]")
 	private List<WebElement> searchIcon;
 
-	public void clickSearchIcon(int index) throws InterruptedException {
+	public void clickSearchIcon(int index,WebDriverWait wait) throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(searchIcon.get(index)));
 		searchIcon.get(index).click();
 		Thread.sleep(500);
 	}
@@ -105,7 +108,8 @@ public class WorkItems extends BaseClass{
 	@FindBy(xpath = "//*[@class='btn btn-default']")
 	private WebElement  updateWorkItemButton;
 
-	public void clickUpdateWorkItemButton() throws InterruptedException {
+	public void clickUpdateWorkItemButton(WebDriverWait wait) throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(updateWorkItemButton));
 		updateWorkItemButton.click();
 		Thread.sleep(500);
 	}
@@ -113,7 +117,8 @@ public class WorkItems extends BaseClass{
 	@FindBy(xpath = "//*[@class='btn dropdown-toggle bs-placeholder btn-default']")
 	private WebElement  ddlStatus;
 
-	public void clickDdlStatus() throws InterruptedException {
+	public void clickDdlStatus(WebDriverWait wait) throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(ddlStatus));
 		ddlStatus.click();
 		Thread.sleep(500);
 	}
@@ -121,7 +126,8 @@ public class WorkItems extends BaseClass{
 	@FindBy(xpath = "//*[@class='dropdown-menu inner']/li")
 	private List<WebElement> stausOptions;
 
-	public void clickStausOptions(int index) throws InterruptedException {
+	public void clickStausOptions(int index,WebDriverWait wait) throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(stausOptions.get(index)));
 		stausOptions.get(index).click();
 		Thread.sleep(500);
 	}
@@ -136,7 +142,8 @@ public class WorkItems extends BaseClass{
 	@FindBy(id = "buttonUpdate")
 	private WebElement  clickUpdateWorkItemInnerButton;
 
-	public void clickUpdateWorkItemInnerButton() throws InterruptedException {
+	public void clickUpdateWorkItemInnerButton(WebDriverWait wait) throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(clickUpdateWorkItemInnerButton));
 		clickUpdateWorkItemInnerButton.click();
 		Thread.sleep(500);
 	}
