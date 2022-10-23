@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="39.787">
+    <testcase classname="Work Item" name="Change items status" time="39.704">
+        <system-out>
+            <![CDATA[Given The user open the login page..........................................passed
+When The user enter a valid username "s.mahallel99@gmail.com"...............passed
+And The user enter a valid password "123456789a"............................passed
+And The user check the remeber me check box.................................passed
+Then The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard".passed
+Given The user open the Work Items..........................................passed
+And The user choose item  "87820937"........................................passed
+When Click symbol search....................................................passed
+Then Work Item details appear with the header "Work Items - Work Item Details".passed
+When User click on button Update Work Item..................................passed
+Then A new windows pop Up with the header "ACME System 1"...................passed
+Given The User change the status of the item to "Completed" and add comment and click on Update Work Item.passed
+Then Then an alert with following appears "Work Item was updated accordingly".passed
+Given The user navigate back to work item table and check the status of random selected item.passed
+Then The item status is changed to "Completed"..............................passed
+Given The user click on reset data..........................................passed
+Then "Account - Reset Test Data" appear.....................................passed
+When The user click on Reset Test Data......................................passed
+Then Progress bar appear....................................................passed
+And Alert with the following appear "Your Test Data has been successfully reset.".passed
+When The user click OK......................................................passed
+Then The alert disappear and the progress bar...............................passed
+And The data in Work item table is reseted..................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

@@ -1,6 +1,5 @@
 package Runner;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.AfterClass;
@@ -15,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 		"json:target/cucumber.json", "junit:target/cucumber.xml" },
 		tags="@current-implementation")
 
-public class Runner {
+public class Test {
 	@AfterClass
 	public static void clean() {
 		List<String> jsonFiles = new ArrayList();

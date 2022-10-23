@@ -3,7 +3,7 @@ Feature: Work Item
 @implemented
 @Autom  
 Scenario:  Check the items of type WI3 
-    Given    The user open the login page
+    Given  The user open the login page
     When   The user enter a valid username "<email>"
     And    The user enter a valid password "<password>"
     And    The user check the remeber me check box
@@ -14,10 +14,10 @@ Scenario:  Check the items of type WI3
       | email                      | password    |
       | s.mahallel99@gmail.com     | 123456789a  |
       
-@current-implementation
+@implemented
 @medium     
 Scenario:  Check that item details shows the right values
-    Given    The user open the login page
+    Given  The user open the login page
     When   The user enter a valid username "<email>"
     And    The user enter a valid password "<password>"
     And    The user check the remeber me check box
@@ -41,15 +41,20 @@ Scenario:  Check that item details shows the right values
       | email                      | password    |
       | s.mahallel99@gmail.com     | 123456789a  |
       
-@not-implemented-yet
+@current-implementation
 @important      
 Scenario Outline:  Change items status
+    Given  The user open the login page
+    When   The user enter a valid username "<email>"
+    And    The user enter a valid password "<password>"
+    And    The user check the remeber me check box
+    Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
     Given  The user open the Work Items
     And    The user choose item  "<WIID>"
     When   Click symbol search
-    Then   Work Item details appears
+    Then   Work Item details appear with the header "Work Items - Work Item Details"
     When   User click on button Update Work Item
-    Then   A new windows pop Up
+    Then   A new windows pop Up with the header "ACME System 1"
     Given  The User change the status of the item to "<Status>" and add comment and click on Update Work Item
     Then   Then an alert with following appears "Work Item was updated accordingly"
     Given  The user navigate back to work item table and check the status of random selected item
@@ -64,7 +69,7 @@ Scenario Outline:  Change items status
     And    The data in Work item table is reseted
 
       Examples: 
-      | WIID       | Status   |
-      | 57064719   | Completed|
-      | 57064719   | Rejected |
+      | email                      | password    | WIID       | Status   |
+      | s.mahallel99@gmail.com     | 123456789a  | 87820937   | Completed|
+   # --    | s.mahallel99@gmail.com     | 123456789a  | 87820920   | Rejected |
           

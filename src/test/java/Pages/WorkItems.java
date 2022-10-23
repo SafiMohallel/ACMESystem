@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -145,6 +146,15 @@ public class WorkItems extends BaseClass{
 	public void clickUpdateWorkItemInnerButton(WebDriverWait wait) throws InterruptedException {
 		wait.until(ExpectedConditions.elementToBeClickable(clickUpdateWorkItemInnerButton));
 		clickUpdateWorkItemInnerButton.click();
+		Thread.sleep(500);
+	}
+	
+	@FindBy(xpath = "//*[@class='breadcrumb-item']/a")
+	private WebElement  HomeLink;
+
+	public void clickHomeLink(WebDriverWait wait) throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(HomeLink));
+		HomeLink.click();
 		Thread.sleep(500);
 	}
 }

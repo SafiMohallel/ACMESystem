@@ -155,4 +155,87 @@ public class WorkItemsSteps {
     	status= workItems.getStatusData(randomNumber);
       	Assert.assertEquals(status, string); 
     }
+    
+    @Given("The user choose item  {string}")
+    public void the_user_choose_item(String string) throws InterruptedException {
+    	randomNumber=-1;
+    	
+    	for (int pagesCounter = 0 ; pagesCounter<workItems.getpageNumberLenght()-1;pagesCounter++)
+    	{
+    		workItems.clickPgeNumberData(pagesCounter,wait);
+			
+    		for (int cellsCounter = 0 ; cellsCounter<workItems.getTypesLenght();cellsCounter++)
+        	{
+        		if (workItems.getWIIDData(cellsCounter).equals(string))
+        		{
+        			randomNumber = cellsCounter;
+        			break;
+        		}
+        	}
+    		
+    		Thread.sleep(200);
+    		if (randomNumber !=-1)
+    			break;
+    	}
+    	
+    	wIID=description=type=status=date ="";
+   	 
+    	wIID= workItems.getWIIDData(randomNumber);
+    	description= workItems.getDescriptionData(randomNumber);
+    	type= workItems.getTypeData(randomNumber);
+    	status= workItems.getStatusData(randomNumber);
+    	date= workItems.getDateData(randomNumber);
+    	Thread.sleep(700);
+    }
+    
+    @Given("The User change the status of the item to {string} and add comment and click on Update Work Item")
+    public void the_user_change_the_status_of_the_item_to_and_add_comment_and_click_on_update_work_item(String string) throws InterruptedException {
+    	workItems.clickDdlStatus(wait);
+    	workItems.clickStausOptions(3,wait);//1 Open, 3 Completed , we should use 2 to Rejected
+    	workItems.setComment(string);
+    	workItems.clickUpdateWorkItemInnerButton(wait);
+    }
+    
+    @Then("Then an alert with following appears {string}")
+    public void then_an_alert_with_following_appears(String string) {
+    	wait.until(ExpectedConditions.alertIsPresent());
+    	Alert alert = driver.switchTo().alert();
+      	Assert.assertEquals(alert.getText(), string); 
+    	alert.accept();
+    }
+    
+    @Given("The user click on reset data")
+    public void the_user_click_on_reset_data() throws InterruptedException {
+    	workItems.clickHomeLink(wait);
+    	dashboard.hooverUserOptionsButton(wait,driver);
+    	dashboard.clickResetTestDataLink(wait);
+    }
+    
+    @Then("{string} appear")
+    public void appear(String string) {
+    }
+    
+    @When("The user click on Reset Test Data")
+    public void the_user_click_on_reset_test_data() {
+    }
+    
+    @Then("Progress bar appear")
+    public void progress_bar_appear() {
+    }
+    
+    @Then("Alert with the following appear {string}")
+    public void alert_with_the_following_appear(String string) {
+    }
+    
+    @When("The user click OK")
+    public void the_user_click_ok() {
+    }
+    
+    @Then("The alert disappear and the progress bar")
+    public void the_alert_disappear_and_the_progress_bar() {
+    }
+    
+    @Then("The data in Work item table is reseted")
+    public void the_data_in_work_item_table_is_reseted() {
+    }
 }
