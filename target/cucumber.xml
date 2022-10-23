@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="39.787">
-    <testcase classname="Work Item" name="Change items status" time="39.704">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="39.257">
+    <testcase classname="Work Item" name="Change items status" time="39.17">
         <system-out>
             <![CDATA[Given The user open the login page..........................................passed
 When The user enter a valid username "s.mahallel99@gmail.com"...............passed
