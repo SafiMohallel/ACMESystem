@@ -21,7 +21,8 @@ public class Dashboard extends BaseClass{
 	@FindBy(xpath = "//button[normalize-space()='Work Items']")
 	private WebElement workItems;
 
-	public void worItemsClick() throws InterruptedException {
+	public void worItemsClick (WebDriverWait wait) throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(workItems));
 		workItems.click();
 		Thread.sleep(200);
 	}

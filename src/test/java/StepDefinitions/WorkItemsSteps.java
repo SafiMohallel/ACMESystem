@@ -20,9 +20,12 @@ public class WorkItemsSteps {
 	private WebDriver driver = Hooks.driver;
     private WebDriverWait wait = Hooks.wait;
     
+    static Alert alert;
     WorkItems workItems;
     Login login;
     Dashboard dashboard;
+    Account account;
+    
     static String wIID,description,type,status,date;
     static int randomNumber;
     static String MainWindow,ChildWindow;
@@ -35,7 +38,7 @@ public class WorkItemsSteps {
     @Given("The user open the Work Items")
     public void the_user_open_the_work_items() throws InterruptedException {
     	dashboard = new Dashboard (driver, wait);
-    	dashboard.worItemsClick();
+    	dashboard.worItemsClick(wait);
     	workItems = new WorkItems (driver, wait);
     }
     
@@ -131,7 +134,7 @@ public class WorkItemsSteps {
     public void an_alert_with_following_appears(String string) {
     	WebDriverWait wait = new WebDriverWait(driver, 2);
     	wait.until(ExpectedConditions.alertIsPresent());
-    	Alert alert = driver.switchTo().alert();
+    	alert = driver.switchTo().alert();
       	Assert.assertEquals(alert.getText(), string); 
     	alert.accept();
     }
@@ -199,7 +202,7 @@ public class WorkItemsSteps {
     @Then("Then an alert with following appears {string}")
     public void then_an_alert_with_following_appears(String string) {
     	wait.until(ExpectedConditions.alertIsPresent());
-    	Alert alert = driver.switchTo().alert();
+    	alert = driver.switchTo().alert();
       	Assert.assertEquals(alert.getText(), string); 
     	alert.accept();
     }
@@ -213,22 +216,31 @@ public class WorkItemsSteps {
     
     @Then("{string} appear")
     public void appear(String string) {
+    	account = new Account (driver, wait);
+      	Assert.assertEquals(account.getResetTestDataPageHeader(), string); 
     }
     
     @When("The user click on Reset Test Data")
-    public void the_user_click_on_reset_test_data() {
+    public void the_user_click_on_reset_test_data() throws InterruptedException {
+    	account.clicResetTestDataButton(wait);
     }
     
     @Then("Progress bar appear")
     public void progress_bar_appear() {
+    	//UNDER CON.
     }
     
     @Then("Alert with the following appear {string}")
     public void alert_with_the_following_appear(String string) {
+    	wait.until(ExpectedConditions.alertIsPresent());
+    	alert = driver.switchTo().alert();
+      	Assert.assertEquals(alert.getText(), string);
     }
+    
     
     @When("The user click OK")
     public void the_user_click_ok() {
+    	alert.accept();
     }
     
     @Then("The alert disappear and the progress bar")
