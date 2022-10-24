@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="57.518">
-    <testcase classname="Work Item" name="Change items status" time="57.416">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="101.852">
+    <testcase classname="Work Item" name="Change items status" time="101.74">
         <system-out>
             <![CDATA[Given The user open the login page..........................................passed
 When The user enter a valid username "s.mahallel99@gmail.com"...............passed
@@ -8,7 +8,7 @@ And The user enter a valid password "123456789a"............................pass
 And The user check the remeber me check box.................................passed
 Then The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard".passed
 Given The user open the Work Items..........................................passed
-And The user choose item  "87996027"........................................passed
+And The user choose item  "87997667"........................................passed
 When Click symbol search....................................................passed
 Then Work Item details appear with the header "Work Items - Work Item Details".passed
 When User click on button Update Work Item..................................passed

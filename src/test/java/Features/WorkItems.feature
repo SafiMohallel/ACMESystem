@@ -51,25 +51,25 @@ Scenario Outline:  Change items status
     Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
     Given  The user open the Work Items
     And    The user choose item  "<WIID>"
-    When   Click symbol search
-    Then   Work Item details appear with the header "Work Items - Work Item Details"
-    When   User click on button Update Work Item
-    Then   A new windows pop Up with the header "ACME System 1"
-    Given  The User change the status of the item to "<Status>" and add comment and click on Update Work Item
-    Then   Then an alert with following appears "Work Item was updated accordingly"
-    Given  The user navigate back to work item table and check the status of random selected item
-    Then   The item status is changed to "<Status>"
-    Given  The user click on reset data
-    Then   "Account - Reset Test Data" appear
-    When   The user click on Reset Test Data
-    Then   Progress bar appear
-    And    Alert with the following appear "Your Test Data has been successfully reset."
-    When   The user click OK 
-    Then   The alert disappear and the progress bar
-    And    The data in Work item table is reseted
+      When   Click symbol search
+      Then   Work Item details appear with the header "Work Items - Work Item Details"
+      When   User click on button Update Work Item
+      Then   A new windows pop Up with the header "ACME System 1"
+      Given  The User change the status of the item to "<Status>" and add comment and click on Update Work Item
+      Then   Then an alert with following appears "Work Item was updated accordingly"
+      Given  The user navigate back to work item table and check the status of random selected item
+      Then   The item status is changed to "<Status>"
+      Given  The user click on reset data
+      Then   "Account - Reset Test Data" appear
+      When   The user click on Reset Test Data
+      Then   Progress bar appear
+      And    Alert with the following appear "Your Test Data has been successfully reset."
+      When   The user click OK 
+      Then   The alert disappear and the progress bar
+      And    The data in Work item table is reseted
 
       Examples: 
       | email                      | password    | WIID       | Status   |
-      | s.mahallel99@gmail.com     | 123456789a  | 87996027   | Completed|
-    # --    | s.mahallel99@gmail.com     | 123456789a  | 87820920   | Rejected |
+      | s.mahallel99@gmail.com     | 123456789a  | 87997667   | Completed|
+      # --| s.mahallel99@gmail.com     | 123456789a  | 87820920   | Rejected |
           

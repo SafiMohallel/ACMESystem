@@ -166,7 +166,7 @@ public class WorkItemsSteps {
     	for (int pagesCounter = 0 ; pagesCounter<workItems.getpageNumberLenght()-1;pagesCounter++)
     	{
     		workItems.clickPgeNumberData(pagesCounter,wait);
-			
+
     		for (int cellsCounter = 0 ; cellsCounter<workItems.getTypesLenght();cellsCounter++)
         	{
         		if (workItems.getWIIDData(cellsCounter).equals(string))
@@ -179,17 +179,21 @@ public class WorkItemsSteps {
     		Thread.sleep(200);
     		if (randomNumber !=-1)
     			break;
-    			
     	}
     	
     	wIID=description=type=status=date ="";
    	 
-    	wIID= workItems.getWIIDData(randomNumber);
-    	description= workItems.getDescriptionData(randomNumber);
-    	type= workItems.getTypeData(randomNumber);
-    	status= workItems.getStatusData(randomNumber);
-    	date= workItems.getDateData(randomNumber);
-    	Thread.sleep(700);
+		if (randomNumber !=-1)
+		{
+	    	wIID= workItems.getWIIDData(randomNumber);
+	    	description= workItems.getDescriptionData(randomNumber);
+	    	type= workItems.getTypeData(randomNumber);
+	    	status= workItems.getStatusData(randomNumber);
+	    	date= workItems.getDateData(randomNumber);
+	    	Thread.sleep(700);
+		}
+		else 
+			Assert.assertFalse("-----------------------Since the element is not present hence marking the test case as FAIL !!!", randomNumber==-1);
     }
     
     @Given("The User change the status of the item to {string} and add comment and click on Update Work Item")
@@ -252,7 +256,26 @@ public class WorkItemsSteps {
     public void the_data_in_work_item_table_is_reseted() throws InterruptedException {
     	workItems.clickHomeLink(wait);
     	dashboard.worItemsClick(wait);
-    	
-    	//CHECK THE PREVIOUS DATA TO MAKE SURE THAT THE SAME INDEX IS CHANGED
+
+    	randomNumber=-1;
+
+    	for (int pagesCounter = 0 ; pagesCounter<workItems.getpageNumberLenght()-1;pagesCounter++)
+    	{
+    		workItems.clickPgeNumberData(pagesCounter,wait);
+
+    		for (int cellsCounter = 0 ; cellsCounter<workItems.getTypesLenght();cellsCounter++)
+        	{
+        		if (workItems.getWIIDData(cellsCounter).equals(wIID))
+        		{
+        			randomNumber = cellsCounter;
+        			break;
+        		}
+        	}
+    		
+    		Thread.sleep(200);
+    		if (randomNumber !=-1)
+    			break;
+    	}
+		Assert.assertTrue("-----------------------Since the element is not present hence marking the test case as PASS !!!", randomNumber==-1);
     }
 }
