@@ -32,4 +32,11 @@ public class Account extends BaseClass {
 	public String getResetTestDataPageHeader() {
 		return resetTestDataPageHeader.getText();
 	}
+	
+	@FindBy(xpath = "//div[@id='loadingProgress']")
+	private WebElement  loadingProgressDiv;
+
+	public String getloadingProgressDivDispaly() {
+		return loadingProgressDiv.getAttribute("style");
+	}
 }

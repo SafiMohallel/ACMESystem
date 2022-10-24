@@ -162,7 +162,7 @@ public class WorkItemsSteps {
     @Given("The user choose item  {string}")
     public void the_user_choose_item(String string) throws InterruptedException {
     	randomNumber=-1;
-    	
+
     	for (int pagesCounter = 0 ; pagesCounter<workItems.getpageNumberLenght()-1;pagesCounter++)
     	{
     		workItems.clickPgeNumberData(pagesCounter,wait);
@@ -179,6 +179,7 @@ public class WorkItemsSteps {
     		Thread.sleep(200);
     		if (randomNumber !=-1)
     			break;
+    			
     	}
     	
     	wIID=description=type=status=date ="";
@@ -227,7 +228,7 @@ public class WorkItemsSteps {
     
     @Then("Progress bar appear")
     public void progress_bar_appear() {
-    	//UNDER CON.
+      	Assert.assertEquals("display: block;", account.getloadingProgressDivDispaly()); 
     }
     
     @Then("Alert with the following appear {string}")
@@ -237,7 +238,6 @@ public class WorkItemsSteps {
       	Assert.assertEquals(alert.getText(), string);
     }
     
-    
     @When("The user click OK")
     public void the_user_click_ok() {
     	alert.accept();
@@ -245,9 +245,14 @@ public class WorkItemsSteps {
     
     @Then("The alert disappear and the progress bar")
     public void the_alert_disappear_and_the_progress_bar() {
+      	Assert.assertEquals("display: none;", account.getloadingProgressDivDispaly()); 
     }
     
     @Then("The data in Work item table is reseted")
-    public void the_data_in_work_item_table_is_reseted() {
+    public void the_data_in_work_item_table_is_reseted() throws InterruptedException {
+    	workItems.clickHomeLink(wait);
+    	dashboard.worItemsClick(wait);
+    	
+    	//CHECK THE PREVIOUS DATA TO MAKE SURE THAT THE SAME INDEX IS CHANGED
     }
 }

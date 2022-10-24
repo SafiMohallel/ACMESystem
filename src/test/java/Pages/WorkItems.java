@@ -19,7 +19,7 @@ public class WorkItems extends BaseClass{
         PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//*[@class='page-numbers']")
+	@FindBy(xpath = "(//*[@class='page-numbers']/li/a)")
 	private List<WebElement> pageNumber;
 
 	public void clickPgeNumberData(int index,WebDriverWait wait) throws InterruptedException {

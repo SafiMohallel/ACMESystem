@@ -1,62 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.51">
-    <testcase classname="Work Item" name="Change items status" time="3.375">
-        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=104.0.5112.101)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /tmp/.com.google.Chrome.oYmQEx}, goog:chromeOptions: {debuggerAddress: localhost:38649}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d1479f87c61295de15c4d89c3fa42556&#10;*** Element info: {Using=id, value=email}" type="org.openqa.selenium.NoSuchWindowException">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="57.518">
+    <testcase classname="Work Item" name="Change items status" time="57.416">
+        <system-out>
             <![CDATA[Given The user open the login page..........................................passed
-When The user enter a valid username "s.mahallel99@gmail.com"...............failed
-And The user enter a valid password "123456789a"............................skipped
-And The user check the remeber me check box.................................skipped
-Then The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard".skipped
-Given The user open the Work Items..........................................skipped
-And The user choose item  "87977741"........................................skipped
-When Click symbol search....................................................skipped
-Then Work Item details appear with the header "Work Items - Work Item Details".skipped
-When User click on button Update Work Item..................................skipped
-Then A new windows pop Up with the header "ACME System 1"...................skipped
-Given The User change the status of the item to "Completed" and add comment and click on Update Work Item.skipped
-Then Then an alert with following appears "Work Item was updated accordingly".skipped
-Given The user navigate back to work item table and check the status of random selected item.skipped
-Then The item status is changed to "Completed"..............................skipped
-Given The user click on reset data..........................................skipped
-Then "Account - Reset Test Data" appear.....................................skipped
-When The user click on Reset Test Data......................................skipped
-Then Progress bar appear....................................................skipped
-And Alert with the following appear "Your Test Data has been successfully reset.".skipped
-When The user click OK......................................................skipped
-Then The alert disappear and the progress bar...............................skipped
-And The data in Work item table is reseted..................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=104.0.5112.101)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /tmp/.com.google.Chrome.oYmQEx}, goog:chromeOptions: {debuggerAddress: localhost:38649}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d1479f87c61295de15c4d89c3fa42556
-*** Element info: {Using=id, value=email}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy20.clear(Unknown Source)
-	at Pages.Login.setEmailData(Login.java:37)
-	at StepDefinitions.LoginSteps.the_user_enter_a_valid_username(LoginSteps.java:76)
-	at ✽.The user enter a valid username "s.mahallel99@gmail.com"(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/WorkItems.feature:48)
+When The user enter a valid username "s.mahallel99@gmail.com"...............passed
+And The user enter a valid password "123456789a"............................passed
+And The user check the remeber me check box.................................passed
+Then The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard".passed
+Given The user open the Work Items..........................................passed
+And The user choose item  "87996027"........................................passed
+When Click symbol search....................................................passed
+Then Work Item details appear with the header "Work Items - Work Item Details".passed
+When User click on button Update Work Item..................................passed
+Then A new windows pop Up with the header "ACME System 1"...................passed
+Given The User change the status of the item to "Completed" and add comment and click on Update Work Item.passed
+Then Then an alert with following appears "Work Item was updated accordingly".passed
+Given The user navigate back to work item table and check the status of random selected item.passed
+Then The item status is changed to "Completed"..............................passed
+Given The user click on reset data..........................................passed
+Then "Account - Reset Test Data" appear.....................................passed
+When The user click on Reset Test Data......................................passed
+Then Progress bar appear....................................................passed
+And Alert with the following appear "Your Test Data has been successfully reset.".passed
+When The user click OK......................................................passed
+Then The alert disappear and the progress bar...............................passed
+And The data in Work item table is reseted..................................passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>
