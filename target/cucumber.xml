@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="101.852">
-    <testcase classname="Work Item" name="Change items status" time="101.74">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="151.337">
+    <testcase classname="Work Item" name="Change items status" time="90.223">
         <system-out>
             <![CDATA[Given The user open the login page..........................................passed
 When The user enter a valid username "s.mahallel99@gmail.com"...............passed
@@ -8,7 +8,7 @@ And The user enter a valid password "123456789a"............................pass
 And The user check the remeber me check box.................................passed
 Then The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard".passed
 Given The user open the Work Items..........................................passed
-And The user choose item  "87997667"........................................passed
+And The user choose item  "87998469"........................................passed
 When Click symbol search....................................................passed
 Then Work Item details appear with the header "Work Items - Work Item Details".passed
 When User click on button Update Work Item..................................passed
@@ -27,5 +27,41 @@ Then The alert disappear and the progress bar...............................pass
 And The data in Work item table is reseted..................................passed
 ]]>
         </system-out>
+    </testcase>
+    <testcase classname="Work Item" name="Change items status 2" time="60.935">
+        <failure message="-----------------------Since the element is not present hence marking the test case as FAIL !!!" type="java.lang.AssertionError">
+            <![CDATA[Given The user open the login page..........................................passed
+When The user enter a valid username "s.mahallel99@gmail.com"...............passed
+And The user enter a valid password "123456789a"............................passed
+And The user check the remeber me check box.................................passed
+Then The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard".passed
+Given The user open the Work Items..........................................passed
+And The user choose item  "87998479"........................................failed
+When Click symbol search....................................................skipped
+Then Work Item details appear with the header "Work Items - Work Item Details".skipped
+When User click on button Update Work Item..................................skipped
+Then A new windows pop Up with the header "ACME System 1"...................skipped
+Given The User change the status of the item to "Rejected" and add comment and click on Update Work Item.skipped
+Then Then an alert with following appears "Work Item was updated accordingly".skipped
+Given The user navigate back to work item table and check the status of random selected item.skipped
+Then The item status is changed to "Rejected"...............................skipped
+Given The user click on reset data..........................................skipped
+Then "Account - Reset Test Data" appear.....................................skipped
+When The user click on Reset Test Data......................................skipped
+Then Progress bar appear....................................................skipped
+And Alert with the following appear "Your Test Data has been successfully reset.".skipped
+When The user click OK......................................................skipped
+Then The alert disappear and the progress bar...............................skipped
+And The data in Work item table is reseted..................................skipped
+
+StackTrace:
+java.lang.AssertionError: -----------------------Since the element is not present hence marking the test case as FAIL !!!
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at StepDefinitions.WorkItemsSteps.the_user_choose_item(WorkItemsSteps.java:238)
+	at ✽.The user choose item  "87998479"(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/WorkItems.feature:53)
+]]>
+        </failure>
     </testcase>
 </testsuite>
