@@ -7,6 +7,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -25,9 +26,12 @@ public class Hooks {
 
 		if (PropertiesReader.getValue("browser").equalsIgnoreCase("chrome")) {
 
-			WebDriverManager.chromedriver().setup();
-	        driver = new ChromeDriver();
-
+		    ChromeOptions options = new ChromeOptions();
+		    WebDriverManager.chromedriver().setup();
+	        options.addArguments("start-maximized");
+	        options.addArguments("disable-infobars");
+	        options.addArguments("--disable-extensions");
+			driver = new ChromeDriver(options);
 		} else if (PropertiesReader.getValue("browser").equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();

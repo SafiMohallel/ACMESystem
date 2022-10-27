@@ -141,12 +141,13 @@ Scenario:  Check the page title
 @important      
 Scenario Outline:  Enter true values in all fields
   Given    The user open the registration page
-    When   The user enter a valid username "<email>"
-    And    The user enter a valid password "<password>"
-    And    The user enter a valid retypepassword "<retypepassword>"
-    And    The user check the captcha
+    When   The user enter a valid username in registration page "<email>"
+    And    The user enter a valid password in registration page  "<password>"
+    And    The user enter a valid retypepassword in registration page "<retypepassword>"
     And    The user check the terms ofuse and privacy policy
-    Then   The system should redirect to the dashboard page
+    And    The user check the captcha
+    And    The user click on register button
+    Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
 
       Examples: 
       | email                     | password    | retypepassword 

@@ -1,7 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: Runner.Test
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 45.955 s <<< FAILURE! - in Runner.Test
-Change items status(Work Item)  Time elapsed: 45.191 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<A[CME System 1] - Reset Test Data> but was:<A[ccount] - Reset Test Data>
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 18.831 sec <<< FAILURE!
+Enter true values in all fields(Register)  Time elapsed: 17.566 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<ACME System 1 - [Dashboard]> but was:<ACME System 1 - [Register]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefinitions.LoginSteps.the_system_should_redirect_to_the_dashboard_page_with_the_title(LoginSteps.java:96)
+	at ✽.The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Register.feature:150)
 

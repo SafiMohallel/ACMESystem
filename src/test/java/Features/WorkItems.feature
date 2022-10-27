@@ -40,8 +40,8 @@ Scenario:  Check that item details shows the right values
   		Examples: 
       | email                      | password    |
       | s.mahallel99@gmail.com     | 123456789a  |
-      
-@current-implementation
+
+@current-implementation 
 @important      
 Scenario Outline:  Change items status
     Given  The user open the login page

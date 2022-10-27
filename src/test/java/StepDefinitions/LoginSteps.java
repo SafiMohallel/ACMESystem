@@ -44,7 +44,7 @@ public class LoginSteps  {
 	 }
 	 @Then("The system appear an error message {string}")
 	 public void the_system_appear_an_error_message(String string) throws InterruptedException {
-		 login.loginButtonClick();
+		 login.loginButtonClick(wait);
 		 Assert.assertEquals( login.getAlretData(), string);
 	 }
 
@@ -55,7 +55,7 @@ public class LoginSteps  {
 	 
 	 @Then("The system appear an error email tooltip {string}")
 	 public void the_system_appear_an_error_tooltip(String string) throws InterruptedException {
-		 login.loginButtonClick();
+		 login.loginButtonClick(wait);
 		 Assert.assertEquals( login.getEmailTooltipData(), string);
 	 }
 	 
@@ -83,12 +83,16 @@ public class LoginSteps  {
 	 
 	 @When("The user check the remeber me check box")
 	 public void the_user_check_the_remeber_me_check_box() throws InterruptedException {
-		 login.rememberMeCheckBoxClick();
+		 login.rememberMeCheckBoxClick(wait);
 	 }
-	 
+
+	 @When("The user click on submit button")
+	 public void the_user_click_on_submit_button() throws InterruptedException {
+		 login.loginButtonClick(wait);
+	 }
+
 	 @Then("The system should redirect to the dashboard page with the title {string}")
-	 public void the_system_should_redirect_to_the_dashboard_page_with_the_title(String string) throws InterruptedException {
-		 login.loginButtonClick();
+	 public void the_system_should_redirect_to_the_dashboard_page_with_the_title(String string){
 		 Assert.assertEquals( string, driver.getTitle());
 	 }
 }

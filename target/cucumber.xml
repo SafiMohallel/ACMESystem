@@ -1,66 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="151.337">
-    <testcase classname="Work Item" name="Change items status" time="90.223">
-        <system-out>
-            <![CDATA[Given The user open the login page..........................................passed
-When The user enter a valid username "s.mahallel99@gmail.com"...............passed
-And The user enter a valid password "123456789a"............................passed
-And The user check the remeber me check box.................................passed
-Then The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard".passed
-Given The user open the Work Items..........................................passed
-And The user choose item  "87998469"........................................passed
-When Click symbol search....................................................passed
-Then Work Item details appear with the header "Work Items - Work Item Details".passed
-When User click on button Update Work Item..................................passed
-Then A new windows pop Up with the header "ACME System 1"...................passed
-Given The User change the status of the item to "Completed" and add comment and click on Update Work Item.passed
-Then Then an alert with following appears "Work Item was updated accordingly".passed
-Given The user navigate back to work item table and check the status of random selected item.passed
-Then The item status is changed to "Completed"..............................passed
-Given The user click on reset data..........................................passed
-Then "Account - Reset Test Data" appear.....................................passed
-When The user click on Reset Test Data......................................passed
-Then Progress bar appear....................................................passed
-And Alert with the following appear "Your Test Data has been successfully reset.".passed
-When The user click OK......................................................passed
-Then The alert disappear and the progress bar...............................passed
-And The data in Work item table is reseted..................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Work Item" name="Change items status 2" time="60.935">
-        <failure message="-----------------------Since the element is not present hence marking the test case as FAIL !!!" type="java.lang.AssertionError">
-            <![CDATA[Given The user open the login page..........................................passed
-When The user enter a valid username "s.mahallel99@gmail.com"...............passed
-And The user enter a valid password "123456789a"............................passed
-And The user check the remeber me check box.................................passed
-Then The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard".passed
-Given The user open the Work Items..........................................passed
-And The user choose item  "87998479"........................................failed
-When Click symbol search....................................................skipped
-Then Work Item details appear with the header "Work Items - Work Item Details".skipped
-When User click on button Update Work Item..................................skipped
-Then A new windows pop Up with the header "ACME System 1"...................skipped
-Given The User change the status of the item to "Rejected" and add comment and click on Update Work Item.skipped
-Then Then an alert with following appears "Work Item was updated accordingly".skipped
-Given The user navigate back to work item table and check the status of random selected item.skipped
-Then The item status is changed to "Rejected"...............................skipped
-Given The user click on reset data..........................................skipped
-Then "Account - Reset Test Data" appear.....................................skipped
-When The user click on Reset Test Data......................................skipped
-Then Progress bar appear....................................................skipped
-And Alert with the following appear "Your Test Data has been successfully reset.".skipped
-When The user click OK......................................................skipped
-Then The alert disappear and the progress bar...............................skipped
-And The data in Work item table is reseted..................................skipped
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="64.98">
+    <testcase classname="Register" name="Enter true values in all fields" time="64.847">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=104.0.5112.101)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /tmp/.com.google.Chrome.0vtOcw}, goog:chromeOptions: {debuggerAddress: localhost:44977}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f1eef585a0cf4476b1393263f0c7d75d&#10;*** Element info: {Using=xpath, value=//*[@class='btn btn-primary']}" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given The user open the registration page...................................passed
+When The user enter a valid username in registration page "s.mahallel99@gmail.comb".passed
+And The user enter a valid password in registration page  "123456789a"......passed
+And The user enter a valid retypepassword in registration page "<retypepassword>".passed
+And The user check the terms ofuse and privacy policy.......................passed
+And The user check the captcha..............................................passed
+And The user click on register button.......................................failed
+Then The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard".skipped
 
 StackTrace:
-java.lang.AssertionError: -----------------------Since the element is not present hence marking the test case as FAIL !!!
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertFalse(Assert.java:65)
-	at StepDefinitions.WorkItemsSteps.the_user_choose_item(WorkItemsSteps.java:238)
-	at ✽.The user choose item  "87998479"(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/WorkItems.feature:53)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.101)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /tmp/.com.google.Chrome.0vtOcw}, goog:chromeOptions: {debuggerAddress: localhost:44977}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f1eef585a0cf4476b1393263f0c7d75d
+*** Element info: {Using=xpath, value=//*[@class='btn btn-primary']}
+	at jdk.internal.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:172)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:683)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:172)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:268)
+	at Pages.Register.registerButtonClick(Register.java:83)
+	at StepDefinitions.RegisterSteps.the_user_click_on_register_button(RegisterSteps.java:58)
+	at ✽.The user click on register button(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Register.feature:149)
 ]]>
         </failure>
     </testcase>

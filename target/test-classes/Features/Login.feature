@@ -50,6 +50,7 @@ Scenario Outline:  Enter with valid email and password
     When   The user enter a valid username "<email>"
     And    The user enter a valid password "<password>"
     And    The user check the remeber me check box
+    And    The user click on submit button
     Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
 
       Examples: 

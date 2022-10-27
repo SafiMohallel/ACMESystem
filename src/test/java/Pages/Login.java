@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Utilities.BaseClass;
@@ -55,7 +56,8 @@ public class Login extends BaseClass {
 		return rememberMeCheckBox.isSelected();
 	}
 	
-	public void rememberMeCheckBoxClick() throws InterruptedException {
+	public void rememberMeCheckBoxClick(WebDriverWait wait) throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(rememberMeCheckBox));
 		rememberMeCheckBox.click();
 		Thread.sleep(200);
 	}
@@ -64,7 +66,8 @@ public class Login extends BaseClass {
 		return copyrightText.getText();
 	}
 	
-	public void loginButtonClick() throws InterruptedException {
+	public void loginButtonClick(WebDriverWait wait) throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(loginButton));
 		loginButton.click();
 		Thread.sleep(200);
 	}
