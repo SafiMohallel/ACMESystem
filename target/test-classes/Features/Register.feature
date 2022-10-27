@@ -137,7 +137,7 @@ Scenario:  Check the page title
     When   The user does not enter any data
     Then   The page title should be is "title text"
        
-@not-implemented-yet
+@current-implementation
 @important      
 Scenario Outline:  Enter true values in all fields
   Given    The user open the registration page
