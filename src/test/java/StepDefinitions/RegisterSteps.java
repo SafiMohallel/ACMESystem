@@ -45,7 +45,7 @@ public class RegisterSteps {
     
     @When("The user check the captcha")
     public void the_user_check_the_captcha() throws InterruptedException, IOException {
-    	register.recaptchaCheckBoxClick(driver);
+    	register.recaptchaCheckBoxClick(driver,wait);
     }
     
     @When("The user check the terms ofuse and privacy policy")

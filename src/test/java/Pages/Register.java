@@ -1,14 +1,24 @@
 package Pages;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -73,10 +83,15 @@ public class Register extends BaseClass {
 		Thread.sleep(200);
 	}
 	
-	public void recaptchaCheckBoxClick(WebDriver driver) throws InterruptedException, IOException {
+	public void recaptchaCheckBoxClick(WebDriver driver,WebDriverWait wait) throws InterruptedException, IOException {
 		//STILL NOT WORKING
-		new WebDriverWait(driver, 20).until(ExpectedConditions.frameToBeAvailableAndSwitchToIt((By.cssSelector("iframe[title='reCAPTCHA']"))));
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.cssSelector( "div.recaptcha-checkbox-border")))).click();
+		
+		
+		//new WebDriverWait(driver, 20).until(ExpectedConditions.frameToBeAvailableAndSwitchToIt((By.cssSelector("iframe[title='reCAPTCHA']"))));
+		//new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.cssSelector( "div.recaptcha-checkbox-border")))).click();
+		 
+		
+	
 	}
 	
 	public void registerButtonClick(WebDriverWait wait) throws InterruptedException {
