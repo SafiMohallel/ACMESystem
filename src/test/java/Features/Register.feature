@@ -130,14 +130,14 @@ Scenario:  Check the label text
     When   The user does not enter any data
     Then   The label text should be is "label text"
 
-@not-implemented-yet
+@current-implementation
 @low     
 Scenario:  Check the page title 
     Given  The user open the registration page
     When   The user does not enter any data
-    Then   The page title should be is "title text"
+    Then   The page title should be is "ACME System 1 - Register"
        
-@current-implementation
+@implemented
 @important      
 Scenario Outline:  Enter true values in all fields
   Given    The user open the registration page

@@ -1,39 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.405">
-    <testcase classname="Register" name="Enter true values in all fields" time="16.245">
-        <failure message="invalid argument&#10;  (Session info: chrome=104.0.5112.101)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /tmp/.com.google.Chrome.C1Z7Eg}, goog:chromeOptions: {debuggerAddress: localhost:39893}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fef45850ee7a6b62703e66e6f4e9959d" type="org.openqa.selenium.InvalidArgumentException">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.532">
+    <testcase classname="Register" name="Check the page title" time="15.384">
+        <system-out>
             <![CDATA[Given The user open the registration page...................................passed
-When The user enter a valid username in registration page "s.mahallel99@gmail.comb".passed
-And The user enter a valid password in registration page  "123456789a"......passed
-And The user enter a valid retypepassword in registration page "<retypepassword>".passed
-And The user check the terms ofuse and privacy policy.......................passed
-And The user check the captcha..............................................failed
-And The user click on register button.......................................skipped
-Then The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard".skipped
-
-StackTrace:
-org.openqa.selenium.InvalidArgumentException: invalid argument
-  (Session info: chrome=104.0.5112.101)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /tmp/.com.google.Chrome.C1Z7Eg}, goog:chromeOptions: {debuggerAddress: localhost:39893}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fef45850ee7a6b62703e66e6f4e9959d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at Pages.Register.recaptchaCheckBoxClick(Register.java:113)
-	at StepDefinitions.RegisterSteps.the_user_check_the_captcha(RegisterSteps.java:48)
-	at ✽.The user check the captcha(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Register.feature:148)
+When The user does not enter any data.......................................passed
+Then The page title should be is "ACME System 1 - Register".................passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>

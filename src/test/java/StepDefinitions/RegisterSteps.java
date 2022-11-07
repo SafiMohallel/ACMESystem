@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import Pages.Dashboard;
 import Pages.Register;
 import Utilities.PropertiesReader;
 import io.cucumber.java.en.Given;
@@ -16,6 +17,7 @@ public class RegisterSteps {
 	private WebDriver driver = Hooks.driver;
     private WebDriverWait wait;
     Register register;
+    Dashboard dashboard;
     
     public RegisterSteps() throws Exception {
         PropertiesReader propertiesReader = new PropertiesReader();
@@ -55,6 +57,13 @@ public class RegisterSteps {
 
     @When("The user click on register button")
     public void the_user_click_on_register_button() throws InterruptedException {
-    	register.registerButtonClick(wait);
+    	register.registerButtonClick(driver,wait);
+    }
+    
+    @When("The user does not enter any data")
+    public void the_user_does_not_enter_any_data() {
+    	register.setEmailData ("");
+		register.setPasswordData ("");
+	    register.setRetypePasswordData ("");
     }
 }

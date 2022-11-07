@@ -8,6 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -86,15 +87,17 @@ public class Register extends BaseClass {
 	public void recaptchaCheckBoxClick(WebDriver driver,WebDriverWait wait) throws InterruptedException, IOException {
 		//STILL NOT WORKING
 		
-		
-		//new WebDriverWait(driver, 20).until(ExpectedConditions.frameToBeAvailableAndSwitchToIt((By.cssSelector("iframe[title='reCAPTCHA']"))));
-		//new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.cssSelector( "div.recaptcha-checkbox-border")))).click();
+		driver.manage().deleteAllCookies();
+		new WebDriverWait(driver, 60).until(ExpectedConditions.frameToBeAvailableAndSwitchToIt((By.cssSelector("iframe[title='reCAPTCHA']"))));
+		new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable((By.cssSelector( "div.recaptcha-checkbox-border")))).click();
 		 
-		
+		//JavascriptExecutor js = (JavascriptExecutor) driver;
+		//js.executeScript("arguments[0].setAttribute('style', 'display: none;')", new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable((By.cssSelector( "iframe[title='reCAPTCHA']")))));
 	
 	}
 	
-	public void registerButtonClick(WebDriverWait wait) throws InterruptedException {
+	public void registerButtonClick(WebDriver driver,WebDriverWait wait) throws InterruptedException {
+		driver.switchTo().defaultContent();
 		wait.until(ExpectedConditions.elementToBeClickable(registerButton));
 		registerButton.click();
 		Thread.sleep(200);
