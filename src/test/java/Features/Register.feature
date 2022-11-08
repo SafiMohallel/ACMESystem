@@ -93,7 +93,7 @@ Scenario Outline:  Uncheck the Term and privacy check box
       | email                     | password    | retypepassword | error message  
       | s.mahallel99@gmail.comb   | 123456789a  | 123456789a     | The terms ofuse and privacy policy should be checked
 
-@not-implemented-yet    
+@current-implementation
 @medium 
 Scenario Outline:  Uncheck the captcha check box
     Given  The user open the registration page
@@ -108,7 +108,7 @@ Scenario Outline:  Uncheck the captcha check box
       | email                     | password    | retypepassword | error message  
       | s.mahallel99@gmail.comb   | 123456789a  | 123456789a     | Please validate that you are a human!
       
-@not-implemented-yet
+@implemented
 @medium     
 Scenario:  Check the intial status of the check boxes
     Given  The user open the registration page
@@ -116,21 +116,20 @@ Scenario:  Check the intial status of the check boxes
     Then   The terms ofuse and privacy polic check box is unchecked
     And    The captcha check box is unchecked
 
-@not-implemented-yet
+@implemented
 @medium     
 Scenario:  Check the Copyright year
-    Given  The user open the registration page
-    When   The user does not enter any data
-    Then   The Copyright year should be "copyright year"
+    Given  The user open the login page
+    Then   The Copyright year should be "Copyright © "+the actual year +" ACME Systems" 
 
-@not-implemented-yet
+@implemented
 @medium     
 Scenario:  Check the label text 
     Given  The user open the registration page
     When   The user does not enter any data
     Then   The label text should be is "label text"
 
-@current-implementation
+@implemented
 @low     
 Scenario:  Check the page title 
     Given  The user open the registration page

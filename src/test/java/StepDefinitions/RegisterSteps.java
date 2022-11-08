@@ -66,4 +66,24 @@ public class RegisterSteps {
 		register.setPasswordData ("");
 	    register.setRetypePasswordData ("");
     }
+    
+    @Then("The label text should be is {string}")
+    public void the_label_text_should_be_is(String string) {
+		 Assert.assertEquals(register.getEmailLabel(), "Email:");
+		 Assert.assertEquals(register.getPasswordLabel(), "Password:");
+		 Assert.assertEquals(register.getReTpePasswordLabel(), "Retype Password:");
+		 Assert.assertEquals(register.getTermsOfUseAndPrivacyPolicyLabelLabel(), "I agree to the updated Terms of Use and Privacy Policy.");
+		 Assert.assertEquals(register.getRegisterQuestionnaireLabel(), "Register by filling the below questionnaire.");
+		 Assert.assertEquals(register.getRegisterHeaderLabel(), "Register");
+    }
+
+    @Then("The terms ofuse and privacy polic check box is unchecked")
+    public void the_terms_ofuse_and_privacy_polic_check_box_is_unchecked() {
+		 Assert.assertEquals(register.getRememberMeCheckBoxStatus(), false);
+    }
+    
+    @Then("The captcha check box is unchecked")
+    public void the_captcha_check_box_is_unchecked() {
+		 Assert.assertEquals(register.getRecaptchaheckBoxStatus(driver), false);
+    }
 }

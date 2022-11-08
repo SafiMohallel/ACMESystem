@@ -102,4 +102,45 @@ public class Register extends BaseClass {
 		registerButton.click();
 		Thread.sleep(200);
 	}
+	
+	@FindBy(xpath = "(//label)[1]")
+	private WebElement emailLabel;
+	public String getEmailLabel() {
+		return emailLabel.getText();
+	}
+	
+	@FindBy(xpath = "(//label)[2]")
+	private WebElement passwordLabel;
+	public String getPasswordLabel() {
+		return passwordLabel.getText();
+	}
+	
+	@FindBy(xpath = "(//label)[3]")
+	private WebElement reTypePasswordLabel;
+	public String getReTpePasswordLabel() {
+		return reTypePasswordLabel.getText();
+	}
+	
+	@FindBy(xpath = "(//label)[4]")
+	private WebElement termsOfUseAndPrivacyPolicyLabel;
+	public String getTermsOfUseAndPrivacyPolicyLabelLabel() {
+		return termsOfUseAndPrivacyPolicyLabel.getText();
+	}
+	
+	@FindBy(xpath = "//h3")
+	private WebElement registerQuestionnaireLabel;
+	public String getRegisterQuestionnaireLabel() {
+		return registerQuestionnaireLabel.getText();
+	}
+	
+	@FindBy(xpath = "//h1")
+	private WebElement registerHeaderLabel;
+	public String getRegisterHeaderLabel() {
+		return registerHeaderLabel.getText();
+	}
+	
+	public boolean getRecaptchaheckBoxStatus(WebDriver driver) {
+		new WebDriverWait(driver, 60).until(ExpectedConditions.frameToBeAvailableAndSwitchToIt((By.cssSelector("iframe[title='reCAPTCHA']"))));
+		return new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable((By.cssSelector( "div.recaptcha-checkbox-border")))).isSelected();
+	}
 }
