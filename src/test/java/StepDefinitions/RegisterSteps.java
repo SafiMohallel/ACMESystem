@@ -86,4 +86,18 @@ public class RegisterSteps {
     public void the_captcha_check_box_is_unchecked() {
 		 Assert.assertEquals(register.getRecaptchaheckBoxStatus(driver), false);
     }
+
+    @When("The user uncheck the captcha")
+    public void the_user_uncheck_the_captcha() throws InterruptedException, IOException {
+    	if(register.getRecaptchaheckBoxStatus(driver))
+        	register.recaptchaCheckBoxClick(driver,wait);
+    }
+
+    @Then("The system appear an error message in registration page {string}")
+    public void the_system_appear_an_error_message_in_registration_page(String string) {
+    	//System.out.println("xxxxxxxxxxxxxxpath"+);
+    	//System.out.println("fffffffffffffffffEAYURE FILE"+string);
+
+		Assert.assertEquals(register.getErrorMessageRecaptchaLabel(), string);
+    }
 }

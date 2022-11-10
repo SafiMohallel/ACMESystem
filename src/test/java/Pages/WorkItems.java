@@ -162,7 +162,7 @@ public class WorkItems extends BaseClass {
 		Thread.sleep(500);
 	}
 
-	//The second method
+	/*The second method
 	//////////////////////////////////////////////////////////////////////////////////////////
 	public String getWIIDSecondMethodData(WebDriver driver, int index) {
 		return driver.findElement(By.xpath("//*[@class='table']/tbody/tr["+index+"]/td[2]")).getText();
@@ -184,4 +184,5 @@ public class WorkItems extends BaseClass {
 		return driver.findElement(By.xpath("//*[@class='table']/tbody/tr["+index+"]/td[6]")).getText();
 	}
 	//////////////////////////////////////////////////////////////////////////////////////////////
+	*/
 }

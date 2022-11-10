@@ -161,9 +161,7 @@ public class WorkItemsSteps {
     
     @Given("The user choose item  {string}")
     public void the_user_choose_item(String string) throws InterruptedException {
-
     	//The first Method 
-    	/*
     	randomNumber=-1;
 
     	for (int pagesCounter = 0 ; pagesCounter<workItems.getpageNumberLenght()-1;pagesCounter++)
@@ -197,9 +195,9 @@ public class WorkItemsSteps {
 		}
 		else 
 			Assert.assertFalse("-----------------------Since the element is not present hence marking the test case as FAIL !!!", randomNumber==-1);
-    	*/
     	
-    	//The second method
+    	
+    	/*The second method
 		/////////////////////////////////////////////////////////
     	randomNumber=-1;
 
@@ -236,6 +234,7 @@ public class WorkItemsSteps {
 		else 
 			Assert.assertFalse("-----------------------Since the element is not present hence marking the test case as FAIL !!!", randomNumber==-1);
 		/////////////////////////////////////////////////////////
+		*/
     }
     
     @Given("The User change the status of the item to {string} and add comment and click on Update Work Item")

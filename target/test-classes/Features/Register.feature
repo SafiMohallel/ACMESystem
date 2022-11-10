@@ -93,22 +93,23 @@ Scenario Outline:  Uncheck the Term and privacy check box
       | email                     | password    | retypepassword | error message  
       | s.mahallel99@gmail.comb   | 123456789a  | 123456789a     | The terms ofuse and privacy policy should be checked
 
-@not-implemented-yet    
+@current-implementation
 @medium 
 Scenario Outline:  Uncheck the captcha check box
     Given  The user open the registration page
-    When   The user enter a valid username "<email>"
-    And    The user enter a valid password "<password>"
-    And    The user enter a valid retypepassword "<retypepassword>"
+    When   The user enter a valid username in registration page "<email>"
+    And    The user enter a valid password in registration page  "<password>"
+    And    The user enter a valid retypepassword in registration page "<retypepassword>"
     And    The user uncheck the captcha
     And    The user check the terms ofuse and privacy policy
-    Then   The system appear an error message "<error message>"
+    And    The user click on register button
+    Then   The system appear an error message in registration page "<error message>"
 
    Examples: 
-      | email                     | password    | retypepassword | error message  
-      | s.mahallel99@gmail.comb   | 123456789a  | 123456789a     | Please validate that you are a human!
+      | email                     | password    | retypepassword | error message                         | 
+      | s.mahallel99@gmail.comb   | 123456789a  | 123456789a     | Please validate that you are a human! | 
       
-@current-implementation
+@implemented
 @medium     
 Scenario:  Check the intial status of the check boxes
     Given  The user open the registration page
@@ -149,8 +150,8 @@ Scenario Outline:  Enter true values in all fields
     Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
 
       Examples: 
-      | email                     | password    | retypepassword 
-      | s.mahallel99@gmail.comb   | 123456789a  | 123456789a     
+      | email                     | password    | retypepassword | 
+      | s.mahallel99@gmail.comb   | 123456789a  | 123456789a     | 
       
 
 

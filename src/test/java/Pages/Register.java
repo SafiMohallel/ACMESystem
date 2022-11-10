@@ -93,11 +93,11 @@ public class Register extends BaseClass {
 		 
 		//JavascriptExecutor js = (JavascriptExecutor) driver;
 		//js.executeScript("arguments[0].setAttribute('style', 'display: none;')", new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable((By.cssSelector( "iframe[title='reCAPTCHA']")))));
-	
+		driver.switchTo().defaultContent();
+
 	}
 	
 	public void registerButtonClick(WebDriver driver,WebDriverWait wait) throws InterruptedException {
-		driver.switchTo().defaultContent();
 		wait.until(ExpectedConditions.elementToBeClickable(registerButton));
 		registerButton.click();
 		Thread.sleep(200);
@@ -140,7 +140,16 @@ public class Register extends BaseClass {
 	}
 	
 	public boolean getRecaptchaheckBoxStatus(WebDriver driver) {
+		boolean isChecked= false;
 		new WebDriverWait(driver, 60).until(ExpectedConditions.frameToBeAvailableAndSwitchToIt((By.cssSelector("iframe[title='reCAPTCHA']"))));
-		return new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable((By.cssSelector( "div.recaptcha-checkbox-border")))).isSelected();
+		isChecked= new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable((By.cssSelector( "div.recaptcha-checkbox-border")))).isSelected();
+		driver.switchTo().defaultContent();
+		return isChecked;
+	}
+	
+	@FindBy(xpath = "//strong")
+	private WebElement errorMessageRecaptchaLabel;
+	public String getErrorMessageRecaptchaLabel() {
+		return errorMessageRecaptchaLabel.getText();
 	}
 }

@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.891">
-    <testcase classname="Register" name="Check the intial status of the check boxes" time="14.762">
-        <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.673">
+    <testcase classname="Register" name="Uncheck the captcha check box" time="17.57">
+        <system-out>
             <![CDATA[Given The user open the registration page...................................passed
-When The user does not enter any data.......................................passed
-Then The terms ofuse and privacy polic check box is unchecked...............passed
-And The captcha check box is unchecked......................................failed
-
-StackTrace:
-java.lang.AssertionError: expected:<false> but was:<true>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:120)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at StepDefinitions.RegisterSteps.the_captcha_check_box_is_unchecked(RegisterSteps.java:87)
-	at ✽.The captcha check box is unchecked(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Register.feature:117)
+When The user enter a valid username in registration page "s.mahallel99@gmail.comb".passed
+And The user enter a valid password in registration page  "123456789a"......passed
+And The user enter a valid retypepassword in registration page "123456789a".passed
+And The user uncheck the captcha............................................passed
+And The user check the terms ofuse and privacy policy.......................passed
+And The user click on register button.......................................passed
+Then The system appear an error message in registration page "Please validate that you are a human!".passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>
