@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.298">
+    <testcase classname="Register" name="Uncheck the captcha check box" time="18.528">
+        <system-out>
+            <![CDATA[Given The user open the registration page...................................passed
+When The user enter a valid username in registration page "s.mahallel99@gmail.comb".passed
+And The user enter a valid password in registration page  "123456789a"......passed
+And The user enter a valid retypepassword in registration page "123456789a".passed
+And The user uncheck the captcha............................................passed
+And The user check the terms ofuse and privacy policy.......................passed
+And The user click on register button.......................................passed
+Then The system appear an error message in registration page "Please validate that you are a human!".passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
