@@ -50,7 +50,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                1,
+                0,
                 1,
                 6,
                 0,
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 8) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 7) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -232,7 +232,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Test Report</td>
         <td>1</td>
-      <td>13 Nov 2022, 13:42</td>
+      <td>13 Nov 2022, 14:36</td>
     </tr>
   </tbody>
 </table>
@@ -347,18 +347,18 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-feature_3737890563.html">Register</a></td>
 
-        <td      class="passed"    >1</td>
+        <td >0</td>
         <td      class="failed"    >1</td>
         <td     class="skipped"   >6</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">8</td>
+        <td class="total">7</td>
 
         <td >0</td>
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="455631000">0.455</td>
+        <td class="duration" data-value="576450000">0.576</td>
         <td class="failed">Failed</td>
       </tr>
   </tbody>
@@ -366,25 +366,25 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>1</td>
+      <td>0</td>
       <td>1</td>
       <td>6</td>
       <td>0</td>
       <td>0</td>
-      <td>8</td>
+      <td>7</td>
 
       <td>0</td>
       <td>1</td>
       <td>1</td>
 
-      <td class="duration">0.455</td>
+      <td class="duration">0.576</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
-      <td>12.50%</td>
-      <td>12.50%</td>
-      <td>75.00%</td>
+      <td>0.00%</td>
+      <td>14.29%</td>
+      <td>85.71%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>

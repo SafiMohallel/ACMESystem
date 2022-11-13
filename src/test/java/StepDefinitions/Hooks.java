@@ -25,13 +25,8 @@ public class Hooks {
     public void openBrowser() throws Exception {
 
 		if (PropertiesReader.getValue("browser").equalsIgnoreCase("chrome")) {
-
-		    ChromeOptions options = new ChromeOptions();
 		    WebDriverManager.chromedriver().setup();
-	        options.addArguments("start-maximized");
-	        options.addArguments("disable-infobars");
-	        options.addArguments("--disable-extensions");
-			driver = new ChromeDriver(options);
+			driver = new ChromeDriver();
 		} else if (PropertiesReader.getValue("browser").equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();

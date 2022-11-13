@@ -79,21 +79,22 @@ Scenario Outline:  Enter differnt password from retype password
       | password        | retypepassword | error message  
       | 123456          | 1234567        | The password confirmation does not match.
 
-@not-implemented-yet      
+@current-implementation    
 @medium      
 Scenario Outline:  Uncheck the Term and privacy check box
     Given  The user open the registration page
-    When   The user enter a valid username "<email>"
-    And    The user enter a valid password "<password>"
-    And    The user enter a valid retypepassword "<retypepassword>"
+    When   The user enter a valid username in registration page "<email>"
+    And    The user enter a valid password in registration page  "<password>"
+    And    The user enter a valid retypepassword in registration page "<retypepassword>"
     And    The user check the captcha
+    And    The user click on register button
     Then   The system appear an error message "<error message>"
 
     Examples: 
-      | email                     | password    | retypepassword | error message  
-      | s.mahallel99@gmail.comb   | 123456789a  | 123456789a     | The terms ofuse and privacy policy should be checked
+      | email                     | password    | retypepassword | error message                                         |
+      | s.mahallel99@gmail.comb   | 123456789a  | 123456789a     | The terms ofuse and privacy policy should be checked  |
 
-@current-implementation
+@implemented
 @medium 
 Scenario Outline:  Uncheck the captcha check box
     Given  The user open the registration page
