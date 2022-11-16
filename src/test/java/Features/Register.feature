@@ -5,7 +5,7 @@ Feature: Register
  Scenario Outline:  Enter empty value in email field
     Given  The user open the registration page
     When   The user enter empty value in email field "<email>"
-    Then   The system appear an error message "<error message>"
+    Then   The system appear an error message in registration page under email "<error message>"
 
     Examples: 
       | email           | error message               | 
@@ -16,7 +16,7 @@ Feature: Register
 Scenario Outline:  Enter empty value in password field
     Given  The user open the registration page
     When   The user enter empty value in password field "<password>"
-    Then   The system appear an error message "<error message>"
+    Then   The system appear an error message in registration page under password "<error message>"
 
     Examples: 
       | password           | error message               | 
@@ -27,7 +27,7 @@ Scenario Outline:  Enter empty value in password field
 Scenario Outline:  Enter invalid value password field
     Given  The user open the registration page
     When   The user enter invalid value in password field "<password>"
-    Then   The system appear an error message "<error message>"
+    Then   The system appear an error message in registration page under password "<error message>"
 
     Examples: 
       | password           | error message               | 
@@ -37,18 +37,18 @@ Scenario Outline:  Enter invalid value password field
 Scenario Outline:  Enter empty value in retype password field
     Given  The user open the registration page
     When   The user enter empty value in retype password field "<retypepassword>"
-    Then   The system appear an error message "<error message>"
+    Then   The system appear an error message in registration page under password "<error message>"
 
     Examples: 
       | retypePassword  | error message               | 
       |                 | Please fill out this field  | 
 
-@not-implemented-yet
+@current-implementation 
 @medium                  
 Scenario Outline:  Enter invaled email formate in email field
     Given  The user open the registration page
     When   The user enter an invalid Email "<email>"
-    Then   The system appear an error message "<error message>"
+    Then   The system appear an error message in registration page under email "<error message>"
 
     Examples: 
       | email        | error message            | 
@@ -56,43 +56,33 @@ Scenario Outline:  Enter invaled email formate in email field
       | test@test    | Please enter true Email  | 
       | test.test    | Please enter true Email  | 
 
-@not-implemented-yet     
+@implemented    
 @important        
 Scenario Outline:  Registration with a valid email exists before
     Given  The user open the registration page
     When   The user enter a valid email exists before "<email>"
-    Then   The system appear an error message "<error message>"
+    And    The user enter a valid password in registration page  "<password>"
+    And    The user enter a valid retypepassword in registration page "<retypepassword>"
+    And    The user click on register button
+    Then   The system appear an error message in registration page under email "<error message>"
 
     Examples: 
-      | email                    | error message                     | 
-      | s.mahallel99@gmail.com   | The email has already been taken. | 
+      | email                    | password        | retypepassword | error message                     | 
+      | s.mahallel99@gmail.com   | 12345678S       | 12345678S      | The email has already been taken. | 
 
-@not-implemented-yet     
+@implemented
 @medium       
 Scenario Outline:  Enter differnt password from retype password
-    Given  The user open the registration page
-    When   The user enter a password "<password>"
-    And    The user enter a differnt retypepassword "<retypepassword>"
-    Then   The system appear an error message "<error message>"
-
-    Examples: 
-      | password        | retypepassword | error message  
-      | 123456          | 1234567        | The password confirmation does not match.
-
-@current-implementation    
-@medium      
-Scenario Outline:  Uncheck the Term and privacy check box
     Given  The user open the registration page
     When   The user enter a valid username in registration page "<email>"
     And    The user enter a valid password in registration page  "<password>"
     And    The user enter a valid retypepassword in registration page "<retypepassword>"
-    And    The user check the captcha
     And    The user click on register button
-    Then   The system appear an error message "<error message>"
+    Then   The system appear an error message in registration page under password "<error message>"
 
     Examples: 
-      | email                     | password    | retypepassword | error message                                         |
-      | s.mahallel99@gmail.comb   | 123456789a  | 123456789a     | The terms ofuse and privacy policy should be checked  |
+      | email                     | password        | retypepassword | error message  														|
+      | s.mahallel99@gmail.comb   | 123456789       | 12345678S      | The password confirmation does not match.  |
 
 @implemented
 @medium 
@@ -104,7 +94,7 @@ Scenario Outline:  Uncheck the captcha check box
     And    The user uncheck the captcha
     And    The user check the terms ofuse and privacy policy
     And    The user click on register button
-    Then   The system appear an error message in registration page "<error message>"
+    Then   The system appear an error message in registration page under captcha "<error message>"
 
    Examples: 
       | email                     | password    | retypepassword | error message                         | 

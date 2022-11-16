@@ -92,12 +92,24 @@ public class RegisterSteps {
     	if(register.getRecaptchaheckBoxStatus(driver))
         	register.recaptchaCheckBoxClick(driver,wait);
     }
+    
+    @Then("The system appear an error message in registration page under captcha {string}")
+    public void the_system_appear_an_error_message_in_registration_page_under_captcha(String string) {
+		Assert.assertEquals(register.getErrorMessageLabel(), string);
+    }
+    
+    @When("The user enter a valid email exists before {string}")
+    public void the_user_enter_a_valid_email_exists_before(String string) {
+    	register.setEmailData (string);
+    }
 
-    @Then("The system appear an error message in registration page {string}")
-    public void the_system_appear_an_error_message_in_registration_page(String string) {
-    	//System.out.println("xxxxxxxxxxxxxxpath"+);
-    	//System.out.println("fffffffffffffffffEAYURE FILE"+string);
-
-		Assert.assertEquals(register.getErrorMessageRecaptchaLabel(), string);
+    @Then("The system appear an error message in registration page under email {string}")
+    public void the_system_appear_an_error_message_in_registration_page_under_email(String string) {
+		Assert.assertEquals(register.getErrorMessageLabel(), string);
+    }
+    
+    @Then("The system appear an error message in registration page under password {string}")
+    public void the_system_appear_an_error_message_in_registration_page_under_password(String string) {
+		Assert.assertEquals(register.getErrorMessageLabel(), string);
     }
 }

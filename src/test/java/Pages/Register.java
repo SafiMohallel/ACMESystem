@@ -149,7 +149,7 @@ public class Register extends BaseClass {
 	
 	@FindBy(xpath = "//strong")
 	private WebElement errorMessageRecaptchaLabel;
-	public String getErrorMessageRecaptchaLabel() {
+	public String getErrorMessageLabel() {
 		return errorMessageRecaptchaLabel.getText();
 	}
 }

@@ -1,21 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: Runner.Test
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.722 s <<< FAILURE! - in Runner.Test
-Uncheck the Term and privacy check box  Time elapsed: 7.856 s  <<< FAILURE!
-org.opentest4j.MultipleFailuresError: 
-Multiple Failures (2 failures)
-	Failed to decode response from marionette
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220818191623, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 5.15.0-46-generic, moz:processID: 22232, moz:profile: /tmp/rust_mozprofileiDSiN2, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0ad6b873-dc8e-4f43-bd79-97b300eae857
-*** Element info: {Using=xpath, value=//*[@class='btn bg-warning'][2]}
-	Tried to run command without establishing a connection
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220818191623, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 5.15.0-46-generic, moz:processID: 22232, moz:profile: /tmp/rust_mozprofileiDSiN2, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0ad6b873-dc8e-4f43-bd79-97b300eae857
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 20.762 s <<< FAILURE! - in Runner.Test
+Uncheck the Term and privacy check box  Time elapsed: 19.596 s  <<< ERROR!
+java.lang.NullPointerException
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Runner.Test" time="8.722" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Runner.Test" time="20.762" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/safia/eclipse-workspace/ACMESystem/target/surefire/surefirebooter56960988505295039.jar /home/safia/eclipse-workspace/ACMESystem/target/surefire 2022-11-13T14-36-18_627-jvmRun1 surefire4755302685486307562tmp surefire_04022269518555018576tmp"/>
+    <property name="sun.java.command" value="/home/safia/eclipse-workspace/ACMESystem/target/surefire/surefirebooter9129221559178995091.jar /home/safia/eclipse-workspace/ACMESystem/target/surefire 2022-11-13T14-42-41_121-jvmRun1 surefire7998662025062581081tmp surefire_08091210040208905858tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/safia/eclipse-workspace/ACMESystem/target/test-classes:/home/safia/eclipse-workspace/ACMESystem/target/classes:/home/safia/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M7/maven-surefire-plugin-3.0.0-M7.jar:/home/safia/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.0.0-M7/maven-surefire-common-3.0.0-M7.jar:/home/safia/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M7/surefire-api-3.0.0-M7.jar:/home/safia/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M7/surefire-logger-api-3.0.0-M7.jar:/home/safia/.m2/repository/org/apache/maven/surefire/surefire-extensions-api/3.0.0-M7/surefire-extensions-api-3.0.0-M7.jar:/home/safia/.m2/repository/org/apache/maven/surefire/surefire-booter/3.0.0-M7/surefire-booter-3.0.0-M7.jar:/home/safia/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.0.0-M7/surefire-extensions-spi-3.0.0-M7.jar:/home/safia/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/3.1.1/maven-common-artifact-filters-3.1.1.jar:/home/safia/.m2/repository/org/apache/maven/maven-artifact/3.1.0/maven-artifact-3.1.0.jar:/home/safia/.m2/repository/org/apache/maven/maven-core/3.1.0/maven-core-3.1.0.jar:/home/safia/.m2/repository/org/apache/maven/maven-settings/3.1.0/maven-settings-3.1.0.jar:/home/safia/.m2/repository/org/apache/maven/maven-settings-builder/3.1.0/maven-settings-builder-3.1.0.jar:/home/safia/.m2/repository/org/apache/maven/maven-repository-metadata/3.1.0/maven-repository-metadata-3.1.0.jar:/home/safia/.m2/repository/org/apache/maven/maven-model-builder/3.1.0/maven-model-builder-3.1.0.jar:/home/safia/.m2/repository/org/apache/maven/maven-aether-provider/3.1.0/maven-aether-provider-3.1.0.jar:/home/safia/.m2/repository/org/eclipse/aether/aether-spi/0.9.0.M2/aether-spi-0.9.0.M2.jar:/home/safia/.m2/repository/org/eclipse/aether/aether-impl/0.9.0.M2/aether-impl-0.9.0.M2.jar:/home/safia/.m2/repository/org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.jar:/home/safia/.m2/repository/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar:/home/safia/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.0.0.M2a/org.eclipse.sisu.plexus-0.0.0.M2a.jar:/home/safia/.m2/repository/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar:/home/safia/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar:/home/safia/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/safia/.m2/repository/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0-no_aop.jar:/home/safia/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/safia/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.0.0.M2a/org.eclipse.sisu.inject-0.0.0.M2a.jar:/home/safia/.m2/repository/asm/asm/3.3.1/asm-3.3.1.jar:/home/safia/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.16/plexus-interpolation-1.16.jar:/home/safia/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.4.2/plexus-classworlds-2.4.2.jar:/home/safia/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar:/home/safia/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar:/home/safia/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar:/home/safia/.m2/repository/org/apache/maven/maven-plugin-api/3.1.0/maven-plugin-api-3.1.0.jar:/home/safia/.m2/repository/org/codehaus/plexus/plexus-java/1.1.1/plexus-java-1.1.1.jar:/home/safia/.m2/repository/org/ow2/asm/asm/9.2/asm-9.2.jar:/home/safia/.m2/repository/com/thoughtworks/qdox/qdox/2.0.1/qdox-2.0.1.jar:/home/safia/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.0.0-M7/surefire-shared-utils-3.0.0-M7.jar:/home/safia/.m2/repository/org/junit/vintage/junit-vintage-engine/5.4.0/junit-vintage-engine-5.4.0.jar:/home/safia/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/safia/.m2/repository/org/junit/platform/junit-platform-engine/1.4.0/junit-platform-engine-1.4.0.jar:/home/safia/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/home/safia/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0/junit-platform-commons-1.4.0.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/home/safia/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/safia/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/safia/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/safia/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/safia/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/safia/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/safia/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/safia/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/safia/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/home/safia/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/home/safia/.m2/repository/junit/junit/4.13/junit-4.13.jar:/home/safia/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/safia/.m2/repository/io/github/bonigarcia/webdrivermanager/5.3.0/webdrivermanager-5.3.0.jar:/home/safia/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/safia/.m2/repository/com/google/code/gson/gson/2.9.1/gson-2.9.1.jar:/home/safia/.m2/repository/com/github/docker-java/docker-java/3.2.13/docker-java-3.2.13.jar:/home/safia/.m2/repository/com/github/docker-java/docker-java-core/3.2.13/docker-java-core-3.2.13.jar:/home/safia/.m2/repository/com/github/docker-java/docker-java-api/3.2.13/docker-java-api-3.2.13.jar:/home/safia/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/home/safia/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/home/safia/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/home/safia/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/safia/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.13/docker-java-transport-httpclient5-3.2.13.jar:/home/safia/.m2/repository/com/github/docker-java/docker-java-transport/3.2.13/docker-java-transport-3.2.13.jar:/home/safia/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/home/safia/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/safia/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/safia/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.jar:/home/safia/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar:/home/safia/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.1.3/httpcore5-h2-5.1.3.jar:/home/safia/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/safia/.m2/repository/io/cucumber/cucumber-java/7.6.0/cucumber-java-7.6.0.jar:/home/safia/.m2/repository/io/cucumber/cucumber-junit/7.6.0/cucumber-junit-7.6.0.jar:/home/safia/.m2/repository/io/cucumber/cucumber-core/7.6.0/cucumber-core-7.6.0.jar:/home/safia/.m2/repository/io/cucumber/cucumber-gherkin/7.6.0/cucumber-gherkin-7.6.0.jar:/home/safia/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.6.0/cucumber-gherkin-messages-7.6.0.jar:/home/safia/.m2/repository/io/cucumber/messages/19.0.0/messages-19.0.0.jar:/home/safia/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/home/safia/.m2/repository/io/cucumber/cucumber-expressions/16.0.0/cucumber-expressions-16.0.0.jar:/home/safia/.m2/repository/io/cucumber/datatable/7.6.0/datatable-7.6.0.jar:/home/safia/.m2/repository/io/cucumber/cucumber-plugin/7.6.0/cucumber-plugin-7.6.0.jar:/home/safia/.m2/repository/io/cucumber/docstring/7.6.0/docstring-7.6.0.jar:/home/safia/.m2/repository/io/cucumber/html-formatter/20.0.0/html-formatter-20.0.0.jar:/home/safia/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/home/safia/.m2/repository/io/cucumber/gherkin/24.0.0/gherkin-24.0.0.jar:/home/safia/.m2/repository/net/masterthought/cucumber-reporting/5.7.2/cucumber-reporting-5.7.2.jar:/home/safia/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.2/jackson-databind-2.13.2.2.jar:/home/safia/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/home/safia/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar:/home/safia/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.2/jackson-datatype-jsr310-2.13.2.jar:/home/safia/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/home/safia/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/safia/.m2/repository/joda-time/joda-time/2.10.14/joda-time-2.10.14.jar:/home/safia/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/home/safia/.m2/repository/org/codehaus/plexus/plexus-utils/3.4.2/plexus-utils-3.4.2.jar:/home/safia/.m2/repository/org/jsoup/jsoup/1.15.1/jsoup-1.15.1.jar:/home/safia/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20211018.2/owasp-java-html-sanitizer-20211018.2.jar:/home/safia/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/home/safia/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/safia/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/safia/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.3.1/junit-jupiter-engine-5.3.1.jar:/home/safia/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.3.1/junit-jupiter-api-5.3.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/safia/eclipse-workspace/ACMESystem/target/surefire/surefirebooter56960988505295039.jar"/>
+    <property name="surefire.real.class.path" value="/home/safia/eclipse-workspace/ACMESystem/target/surefire/surefirebooter9129221559178995091.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.16+8-post-Ubuntu-0ubuntu120.04"/>
     <property name="user.name" value="safia"/>
@@ -58,112 +58,53 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="Uncheck the Term and privacy check box" classname="Runner.Test" time="7.856">
-    <failure message="Multiple Failures (2 failures)&#10;	Failed to decode response from marionette&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;safia-HP-Laptop-15-dw3xxx&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-46-generic&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220818191623, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 5.15.0-46-generic, moz:processID: 22232, moz:profile: /tmp/rust_mozprofileiDSiN2, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 0ad6b873-dc8e-4f43-bd79-97b300eae857&#10;*** Element info: {Using=xpath, value=//*[@class=&apos;btn bg-warning&apos;][2]}&#10;	Tried to run command without establishing a connection&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;safia-HP-Laptop-15-dw3xxx&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-46-generic&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220818191623, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 5.15.0-46-generic, moz:processID: 22232, moz:profile: /tmp/rust_mozprofileiDSiN2, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 0ad6b873-dc8e-4f43-bd79-97b300eae857" type="org.opentest4j.MultipleFailuresError">org.opentest4j.MultipleFailuresError: 
-Multiple Failures (2 failures)
-	Failed to decode response from marionette
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220818191623, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 5.15.0-46-generic, moz:processID: 22232, moz:profile: /tmp/rust_mozprofileiDSiN2, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0ad6b873-dc8e-4f43-bd79-97b300eae857
-*** Element info: {Using=xpath, value=//*[@class='btn bg-warning'][2]}
-	Tried to run command without establishing a connection
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220818191623, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 5.15.0-46-generic, moz:processID: 22232, moz:profile: /tmp/rust_mozprofileiDSiN2, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0ad6b873-dc8e-4f43-bd79-97b300eae857
-</failure>
+  <testcase name="Uncheck the Term and privacy check box" classname="Runner.Test" time="19.596">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+</error>
     <system-out><![CDATA[
 @current-implementation @medium
 Scenario Outline: Uncheck the Term and privacy check box                                         &amp#27;[90m# src/test/java/Features/Register.feature:95&amp#27;[0m
-  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mThe user open the registration page&amp#27;[0m                                                      &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_open_the_registration_page()&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220818191623, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 5.15.0-46-generic, moz:processID: 22232, moz:profile: /tmp/rust_mozprofileiDSiN2, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0ad6b873-dc8e-4f43-bd79-97b300eae857
-*** Element info: {Using=xpath, value=//*[@class='btn bg-warning'][2]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at Pages.Register.registerLinkClick(Register.java:39)
-	at StepDefinitions.RegisterSteps.the_user_open_the_registration_page(RegisterSteps.java:30)
-	at ✽.The user open the registration page(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Register.feature:85)
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user open the registration page&amp#27;[0m                                                      &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_open_the_registration_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user enter a valid username in registration page &amp#27;[0m&amp#27;[32m&amp#27;[1m"s.mahallel99@gmail.comb"&amp#27;[0m            &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_enter_a_valid_username_in_registration_page(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user enter a valid password in registration page  &amp#27;[0m&amp#27;[32m&amp#27;[1m"123456789a"&amp#27;[0m                         &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_enter_a_valid_password_in_registration_page(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user enter a valid retypepassword in registration page &amp#27;[0m&amp#27;[32m&amp#27;[1m"123456789a"&amp#27;[0m                    &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_enter_a_valid_retypepassword_in_registration_page(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user check the captcha&amp#27;[0m                                                                 &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_check_the_captcha()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user click on register button&amp#27;[0m                                                          &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_click_on_register_button()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mThe system appear an error message &amp#27;[0m&amp#27;[31m&amp#27;[1m"The terms ofuse and privacy policy should be checked"&amp#27;[0m &amp#27;[90m# StepDefinitions.LoginSteps.the_system_appear_an_error_message(java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException
+	at StepDefinitions.LoginSteps.the_system_appear_an_error_message(LoginSteps.java:47)
+	at ✽.The system appear an error message "The terms ofuse and privacy policy should be checked"(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Register.feature:91)
 &amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mThe user enter a valid username in registration page &amp#27;[0m&amp#27;[36m&amp#27;[1m"s.mahallel99@gmail.comb"&amp#27;[0m            &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_enter_a_valid_username_in_registration_page(java.lang.String)&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe user enter a valid password in registration page  &amp#27;[0m&amp#27;[36m&amp#27;[1m"123456789a"&amp#27;[0m                         &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_enter_a_valid_password_in_registration_page(java.lang.String)&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe user enter a valid retypepassword in registration page &amp#27;[0m&amp#27;[36m&amp#27;[1m"123456789a"&amp#27;[0m                    &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_enter_a_valid_retypepassword_in_registration_page(java.lang.String)&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe user check the captcha&amp#27;[0m                                                                 &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_check_the_captcha()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe user click on register button&amp#27;[0m                                                          &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_click_on_register_button()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mThe system appear an error message &amp#27;[0m&amp#27;[36m&amp#27;[1m"The terms ofuse and privacy policy should be checked"&amp#27;[0m &amp#27;[90m# StepDefinitions.LoginSteps.the_system_appear_an_error_message(java.lang.String)&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220818191623, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 5.15.0-46-generic, moz:processID: 22232, moz:profile: /tmp/rust_mozprofileiDSiN2, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0ad6b873-dc8e-4f43-bd79-97b300eae857
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at StepDefinitions.Hooks.takeScreenShotOnFailure(Hooks.java:48)
-&amp#27;[0m
+
+    Embedding  [image/png 37995 bytes]
+
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1668342980703	geckodriver	INFO	Listening on 127.0.0.1:18630
-1668342980798	mozrunner::runner	INFO	Running command: "/usr/lib/firefox/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileiDSiN2"
+1668343362898	geckodriver	INFO	Listening on 127.0.0.1:22099
+1668343363058	mozrunner::runner	INFO	Running command: "/usr/lib/firefox/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileXKH2h1"
 ATTENTION: default value of option mesa_glthread overridden by environment.
 ATTENTION: default value of option mesa_glthread overridden by environment.
 ATTENTION: default value of option mesa_glthread overridden by environment.
 ATTENTION: default value of option mesa_glthread overridden by environment.
-1668342981655	Marionette	INFO	Marionette enabled
-1668342981661	Marionette	INFO	Listening on port 36679
-Read port: 36679
-1668342981796	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileiDSiN2/search.json.mozlz4", (void 0)))
+1668343363874	Marionette	INFO	Marionette enabled
+1668343363883	Marionette	INFO	Listening on port 34545
+Read port: 34545
+1668343364096	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXKH2h1/search.json.mozlz4", (void 0)))
 Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
-Nov 13, 2022 2:36:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Nov 13, 2022 2:42:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 JavaScript error: resource://gre/modules/URIFixup.jsm, line 292: NS_ERROR_FAILURE: Should pass a non-null uri
-Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjscon
-sole.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 2013\"  data: no]"
-1668342986801	Marionette	INFO	Stopped listening on port 36679
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://acme-test.uipath.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://acme-test.uipath.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://acme-test.uipath.com."
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sycso.nmsjosl
+e.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 2013\"  data: no]"
+1668343380052	Marionette	INFO	Stopped listening on port 34545
 JavaScript error: chrome://remote/content/marionette/cert.js, line 57: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
-1668342987348	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
 ]]></system-err>
   </testcase>
 </testsuite>
