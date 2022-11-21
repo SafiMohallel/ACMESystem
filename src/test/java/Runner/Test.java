@@ -23,6 +23,4 @@ public class Test {
 
 		UtilitiesBase.generateReport("Test Report", jsonFiles);
 	}
-
-	
 }

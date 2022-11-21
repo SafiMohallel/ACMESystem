@@ -112,4 +112,8 @@ public class RegisterSteps {
     public void the_system_appear_an_error_message_in_registration_page_under_password(String string) {
 		Assert.assertEquals(register.getErrorMessageLabel(), string);
     }
+    
+    @When("The user enter an invalid Email {string}")
+    public void the_user_enter_an_invalid_email(String string) {
+    }
 }

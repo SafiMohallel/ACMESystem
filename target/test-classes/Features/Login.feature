@@ -12,6 +12,7 @@ Scenario Outline:  Enter a wrong password for the email registered before
     Given  The user open the login page
     When   The user enter an email not registered before "<email>"
     And    The user enter an invalid password "<password>"
+    And    The user click on submit button
     Then   The system appear an error message "<error message>"
 
     Examples: 
@@ -79,6 +80,7 @@ Scenario Outline:  Enter empty value in password field
 Scenario Outline:  Enter invaled email formate in email field
     Given  The user open the login page
     When   The user enter an invalid Email "<email>"
+    And    The user click on submit button
     Then   The system appear an error message "<error message>"
 
     Examples: 
@@ -92,6 +94,7 @@ Scenario Outline:  Enter invaled email formate in email field
 Scenario Outline:  Enter with email not registered before
     Given  The user open the login page
     When   The user enter an email not registered before "<email>"
+    And    The user click on submit button
     Then   The system appear an error message "<error message>"
 
     Examples: 

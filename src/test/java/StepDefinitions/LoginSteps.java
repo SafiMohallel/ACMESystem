@@ -35,16 +35,15 @@ public class LoginSteps  {
 	 @When("The user enter an email not registered before {string}")
 	 public void the_user_enter_an_email_not_registered_before(String string) {
 		 login.setEmailData (string);
-
 	 }
+	 
 	 @When("The user enter an invalid password {string}")
 	 public void the_user_enter_an_invalid_password(String string) {
 		 login.setPasswordData (string);
-
 	 }
+	 
 	 @Then("The system appear an error message {string}")
 	 public void the_system_appear_an_error_message(String string) throws InterruptedException {
-		 login.loginButtonClick(wait);
 		 Assert.assertEquals( login.getAlretData(), string);
 	 }
 

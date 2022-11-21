@@ -43,7 +43,7 @@ Scenario Outline:  Enter empty value in retype password field
       | retypePassword  | error message               | 
       |                 | Please fill out this field  | 
 
-@not-implemented-yet
+@current-implementation 
 @medium                  
 Scenario Outline:  Enter invaled email formate in email field
     Given  The user open the registration page
@@ -56,7 +56,7 @@ Scenario Outline:  Enter invaled email formate in email field
       | test@test    | Please enter true Email  | 
       | test.test    | Please enter true Email  | 
 
-@current-implementation      
+@implemented    
 @important        
 Scenario Outline:  Registration with a valid email exists before
     Given  The user open the registration page
@@ -70,7 +70,7 @@ Scenario Outline:  Registration with a valid email exists before
       | email                    | password        | retypepassword | error message                     | 
       | s.mahallel99@gmail.com   | 12345678S       | 12345678S      | The email has already been taken. | 
 
-@current-implementation   
+@implemented
 @medium       
 Scenario Outline:  Enter differnt password from retype password
     Given  The user open the registration page
