@@ -115,5 +115,6 @@ public class RegisterSteps {
     
     @When("The user enter an invalid Email {string}")
     public void the_user_enter_an_invalid_email(String string) {
+    	//WORK HERE NOW !!
     }
 }
