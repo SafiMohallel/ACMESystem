@@ -43,7 +43,7 @@ Scenario Outline:  Enter empty value in retype password field
       | retypePassword  | error message               | 
       |                 | Please fill out this field  | 
 
-@current-implementation 
+@implemented
 @medium                  
 Scenario Outline:  Enter invaled email formate in email field
     Given  The user open the registration page
@@ -56,7 +56,7 @@ Scenario Outline:  Enter invaled email formate in email field
       | test@test    | Please enter true Email  | 
       | test.test    | Please enter true Email  | 
 
-@implemented    
+@implemented 
 @important        
 Scenario Outline:  Registration with a valid email exists before
     Given  The user open the registration page
@@ -128,15 +128,15 @@ Scenario:  Check the page title
     When   The user does not enter any data
     Then   The page title should be is "ACME System 1 - Register"
        
-@implemented
+@not-implemented-yet
 @important      
 Scenario Outline:  Enter true values in all fields
   Given    The user open the registration page
     When   The user enter a valid username in registration page "<email>"
     And    The user enter a valid password in registration page  "<password>"
     And    The user enter a valid retypepassword in registration page "<retypepassword>"
-    And    The user check the terms ofuse and privacy policy
     And    The user check the captcha
+    And    The user check the terms ofuse and privacy policy
     And    The user click on register button
     Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
 

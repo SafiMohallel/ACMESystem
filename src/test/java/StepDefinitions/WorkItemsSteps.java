@@ -51,12 +51,12 @@ public class WorkItemsSteps {
     		workItems.clickPgeNumberData(pagesCounter,wait);
     		for (int cellsCounter = 0 ; cellsCounter<workItems.getTypesLenght();cellsCounter++)
         	{
-        		if (workItems.getTypeData(cellsCounter).equals("WI3"))
+        		if (workItems.getTypeData(cellsCounter).equals("WI5"))
         			W13Count++;
         	}
     		Thread.sleep(200);
     	}
-		Assert.assertEquals(4,W13Count);
+		Assert.assertEquals(17,W13Count);
     }
 
     @Given("Choose a random item and save the data of random item")

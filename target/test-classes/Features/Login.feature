@@ -1,12 +1,12 @@
 Feature: Login
  
-@implemented
+@implemented   
 @medium    
 Scenario:  Check the page title 
     Given  The user open the login page
     Then   The page title should be is "ACME System 1 - Log In"
  
-@implemented
+@implemented    
 @important       
 Scenario Outline:  Enter a wrong password for the email registered before
     Given  The user open the login page
@@ -19,7 +19,7 @@ Scenario Outline:  Enter a wrong password for the email registered before
       | email                      | password | error message                               | 
       | s.mahallel99@gmail.com     |1231234as | These credentials do not match our records. | 
   
-@implemented
+@implemented   
 @medium 
 Scenario Outline:  Enter empty value in email field
     Given  The user open the login page
@@ -31,20 +31,20 @@ Scenario Outline:  Enter empty value in email field
       |                 | Please fill out this field.| 
     
 
-@implemented
+@implemented   
 @medium     
 Scenario:  Check the intial status of remember me check box
     Given  The user open the login page
     Then   The remember me  check box is unchecked
 
 
-@implemented
+@implemented   
 @medium 
 Scenario:  Check the Copyright year
     Given  The user open the login page
     Then   The Copyright year should be "Copyright © "+the actual year +" ACME Systems" 
 
-@implemented
+@implemented    
 @important      
 Scenario Outline:  Enter with valid email and password
     Given    The user open the login page

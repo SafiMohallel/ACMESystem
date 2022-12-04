@@ -2,25 +2,27 @@ Feature: Work Item
 
 @implemented
 @Autom  
-Scenario:  Check the items of type WI3 
-    Given  The user open the login page
+Scenario:  Check the items of type WI5 
+    Given    The user open the login page
     When   The user enter a valid username "<email>"
     And    The user enter a valid password "<password>"
     And    The user check the remeber me check box
+    And    The user click on submit button
     Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
     Given  The user open the Work Items
-    And    check that only 4 items of type "WI3" is presented
+    And    check that only 15 items of type "WI5" is presented
       Examples: 
       | email                      | password    |
       | s.mahallel99@gmail.com     | 123456789a  |
       
-@implemented
+@implemented     
 @medium     
 Scenario:  Check that item details shows the right values
-    Given  The user open the login page
+   Given    The user open the login page
     When   The user enter a valid username "<email>"
     And    The user enter a valid password "<password>"
     And    The user check the remeber me check box
+    And    The user click on submit button
     Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
     Given  The user open the Work Items
     And    Choose a random item and save the data of random item
@@ -41,13 +43,14 @@ Scenario:  Check that item details shows the right values
       | email                      | password    |
       | s.mahallel99@gmail.com     | 123456789a  |
 
-@implemented     
+@implemented  
 @important      
 Scenario Outline:  Change items status
     Given  The user open the login page
     When   The user enter a valid username "<email>"
     And    The user enter a valid password "<password>"
     And    The user check the remeber me check box
+    And    The user click on submit button
     Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
     Given  The user open the Work Items
     And    The user choose item  "<WIID>"
@@ -70,6 +73,6 @@ Scenario Outline:  Change items status
 
       Examples: 
       | email                      | password    | WIID       | Status   |
-      | s.mahallel99@gmail.com     | 123456789a  | 87998469   | Completed|
-      | s.mahallel99@gmail.com     | 123456789a  | 87998479   | Rejected |
+      | s.mahallel99@gmail.com     | 123456789a  | 88014979   | Completed|
+      | s.mahallel99@gmail.com     | 123456789a  | 88014991   | Rejected |
           

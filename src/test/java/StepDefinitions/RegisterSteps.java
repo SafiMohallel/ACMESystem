@@ -48,6 +48,7 @@ public class RegisterSteps {
     @When("The user check the captcha")
     public void the_user_check_the_captcha() throws InterruptedException, IOException {
     	register.recaptchaCheckBoxClick(driver,wait);
+    	Thread.sleep(5000);
     }
     
     @When("The user check the terms ofuse and privacy policy")
@@ -57,6 +58,7 @@ public class RegisterSteps {
 
     @When("The user click on register button")
     public void the_user_click_on_register_button() throws InterruptedException {
+    	//Thread.sleep(5000);
     	register.registerButtonClick(driver,wait);
     }
     

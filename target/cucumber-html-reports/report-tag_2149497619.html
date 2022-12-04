@@ -78,7 +78,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Test Report</td>
         <td>1</td>
-      <td>07 Nov 2022, 16:23</td>
+      <td>04 Dec 2022, 10:42</td>
     </tr>
   </tbody>
 </table>
@@ -131,19 +131,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@low</td>
-          <td      class="passed"    >3</td>
+          <td      class="passed"    >1</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">3</td>
+          <td class="total">2</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1529464000">1.529</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="7206000">0.007</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -175,7 +175,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_3737890563.html">Register</a>
+      <a href="report-feature_3600835682.html">Dashboard</a>
     </div>
 
 
@@ -186,12 +186,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.529</span>
+  <span class="lead-duration duration">0.007</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Check the page title</span>
 
@@ -202,7 +202,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -224,7 +224,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">StepDefinitions.Hooks.openBrowser()</span>
 
-  <span class="lead-duration duration">3.826</span>
+  <span class="lead-duration duration">3.023</span>
 
           </div>
 
@@ -241,9 +241,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -253,42 +253,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">The user open the registration page</span>
+  <span class="name">The user open the dashboard page</span>
 
-  <span class="lead-duration duration">1.285</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">The user does not enter any data</span>
-
-  <span class="lead-duration duration">0.237</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -311,9 +284,9 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">The page title should be is <span class="argument">&quot;ACME System 1 - Register&quot;</span></span>
+  <span class="name">The page title should be is <span class="argument">&quot;ACME System 1 -  Dashboard&quot;</span></span>
 
   <span class="lead-duration duration">0.006</span>
 
@@ -323,6 +296,22 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>org.junit.ComparisonFailure:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>org.junit.ComparisonFailure: expected:&lt;ACME System 1 - [Log In]&gt; but was:&lt;ACME System 1 - [ Dashboard]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefinitions.LoginSteps.the_page_title_should_be_is(LoginSteps.java:32)
+	at &#10045;.The page title should be is &quot;ACME System 1 -  Dashboard&quot;(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Dashboard.feature:7)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -342,7 +331,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -354,13 +343,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">StepDefinitions.Hooks.takeScreenShotOnFailure(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">10.001</span>
+  <span class="lead-duration duration">10.156</span>
 
           </div>
 
@@ -369,6 +358,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-829770340.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-829770340.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
