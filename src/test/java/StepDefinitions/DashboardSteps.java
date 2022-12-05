@@ -1,5 +1,6 @@
 package StepDefinitions;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -12,20 +13,24 @@ import io.cucumber.java.en.When;
 public class DashboardSteps {
 	private WebDriver driver = Hooks.driver;
     private WebDriverWait wait;
-    Dashboard dashboard;
+    Dashboard dashboard= new Dashboard(driver, wait);;
     
     public DashboardSteps() throws Exception {
         PropertiesReader propertiesReader = new PropertiesReader();
         this.wait = new WebDriverWait(driver, propertiesReader.getTimeout());
     }
-    
-	@Given("The user open the dashboard page")
-	public void the_user_open_the_dashboard_page() {
-		dashboard = new Dashboard(driver, wait);
+
+	@Then("The label text should be {string} plus {string} plus {string}")
+	public void the_label_text_should_be_plus_plus(String string, String string2, String string3) {
+		 Assert.assertEquals(dashboard.getWelcomeWord().substring(0,dashboard.getWelcomeWord().indexOf(dashboard.getUserName())), string);
+		 Assert.assertEquals(dashboard.getUserName(), string2);
+		 Assert.assertEquals(dashboard.getWelcomeWord().substring((dashboard.getWelcomeWord().substring(0,dashboard.getWelcomeWord().indexOf(dashboard.getUserName())) + dashboard.getUserName()).length()), string3);
+	}
+	@Then("The system appear the button text {string}")
+	public void the_system_appear_the_button_text(String string) {
 	}
 	
-	
-	@Then("The label text should be is {string} and {string} plus {string} plus {string}")
-	public void the_label_text_should_be_is_and_plus_plus(String string, String string2, String string3, String string4) {
+	@Then("The system appear First tool tip link {string}")
+	public void the_system_appear_first_tool_tip_link(String string) {
 	}
 }

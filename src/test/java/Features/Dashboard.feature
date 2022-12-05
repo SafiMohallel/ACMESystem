@@ -1,12 +1,20 @@
 Feature: Dashboard
   
-@current-implementation
+@implemented   
 @medium     
 Scenario:  Check the label text 
-    Given  The user open the dashboard page
-    Then   The label text should be is "Dashboard" and "Welcome, " plus "s.mahallel9999@gmail.com" plus " to System 1."
-
-@not-implemented-yet
+    Given  The user open the login page
+    When   The user enter a valid username "<email>"
+    And    The user enter a valid password "<password>"
+    And    The user check the remeber me check box
+    And    The user click on submit button
+    Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
+    Then   The label text should be "Welcome, " plus "s.mahallel99@gmail.com" plus " to System 1."
+ Examples: 
+      | email                      | password    |
+      | s.mahallel99@gmail.com     | 123456789a  |
+      
+@current-implementation
 @important 
 Scenario Outline:  Check the buttons text and tool tip
     Given  The user open the login page

@@ -44,4 +44,18 @@ public class Dashboard extends BaseClass{
 		wait.until(ExpectedConditions.elementToBeClickable(ResetTestDataLink));
 		action.click().build().perform();
 	}
+	
+	@FindBy(xpath = "//strong")
+	private WebElement  userName;
+	
+	public String getUserName() {
+		return userName.getText();
+	}
+	
+	@FindBy(xpath = "(//h1)[2]")
+	private WebElement  welcomeWord;
+	
+	public String getWelcomeWord() {
+		return welcomeWord.getText();
+	}
 }
