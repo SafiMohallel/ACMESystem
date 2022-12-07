@@ -1,5 +1,7 @@
 package Pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -57,5 +59,29 @@ public class Dashboard extends BaseClass{
 	
 	public String getWelcomeWord() {
 		return welcomeWord.getText();
+	}
+	
+	@FindBy(xpath = "//*[@class='btn btn-default btn-lg dropdown-toggle']")
+	private List<WebElement> mainLinks;
+
+	public String clickMainLinksData(int index, WebDriverWait wait) throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(mainLinks.get(index)));
+		return mainLinks.get(index).getText();
+	}
+
+	public int getMainLinksLenght() {
+		return mainLinks.size();
+	}
+	
+	@FindBy(xpath = "//*[@class='btn btn-default btn-lg']")
+	private List<WebElement> mainButtons;
+
+	public String clickMainButtonsData(int index, WebDriverWait wait) throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(mainButtons.get(index)));
+		return mainButtons.get(index).getText();
+	}
+
+	public int getMainButtonsLenght() {
+		return mainButtons.size();
 	}
 }

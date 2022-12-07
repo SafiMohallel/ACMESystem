@@ -1,6 +1,6 @@
 Feature: Dashboard
   
-@current-implementation
+@implemented   
 @medium     
 Scenario:  Check the label text 
     Given  The user open the login page
@@ -14,7 +14,7 @@ Scenario:  Check the label text
       | email                      | password    |
       | s.mahallel99@gmail.com     | 123456789a  |
       
-@not-implemented-yet
+@current-implementation
 @important 
 Scenario Outline:  Check the buttons text and tool tip
     Given  The user open the login page
