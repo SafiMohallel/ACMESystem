@@ -7,6 +7,7 @@
 /home/safia/eclipse-workspace/ACMESystem/src/test/java/Runner/Test.java
 /home/safia/eclipse-workspace/ACMESystem/src/test/java/StepDefinitions/Hooks.java
 /home/safia/eclipse-workspace/ACMESystem/src/test/java/StepDefinitions/LoginSteps.java
+/home/safia/eclipse-workspace/ACMESystem/src/test/java/StepDefinitions/DashboardSteps.java
 /home/safia/eclipse-workspace/ACMESystem/src/test/java/Pages/Login.java
 /home/safia/eclipse-workspace/ACMESystem/src/test/java/Pages/Account.java
 /home/safia/eclipse-workspace/ACMESystem/src/test/java/Pages/WorkItems.java

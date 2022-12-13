@@ -64,7 +64,7 @@ public class Dashboard extends BaseClass{
 	@FindBy(xpath = "//*[@class='btn btn-default btn-lg dropdown-toggle']")
 	private List<WebElement> mainLinks;
 
-	public String clickMainLinksData(int index, WebDriverWait wait) throws InterruptedException {
+	public String getMainLinksData(int index, WebDriverWait wait) throws InterruptedException {
 		wait.until(ExpectedConditions.elementToBeClickable(mainLinks.get(index)));
 		return mainLinks.get(index).getText();
 	}
@@ -76,12 +76,42 @@ public class Dashboard extends BaseClass{
 	@FindBy(xpath = "//*[@class='btn btn-default btn-lg']")
 	private List<WebElement> mainButtons;
 
-	public String clickMainButtonsData(int index, WebDriverWait wait) throws InterruptedException {
+	public String getMainButtonsData(int index, WebDriverWait wait) throws InterruptedException {
 		wait.until(ExpectedConditions.elementToBeClickable(mainButtons.get(index)));
 		return mainButtons.get(index).getText();
 	}
 
+	public void clickMainButtonsData(int index, WebDriverWait wait) throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(mainButtons.get(index)));
+	    mainButtons.get(index).click();
+	}
+	
 	public int getMainButtonsLenght() {
 		return mainButtons.size();
+	}
+	
+	public void hoverMainLinksData(int index, WebDriverWait wait, WebDriver driver) throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(mainLinks.get(index)));
+		action = new Actions(driver);
+	    action.moveToElement(mainLinks.get(index)).perform();
+	}
+	
+	@FindBy(xpath = "//*[@class='dropdown-menu dropdown-content rightMenu']//li//a")
+	private List<WebElement> toolTipLinks;
+
+	public String getToolTipLinksData(int index, WebDriverWait wait) throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(toolTipLinks.get(index)));
+		return toolTipLinks.get(index).getText();
+	}
+
+	public int getToolTipLinksLenght() {
+		return toolTipLinks.size();
+	}
+	
+	@FindBy(linkText = "Log Out")
+	private WebElement  logOut;
+	
+	public void clickLogOut() {
+		logOut.click();
 	}
 }

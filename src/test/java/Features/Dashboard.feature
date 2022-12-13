@@ -14,7 +14,7 @@ Scenario:  Check the label text
       | email                      | password    |
       | s.mahallel99@gmail.com     | 123456789a  |
       
-@current-implementation
+@not-implemented-yet
 @important 
 Scenario Outline:  Check the buttons text and tool tip
     Given  The user open the login page
@@ -24,7 +24,7 @@ Scenario Outline:  Check the buttons text and tool tip
     And    The user click on submit button
     Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
     Then   The system appear the button text "<button text>" 
-    And    The system appear First tool tip link "<first tooltip link>"
+    And    The system appear First tool tip link "<first tooltip link>" for the button "<button text>" 
     And    The system appear First tool tip link "<second tooltip link>"
     And    The system appear First tool tip link "<third tooltip link>"
     And    The system appear First tool tip link "<forth tooltip link>"
@@ -38,19 +38,19 @@ Scenario Outline:  Check the buttons text and tool tip
       | email                      | password    | button text         | first tooltip link           | second tooltip link          | third tooltip link          | forth tooltip link         | fifth tooltip link   | sixth tooltip link | seventh tooltip link | eighth tooltip link | ninth tooltip link  |                                       
       | s.mahallel99@gmail.com     | 123456789a  | User options        | Download Client and Support  | Reset test data              | Change password             | Check training assignments |                      |                    |                      |                     |                     |
       | s.mahallel99@gmail.com     | 123456789a  | Work Items          |                              |                              |                             |                            |                      |                    |                      |                     |                     |
-      | s.mahallel99@gmail.com     | 123456789a  | Accounts            | Add account modification     | View account history         |                             |                            |                      |                    |                      |                     |                     |
-      | s.mahallel99@gmail.com     | 123456789a  | Checks              | Search for Check             | Submit Check Copy            |                             |                            |                      |                    |                      |                     |                     |
-      | s.mahallel99@gmail.com     | 123456789a  | Vendors             | Search for Vendor            | Add Vendor                   | Download Resource Report    | Resource Order             | Download Vendor List | Vendor Inventory   | Upload Order         |Vendors Stock        | Create Order        |
-      | s.mahallel99@gmail.com     | 123456789a  | Invoices            | Search for Invoice           | Add Invoice Details          | Delete Invoice              |                            |                      |                    |                      |                     |                     |
-      | s.mahallel99@gmail.com     | 123456789a  | Internal Invoices   | Download Monthly Invoices    | Download Full Invoice Report |                             |                            |                      |                    |                      |                     |                     |
-      | s.mahallel99@gmail.com     | 123456789a  | Reports             | Download Monthly Report      | Upload Yearly Report         |                             |                            |                      |                    |                      |                     |                     | 
-      | s.mahallel99@gmail.com     | 123456789a  | Students            | Download Enrollment Report   | Download Result Report       | Score Card                  |                            |                      |                    |                      |                     |                     |
-      | s.mahallel99@gmail.com     | 123456789a  | Health Care         | Download Daily Appointment   | Download Treatment Report    | National Insurance Planning |                            |                      |                    |                      |                     |                     |
-      | s.mahallel99@gmail.com     | 123456789a  | Employees           |                              |                              |                             |                            |                      |                    |                      |                     |                     |
-      | s.mahallel99@gmail.com     | 123456789a  | Bank                | Add Account                  |                              |                             |                            |                      |                    |                      |                     |                     |
-      | s.mahallel99@gmail.com     | 123456789a  | Customer Service    |                              |                              |                             |                            |                      |                    |                      |                     |                     |
+      #| s.mahallel99@gmail.com     | 123456789a  | Accounts            | Add account modification     | View account history         |                             |                            |                      |                    |                      |                     |                     |
+      #| s.mahallel99@gmail.com     | 123456789a  | Checks              | Search for Check             | Submit Check Copy            |                             |                            |                      |                    |                      |                     |                     |
+      #| s.mahallel99@gmail.com     | 123456789a  | Vendors             | Search for Vendor            | Add Vendor                   | Download Resource Report    | Resource Order             | Download Vendor List | Vendor Inventory   | Upload Order         |Vendors Stock        | Create Order        |
+      #| s.mahallel99@gmail.com     | 123456789a  | Invoices            | Search for Invoice           | Add Invoice Details          | Delete Invoice              |                            |                      |                    |                      |                     |                     |
+      #| s.mahallel99@gmail.com     | 123456789a  | Internal Invoices   | Download Monthly Invoices    | Download Full Invoice Report |                             |                            |                      |                    |                      |                     |                     |
+      #| s.mahallel99@gmail.com     | 123456789a  | Reports             | Download Monthly Report      | Upload Yearly Report         |                             |                            |                      |                    |                      |                     |                     | 
+      #| s.mahallel99@gmail.com     | 123456789a  | Students            | Download Enrollment Report   | Download Result Report       | Score Card                  |                            |                      |                    |                      |                     |                     |
+      #| s.mahallel99@gmail.com     | 123456789a  | Health Care         | Download Daily Appointment   | Download Treatment Report    | National Insurance Planning |                            |                      |                    |                      |                     |                     |
+      #| s.mahallel99@gmail.com     | 123456789a  | Employees           |                              |                              |                             |                            |                      |                    |                      |                     |                     |
+      #| s.mahallel99@gmail.com     | 123456789a  | Bank                | Add Account                  |                              |                             |                            |                      |                    |                      |                     |                     |
+      #| s.mahallel99@gmail.com     | 123456789a  | Customer Service    |                              |                              |                             |                            |                      |                    |                      |                     |                     |
       
-@not-implemented-yet
+@implemented 
 @important 
 Scenario Outline:  Check the buttons redirect to other page
     Given  The user open the login page
@@ -60,15 +60,15 @@ Scenario Outline:  Check the buttons redirect to other page
     And    The user click on submit button
     Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
     When   The user clicks on the specific button "<button text>"
-    Then   The system redirect to a page "<redirection page>" 
+    Then   The system redirect to a page with the title "<title>"
     
     Examples: 
-      | email                      | password    | button text         | redirection page                                               
-      | s.mahallel99@gmail.com     | 123456789a  | Work Items          | work-items
-      | s.mahallel99@gmail.com     | 123456789a  | Employees           | employees
-      | s.mahallel99@gmail.com     | 123456789a  | Customer Service    | callcenter
+      | email                      | password    | button text         | title                         |                                      
+      | s.mahallel99@gmail.com     | 123456789a  | Work Items          | ACME System 1 - Work Items    | 
+      | s.mahallel99@gmail.com     | 123456789a  | Employees           | ACME System 1 - Employees     | 
+      | s.mahallel99@gmail.com     | 123456789a  | Customer Service    | ACME System 1 - Add Account   | 
       
-@not-implemented-yet  
+@current-implementation
 @important 
 Scenario:   Check the logout link
     Given  The user open the login page
@@ -79,7 +79,7 @@ Scenario:   Check the logout link
     Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
     When    The user clicks on the logout link
     Then    The system sign out
-    And     The system redirect to the login page
+    And     The system redirect to the login page  with the title "ACME System 1 - Log In"
 
   Examples: 
       | email                      | password    |

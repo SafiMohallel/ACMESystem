@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Runner.Test" time="20.762" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Runner.Test" time="857.477" tests="13" errors="6" skipped="0" failures="3">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/safia/eclipse-workspace/ACMESystem/target/surefire/surefirebooter9129221559178995091.jar /home/safia/eclipse-workspace/ACMESystem/target/surefire 2022-11-13T14-42-41_121-jvmRun1 surefire7998662025062581081tmp surefire_08091210040208905858tmp"/>
+    <property name="sun.java.command" value="/home/safia/eclipse-workspace/ACMESystem/target/surefire/surefirebooter7437763544352101634.jar /home/safia/eclipse-workspace/ACMESystem/target/surefire 2022-12-11T09-18-25_162-jvmRun1 surefire3973505280811019035tmp surefire_01281525472297520569tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/safia/eclipse-workspace/ACMESystem/target/test-classes:/home/safia/eclipse-workspace/ACMESystem/target/classes:/home/safia/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M7/maven-surefire-plugin-3.0.0-M7.jar:/home/safia/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.0.0-M7/maven-surefire-common-3.0.0-M7.jar:/home/safia/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M7/surefire-api-3.0.0-M7.jar:/home/safia/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M7/surefire-logger-api-3.0.0-M7.jar:/home/safia/.m2/repository/org/apache/maven/surefire/surefire-extensions-api/3.0.0-M7/surefire-extensions-api-3.0.0-M7.jar:/home/safia/.m2/repository/org/apache/maven/surefire/surefire-booter/3.0.0-M7/surefire-booter-3.0.0-M7.jar:/home/safia/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.0.0-M7/surefire-extensions-spi-3.0.0-M7.jar:/home/safia/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/3.1.1/maven-common-artifact-filters-3.1.1.jar:/home/safia/.m2/repository/org/apache/maven/maven-artifact/3.1.0/maven-artifact-3.1.0.jar:/home/safia/.m2/repository/org/apache/maven/maven-core/3.1.0/maven-core-3.1.0.jar:/home/safia/.m2/repository/org/apache/maven/maven-settings/3.1.0/maven-settings-3.1.0.jar:/home/safia/.m2/repository/org/apache/maven/maven-settings-builder/3.1.0/maven-settings-builder-3.1.0.jar:/home/safia/.m2/repository/org/apache/maven/maven-repository-metadata/3.1.0/maven-repository-metadata-3.1.0.jar:/home/safia/.m2/repository/org/apache/maven/maven-model-builder/3.1.0/maven-model-builder-3.1.0.jar:/home/safia/.m2/repository/org/apache/maven/maven-aether-provider/3.1.0/maven-aether-provider-3.1.0.jar:/home/safia/.m2/repository/org/eclipse/aether/aether-spi/0.9.0.M2/aether-spi-0.9.0.M2.jar:/home/safia/.m2/repository/org/eclipse/aether/aether-impl/0.9.0.M2/aether-impl-0.9.0.M2.jar:/home/safia/.m2/repository/org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.jar:/home/safia/.m2/repository/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar:/home/safia/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.0.0.M2a/org.eclipse.sisu.plexus-0.0.0.M2a.jar:/home/safia/.m2/repository/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar:/home/safia/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar:/home/safia/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/safia/.m2/repository/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0-no_aop.jar:/home/safia/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/safia/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.0.0.M2a/org.eclipse.sisu.inject-0.0.0.M2a.jar:/home/safia/.m2/repository/asm/asm/3.3.1/asm-3.3.1.jar:/home/safia/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.16/plexus-interpolation-1.16.jar:/home/safia/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.4.2/plexus-classworlds-2.4.2.jar:/home/safia/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar:/home/safia/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar:/home/safia/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar:/home/safia/.m2/repository/org/apache/maven/maven-plugin-api/3.1.0/maven-plugin-api-3.1.0.jar:/home/safia/.m2/repository/org/codehaus/plexus/plexus-java/1.1.1/plexus-java-1.1.1.jar:/home/safia/.m2/repository/org/ow2/asm/asm/9.2/asm-9.2.jar:/home/safia/.m2/repository/com/thoughtworks/qdox/qdox/2.0.1/qdox-2.0.1.jar:/home/safia/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.0.0-M7/surefire-shared-utils-3.0.0-M7.jar:/home/safia/.m2/repository/org/junit/vintage/junit-vintage-engine/5.4.0/junit-vintage-engine-5.4.0.jar:/home/safia/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/safia/.m2/repository/org/junit/platform/junit-platform-engine/1.4.0/junit-platform-engine-1.4.0.jar:/home/safia/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/home/safia/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0/junit-platform-commons-1.4.0.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/home/safia/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/home/safia/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/safia/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/safia/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/safia/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/safia/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/safia/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/safia/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/safia/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/safia/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/home/safia/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/home/safia/.m2/repository/junit/junit/4.13/junit-4.13.jar:/home/safia/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/safia/.m2/repository/io/github/bonigarcia/webdrivermanager/5.3.0/webdrivermanager-5.3.0.jar:/home/safia/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/safia/.m2/repository/com/google/code/gson/gson/2.9.1/gson-2.9.1.jar:/home/safia/.m2/repository/com/github/docker-java/docker-java/3.2.13/docker-java-3.2.13.jar:/home/safia/.m2/repository/com/github/docker-java/docker-java-core/3.2.13/docker-java-core-3.2.13.jar:/home/safia/.m2/repository/com/github/docker-java/docker-java-api/3.2.13/docker-java-api-3.2.13.jar:/home/safia/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/home/safia/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/home/safia/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/home/safia/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/safia/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.13/docker-java-transport-httpclient5-3.2.13.jar:/home/safia/.m2/repository/com/github/docker-java/docker-java-transport/3.2.13/docker-java-transport-3.2.13.jar:/home/safia/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/home/safia/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/safia/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/safia/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.jar:/home/safia/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar:/home/safia/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.1.3/httpcore5-h2-5.1.3.jar:/home/safia/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/safia/.m2/repository/io/cucumber/cucumber-java/7.6.0/cucumber-java-7.6.0.jar:/home/safia/.m2/repository/io/cucumber/cucumber-junit/7.6.0/cucumber-junit-7.6.0.jar:/home/safia/.m2/repository/io/cucumber/cucumber-core/7.6.0/cucumber-core-7.6.0.jar:/home/safia/.m2/repository/io/cucumber/cucumber-gherkin/7.6.0/cucumber-gherkin-7.6.0.jar:/home/safia/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.6.0/cucumber-gherkin-messages-7.6.0.jar:/home/safia/.m2/repository/io/cucumber/messages/19.0.0/messages-19.0.0.jar:/home/safia/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/home/safia/.m2/repository/io/cucumber/cucumber-expressions/16.0.0/cucumber-expressions-16.0.0.jar:/home/safia/.m2/repository/io/cucumber/datatable/7.6.0/datatable-7.6.0.jar:/home/safia/.m2/repository/io/cucumber/cucumber-plugin/7.6.0/cucumber-plugin-7.6.0.jar:/home/safia/.m2/repository/io/cucumber/docstring/7.6.0/docstring-7.6.0.jar:/home/safia/.m2/repository/io/cucumber/html-formatter/20.0.0/html-formatter-20.0.0.jar:/home/safia/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/home/safia/.m2/repository/io/cucumber/gherkin/24.0.0/gherkin-24.0.0.jar:/home/safia/.m2/repository/net/masterthought/cucumber-reporting/5.7.2/cucumber-reporting-5.7.2.jar:/home/safia/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.2/jackson-databind-2.13.2.2.jar:/home/safia/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/home/safia/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar:/home/safia/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.2/jackson-datatype-jsr310-2.13.2.jar:/home/safia/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/home/safia/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/safia/.m2/repository/joda-time/joda-time/2.10.14/joda-time-2.10.14.jar:/home/safia/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/home/safia/.m2/repository/org/codehaus/plexus/plexus-utils/3.4.2/plexus-utils-3.4.2.jar:/home/safia/.m2/repository/org/jsoup/jsoup/1.15.1/jsoup-1.15.1.jar:/home/safia/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20211018.2/owasp-java-html-sanitizer-20211018.2.jar:/home/safia/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/home/safia/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/safia/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/safia/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.3.1/junit-jupiter-engine-5.3.1.jar:/home/safia/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.3.1/junit-jupiter-api-5.3.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/safia/eclipse-workspace/ACMESystem/target/surefire/surefirebooter9129221559178995091.jar"/>
+    <property name="surefire.real.class.path" value="/home/safia/eclipse-workspace/ACMESystem/target/surefire/surefirebooter7437763544352101634.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.16+8-post-Ubuntu-0ubuntu120.04"/>
     <property name="user.name" value="safia"/>
@@ -58,53 +58,1405 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="Uncheck the Term and privacy check box" classname="Runner.Test" time="19.596">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+  <testcase name="Check the buttons text and tool tip #1" classname="Runner.Test" time="84.684">
+    <error message="Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (d057908a34ce3810982fe12d58893761)] -&gt; xpath: //*[@class=&apos;dropdown-menu dropdown-content rightMenu&apos;]//li//a] (tried for 60 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;safia-HP-Laptop-15-dw3xxx&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-46-generic&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.qfOwYl}, goog:chromeOptions: {debuggerAddress: localhost:34447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d057908a34ce3810982fe12d58893761" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (d057908a34ce3810982fe12d58893761)] -> xpath: //*[@class='dropdown-menu dropdown-content rightMenu']//li//a] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.qfOwYl}, goog:chromeOptions: {debuggerAddress: localhost:34447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d057908a34ce3810982fe12d58893761
 </error>
     <system-out><![CDATA[
-@current-implementation @medium
-Scenario Outline: Uncheck the Term and privacy check box                                         &amp#27;[90m# src/test/java/Features/Register.feature:95&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user open the registration page&amp#27;[0m                                                      &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_open_the_registration_page()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user enter a valid username in registration page &amp#27;[0m&amp#27;[32m&amp#27;[1m"s.mahallel99@gmail.comb"&amp#27;[0m            &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_enter_a_valid_username_in_registration_page(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user enter a valid password in registration page  &amp#27;[0m&amp#27;[32m&amp#27;[1m"123456789a"&amp#27;[0m                         &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_enter_a_valid_password_in_registration_page(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user enter a valid retypepassword in registration page &amp#27;[0m&amp#27;[32m&amp#27;[1m"123456789a"&amp#27;[0m                    &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_enter_a_valid_retypepassword_in_registration_page(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user check the captcha&amp#27;[0m                                                                 &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_check_the_captcha()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user click on register button&amp#27;[0m                                                          &amp#27;[90m# StepDefinitions.RegisterSteps.the_user_click_on_register_button()&amp#27;[0m
-  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mThe system appear an error message &amp#27;[0m&amp#27;[31m&amp#27;[1m"The terms ofuse and privacy policy should be checked"&amp#27;[0m &amp#27;[90m# StepDefinitions.LoginSteps.the_system_appear_an_error_message(java.lang.String)&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException
-	at StepDefinitions.LoginSteps.the_system_appear_an_error_message(LoginSteps.java:47)
-	at ✽.The system appear an error message "The terms ofuse and privacy policy should be checked"(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Register.feature:91)
+@current-implementation @important
+Scenario Outline: Check the buttons text and tool tip                                              &amp#27;[90m# src/test/java/Features/Dashboard.feature:39&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user open the login page&amp#27;[0m                                                               &amp#27;[90m# StepDefinitions.LoginSteps.the_user_open_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user enter a valid username &amp#27;[0m&amp#27;[32m&amp#27;[1m"s.mahallel99@gmail.com"&amp#27;[0m                                    &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_username(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user enter a valid password &amp#27;[0m&amp#27;[32m&amp#27;[1m"123456789a"&amp#27;[0m                                                 &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_password(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user check the remeber me check box&amp#27;[0m                                                      &amp#27;[90m# StepDefinitions.LoginSteps.the_user_check_the_remeber_me_check_box()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user click on submit button&amp#27;[0m                                                              &amp#27;[90m# StepDefinitions.LoginSteps.the_user_click_on_submit_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe system should redirect to the dashboard page with the title &amp#27;[0m&amp#27;[32m&amp#27;[1m"ACME System 1 - Dashboard"&amp#27;[0m &amp#27;[90m# StepDefinitions.LoginSteps.the_system_should_redirect_to_the_dashboard_page_with_the_title(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe system appear the button text &amp#27;[0m&amp#27;[32m&amp#27;[1m"User options"&amp#27;[0m                                            &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_the_button_text(java.lang.String)&amp#27;[0m
+***************Download Client and Support
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
++++++++++++Download Enrollment Report
++++++++++++Download Result Report
++++++++++++Score Card
++++++++++++
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mThe system appear First tool tip link &amp#27;[0m&amp#27;[31m&amp#27;[1m"Download Client and Support"&amp#27;[0m                          &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (d057908a34ce3810982fe12d58893761)] -> xpath: //*[@class='dropdown-menu dropdown-content rightMenu']//li//a] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.qfOwYl}, goog:chromeOptions: {debuggerAddress: localhost:34447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d057908a34ce3810982fe12d58893761
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pages.Dashboard.getToolTipLinksData(Dashboard.java:98)
+	at StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(DashboardSteps.java:120)
+	at ✽.The system appear First tool tip link "Download Client and Support"(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Dashboard.feature:27)
 &amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m"Reset test data"&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m"Change password"&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m"Check training assignments"&amp#27;[0m                           &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
 
-    Embedding  [image/png 37995 bytes]
+    Embedding  [image/png 77291 bytes]
 
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1668343362898	geckodriver	INFO	Listening on 127.0.0.1:22099
-1668343363058	mozrunner::runner	INFO	Running command: "/usr/lib/firefox/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileXKH2h1"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1668343363874	Marionette	INFO	Marionette enabled
-1668343363883	Marionette	INFO	Listening on port 34545
-Read port: 34545
-1668343364096	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXKH2h1/search.json.mozlz4", (void 0)))
-Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
-Nov 13, 2022 2:42:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 26440
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 11, 2022 9:18:27 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-JavaScript error: resource://gre/modules/URIFixup.jsm, line 292: NS_ERROR_FAILURE: Should pass a non-null uri
-console.warn: LoginRecipes: "Falling back to a synchronous message for: https://acme-test.uipath.com."
-console.warn: LoginRecipes: "Falling back to a synchronous message for: https://acme-test.uipath.com."
-console.warn: LoginRecipes: "Falling back to a synchronous message for: https://acme-test.uipath.com."
-Missing chrome or resource URL: resource://gre/modules/UpdateListener.sycso.nmsjosl
-e.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 2013\"  data: no]"
-1668343380052	Marionette	INFO	Stopped listening on port 34545
-JavaScript error: chrome://remote/content/marionette/cert.js, line 57: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
-Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+]]></system-err>
+  </testcase>
+  <testcase name="Check the buttons text and tool tip #2" classname="Runner.Test" time="93.271">
+    <error message="Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (da57bb516b7987b662ccf3581cc9438f)] -&gt; xpath: //*[@class=&apos;dropdown-menu dropdown-content rightMenu&apos;]//li//a] (tried for 60 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;safia-HP-Laptop-15-dw3xxx&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-46-generic&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.f0zAYm}, goog:chromeOptions: {debuggerAddress: localhost:42707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: da57bb516b7987b662ccf3581cc9438f" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (da57bb516b7987b662ccf3581cc9438f)] -> xpath: //*[@class='dropdown-menu dropdown-content rightMenu']//li//a] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.f0zAYm}, goog:chromeOptions: {debuggerAddress: localhost:42707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: da57bb516b7987b662ccf3581cc9438f
+</error>
+    <system-out><![CDATA[
+@current-implementation @important
+Scenario Outline: Check the buttons text and tool tip                                              &amp#27;[90m# src/test/java/Features/Dashboard.feature:40&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user open the login page&amp#27;[0m                                                               &amp#27;[90m# StepDefinitions.LoginSteps.the_user_open_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user enter a valid username &amp#27;[0m&amp#27;[32m&amp#27;[1m"s.mahallel99@gmail.com"&amp#27;[0m                                    &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_username(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user enter a valid password &amp#27;[0m&amp#27;[32m&amp#27;[1m"123456789a"&amp#27;[0m                                                 &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_password(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user check the remeber me check box&amp#27;[0m                                                      &amp#27;[90m# StepDefinitions.LoginSteps.the_user_check_the_remeber_me_check_box()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user click on submit button&amp#27;[0m                                                              &amp#27;[90m# StepDefinitions.LoginSteps.the_user_click_on_submit_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe system should redirect to the dashboard page with the title &amp#27;[0m&amp#27;[32m&amp#27;[1m"ACME System 1 - Dashboard"&amp#27;[0m &amp#27;[90m# StepDefinitions.LoginSteps.the_system_should_redirect_to_the_dashboard_page_with_the_title(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe system appear the button text &amp#27;[0m&amp#27;[32m&amp#27;[1m"Work Items"&amp#27;[0m                                              &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_the_button_text(java.lang.String)&amp#27;[0m
+***************
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
++++++++++++Download Enrollment Report
++++++++++++Download Result Report
++++++++++++Score Card
++++++++++++Download Daily Appointment
++++++++++++Download Treatment Report
++++++++++++National Insurance Planning
++++++++++++Add Account
+>>>>>>>>>>>>>>0
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe system appear First tool tip link &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+***************
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
++++++++++++Download Enrollment Report
++++++++++++Download Result Report
++++++++++++Score Card
++++++++++++Download Daily Appointment
++++++++++++Download Treatment Report
++++++++++++National Insurance Planning
++++++++++++Add Account
+>>>>>>>>>>>>>>0
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe system appear First tool tip link &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+***************
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mThe system appear First tool tip link &amp#27;[0m&amp#27;[31m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (da57bb516b7987b662ccf3581cc9438f)] -> xpath: //*[@class='dropdown-menu dropdown-content rightMenu']//li//a] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.f0zAYm}, goog:chromeOptions: {debuggerAddress: localhost:42707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: da57bb516b7987b662ccf3581cc9438f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pages.Dashboard.getToolTipLinksData(Dashboard.java:98)
+	at StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(DashboardSteps.java:113)
+	at ✽.The system appear First tool tip link ""(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Dashboard.feature:29)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+
+    Embedding  [image/png 77314 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 3724
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 11, 2022 9:19:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Check the buttons text and tool tip #3" classname="Runner.Test" time="86.432">
+    <error message="Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (56229bd24a8f7d428a7122149127dde8)] -&gt; xpath: //*[@class=&apos;dropdown-menu dropdown-content rightMenu&apos;]//li//a] (tried for 60 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;safia-HP-Laptop-15-dw3xxx&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-46-generic&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.MBCbua}, goog:chromeOptions: {debuggerAddress: localhost:43735}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 56229bd24a8f7d428a7122149127dde8" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (56229bd24a8f7d428a7122149127dde8)] -> xpath: //*[@class='dropdown-menu dropdown-content rightMenu']//li//a] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.MBCbua}, goog:chromeOptions: {debuggerAddress: localhost:43735}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 56229bd24a8f7d428a7122149127dde8
+</error>
+    <system-out><![CDATA[
+@current-implementation @important
+Scenario Outline: Check the buttons text and tool tip                                              &amp#27;[90m# src/test/java/Features/Dashboard.feature:41&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user open the login page&amp#27;[0m                                                               &amp#27;[90m# StepDefinitions.LoginSteps.the_user_open_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user enter a valid username &amp#27;[0m&amp#27;[32m&amp#27;[1m"s.mahallel99@gmail.com"&amp#27;[0m                                    &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_username(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user enter a valid password &amp#27;[0m&amp#27;[32m&amp#27;[1m"123456789a"&amp#27;[0m                                                 &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_password(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user check the remeber me check box&amp#27;[0m                                                      &amp#27;[90m# StepDefinitions.LoginSteps.the_user_check_the_remeber_me_check_box()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user click on submit button&amp#27;[0m                                                              &amp#27;[90m# StepDefinitions.LoginSteps.the_user_click_on_submit_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe system should redirect to the dashboard page with the title &amp#27;[0m&amp#27;[32m&amp#27;[1m"ACME System 1 - Dashboard"&amp#27;[0m &amp#27;[90m# StepDefinitions.LoginSteps.the_system_should_redirect_to_the_dashboard_page_with_the_title(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe system appear the button text &amp#27;[0m&amp#27;[32m&amp#27;[1m"Accounts"&amp#27;[0m                                                &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_the_button_text(java.lang.String)&amp#27;[0m
+***************Add account modification
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
++++++++++++Download Enrollment Report
++++++++++++Download Result Report
++++++++++++Score Card
++++++++++++Download Daily Appointment
++++++++++++Download Treatment Report
++++++++++++National Insurance Planning
++++++++++++Add Account
+>>>>>>>>>>>>>>0
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe system appear First tool tip link &amp#27;[0m&amp#27;[32m&amp#27;[1m"Add account modification"&amp#27;[0m                             &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+***************View account history
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mThe system appear First tool tip link &amp#27;[0m&amp#27;[31m&amp#27;[1m"View account history"&amp#27;[0m                                 &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (56229bd24a8f7d428a7122149127dde8)] -> xpath: //*[@class='dropdown-menu dropdown-content rightMenu']//li//a] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.MBCbua}, goog:chromeOptions: {debuggerAddress: localhost:43735}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 56229bd24a8f7d428a7122149127dde8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pages.Dashboard.getToolTipLinksData(Dashboard.java:98)
+	at StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(DashboardSteps.java:81)
+	at ✽.The system appear First tool tip link "View account history"(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Dashboard.feature:28)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+
+    Embedding  [image/png 77314 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 22477
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 11, 2022 9:21:24 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Check the buttons text and tool tip #4" classname="Runner.Test" time="68.128"/>
+  <testcase name="Check the buttons text and tool tip #5" classname="Runner.Test" time="61.09"/>
+  <testcase name="Check the buttons text and tool tip #6" classname="Runner.Test" time="90.608">
+    <error message="Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (0353dfebd63091694df707b9165097ba)] -&gt; xpath: //*[@class=&apos;dropdown-menu dropdown-content rightMenu&apos;]//li//a] (tried for 60 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;safia-HP-Laptop-15-dw3xxx&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-46-generic&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.Nkiq75}, goog:chromeOptions: {debuggerAddress: localhost:36897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0353dfebd63091694df707b9165097ba" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (0353dfebd63091694df707b9165097ba)] -> xpath: //*[@class='dropdown-menu dropdown-content rightMenu']//li//a] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.Nkiq75}, goog:chromeOptions: {debuggerAddress: localhost:36897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0353dfebd63091694df707b9165097ba
+</error>
+    <system-out><![CDATA[
+@current-implementation @important
+Scenario Outline: Check the buttons text and tool tip                                              &amp#27;[90m# src/test/java/Features/Dashboard.feature:44&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user open the login page&amp#27;[0m                                                               &amp#27;[90m# StepDefinitions.LoginSteps.the_user_open_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user enter a valid username &amp#27;[0m&amp#27;[32m&amp#27;[1m"s.mahallel99@gmail.com"&amp#27;[0m                                    &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_username(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user enter a valid password &amp#27;[0m&amp#27;[32m&amp#27;[1m"123456789a"&amp#27;[0m                                                 &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_password(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user check the remeber me check box&amp#27;[0m                                                      &amp#27;[90m# StepDefinitions.LoginSteps.the_user_check_the_remeber_me_check_box()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user click on submit button&amp#27;[0m                                                              &amp#27;[90m# StepDefinitions.LoginSteps.the_user_click_on_submit_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe system should redirect to the dashboard page with the title &amp#27;[0m&amp#27;[32m&amp#27;[1m"ACME System 1 - Dashboard"&amp#27;[0m &amp#27;[90m# StepDefinitions.LoginSteps.the_system_should_redirect_to_the_dashboard_page_with_the_title(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe system appear the button text &amp#27;[0m&amp#27;[32m&amp#27;[1m"Invoices"&amp#27;[0m                                                &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_the_button_text(java.lang.String)&amp#27;[0m
+***************Search for Invoice
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
++++++++++++Download Enrollment Report
++++++++++++Download Result Report
++++++++++++Score Card
++++++++++++Download Daily Appointment
++++++++++++Download Treatment Report
++++++++++++National Insurance Planning
++++++++++++Add Account
+>>>>>>>>>>>>>>0
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe system appear First tool tip link &amp#27;[0m&amp#27;[32m&amp#27;[1m"Search for Invoice"&amp#27;[0m                                   &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+***************Add Invoice Details
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mThe system appear First tool tip link &amp#27;[0m&amp#27;[31m&amp#27;[1m"Add Invoice Details"&amp#27;[0m                                  &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (0353dfebd63091694df707b9165097ba)] -> xpath: //*[@class='dropdown-menu dropdown-content rightMenu']//li//a] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.Nkiq75}, goog:chromeOptions: {debuggerAddress: localhost:36897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0353dfebd63091694df707b9165097ba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pages.Dashboard.getToolTipLinksData(Dashboard.java:98)
+	at StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(DashboardSteps.java:93)
+	at ✽.The system appear First tool tip link "Add Invoice Details"(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Dashboard.feature:28)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m"Delete Invoice"&amp#27;[0m                                       &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+
+    Embedding  [image/png 86678 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 13826
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 11, 2022 9:25:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Check the buttons text and tool tip #7" classname="Runner.Test" time="62.961"/>
+  <testcase name="Check the buttons text and tool tip #8" classname="Runner.Test" time="90.372">
+    <error message="Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (948270a9cd669f54d4350219668f9a01)] -&gt; xpath: //*[@class=&apos;dropdown-menu dropdown-content rightMenu&apos;]//li//a] (tried for 60 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;safia-HP-Laptop-15-dw3xxx&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-46-generic&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.rfhDnm}, goog:chromeOptions: {debuggerAddress: localhost:46583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 948270a9cd669f54d4350219668f9a01" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (948270a9cd669f54d4350219668f9a01)] -> xpath: //*[@class='dropdown-menu dropdown-content rightMenu']//li//a] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.rfhDnm}, goog:chromeOptions: {debuggerAddress: localhost:46583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 948270a9cd669f54d4350219668f9a01
+</error>
+    <system-out><![CDATA[
+@current-implementation @important
+Scenario Outline: Check the buttons text and tool tip                                              &amp#27;[90m# src/test/java/Features/Dashboard.feature:46&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user open the login page&amp#27;[0m                                                               &amp#27;[90m# StepDefinitions.LoginSteps.the_user_open_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user enter a valid username &amp#27;[0m&amp#27;[32m&amp#27;[1m"s.mahallel99@gmail.com"&amp#27;[0m                                    &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_username(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user enter a valid password &amp#27;[0m&amp#27;[32m&amp#27;[1m"123456789a"&amp#27;[0m                                                 &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_password(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user check the remeber me check box&amp#27;[0m                                                      &amp#27;[90m# StepDefinitions.LoginSteps.the_user_check_the_remeber_me_check_box()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user click on submit button&amp#27;[0m                                                              &amp#27;[90m# StepDefinitions.LoginSteps.the_user_click_on_submit_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe system should redirect to the dashboard page with the title &amp#27;[0m&amp#27;[32m&amp#27;[1m"ACME System 1 - Dashboard"&amp#27;[0m &amp#27;[90m# StepDefinitions.LoginSteps.the_system_should_redirect_to_the_dashboard_page_with_the_title(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe system appear the button text &amp#27;[0m&amp#27;[32m&amp#27;[1m"Reports"&amp#27;[0m                                                 &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_the_button_text(java.lang.String)&amp#27;[0m
+***************Download Monthly Report
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
++++++++++++Download Enrollment Report
++++++++++++Download Result Report
++++++++++++Score Card
++++++++++++Download Daily Appointment
++++++++++++Download Treatment Report
++++++++++++National Insurance Planning
++++++++++++Add Account
+>>>>>>>>>>>>>>0
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe system appear First tool tip link &amp#27;[0m&amp#27;[32m&amp#27;[1m"Download Monthly Report"&amp#27;[0m                              &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+***************Upload Yearly Report
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
++++++++++++Download Enrollment Report
++++++++++++Download Result Report
++++++++++++Score Card
++++++++++++Download Daily Appointment
++++++++++++Download Treatment Report
++++++++++++National Insurance Planning
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mThe system appear First tool tip link &amp#27;[0m&amp#27;[31m&amp#27;[1m"Upload Yearly Report"&amp#27;[0m                                 &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (948270a9cd669f54d4350219668f9a01)] -> xpath: //*[@class='dropdown-menu dropdown-content rightMenu']//li//a] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.rfhDnm}, goog:chromeOptions: {debuggerAddress: localhost:46583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 948270a9cd669f54d4350219668f9a01
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pages.Dashboard.getToolTipLinksData(Dashboard.java:98)
+	at StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(DashboardSteps.java:125)
+	at ✽.The system appear First tool tip link "Upload Yearly Report"(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Dashboard.feature:28)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+
+    Embedding  [image/png 77291 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 23671
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 11, 2022 9:27:33 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Check the buttons text and tool tip #9" classname="Runner.Test" time="105.616">
+    <error message="Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (3df15a10990fa366029874f0cff9967c)] -&gt; xpath: //*[@class=&apos;dropdown-menu dropdown-content rightMenu&apos;]//li//a] (tried for 60 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;safia-HP-Laptop-15-dw3xxx&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-46-generic&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.UgqomX}, goog:chromeOptions: {debuggerAddress: localhost:34695}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3df15a10990fa366029874f0cff9967c" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (3df15a10990fa366029874f0cff9967c)] -> xpath: //*[@class='dropdown-menu dropdown-content rightMenu']//li//a] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.UgqomX}, goog:chromeOptions: {debuggerAddress: localhost:34695}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3df15a10990fa366029874f0cff9967c
+</error>
+    <system-out><![CDATA[
+@current-implementation @important
+Scenario Outline: Check the buttons text and tool tip                                              &amp#27;[90m# src/test/java/Features/Dashboard.feature:47&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user open the login page&amp#27;[0m                                                               &amp#27;[90m# StepDefinitions.LoginSteps.the_user_open_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user enter a valid username &amp#27;[0m&amp#27;[32m&amp#27;[1m"s.mahallel99@gmail.com"&amp#27;[0m                                    &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_username(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user enter a valid password &amp#27;[0m&amp#27;[32m&amp#27;[1m"123456789a"&amp#27;[0m                                                 &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_password(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user check the remeber me check box&amp#27;[0m                                                      &amp#27;[90m# StepDefinitions.LoginSteps.the_user_check_the_remeber_me_check_box()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user click on submit button&amp#27;[0m                                                              &amp#27;[90m# StepDefinitions.LoginSteps.the_user_click_on_submit_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe system should redirect to the dashboard page with the title &amp#27;[0m&amp#27;[32m&amp#27;[1m"ACME System 1 - Dashboard"&amp#27;[0m &amp#27;[90m# StepDefinitions.LoginSteps.the_system_should_redirect_to_the_dashboard_page_with_the_title(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe system appear the button text &amp#27;[0m&amp#27;[32m&amp#27;[1m"Students"&amp#27;[0m                                                &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_the_button_text(java.lang.String)&amp#27;[0m
+***************Download Enrollment Report
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
++++++++++++Download Enrollment Report
++++++++++++Download Result Report
++++++++++++Score Card
++++++++++++Download Daily Appointment
++++++++++++Download Treatment Report
++++++++++++National Insurance Planning
++++++++++++Add Account
+>>>>>>>>>>>>>>0
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe system appear First tool tip link &amp#27;[0m&amp#27;[32m&amp#27;[1m"Download Enrollment Report"&amp#27;[0m                           &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+***************Download Result Report
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
++++++++++++Download Enrollment Report
++++++++++++Download Result Report
++++++++++++Score Card
++++++++++++Download Daily Appointment
++++++++++++Download Treatment Report
++++++++++++National Insurance Planning
++++++++++++Add Account
+>>>>>>>>>>>>>>0
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe system appear First tool tip link &amp#27;[0m&amp#27;[32m&amp#27;[1m"Download Result Report"&amp#27;[0m                               &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+***************Score Card
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
++++++++++++Download Enrollment Report
++++++++++++Download Result Report
++++++++++++Score Card
++++++++++++Download Daily Appointment
++++++++++++Download Treatment Report
++++++++++++National Insurance Planning
++++++++++++Add Account
+>>>>>>>>>>>>>>0
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe system appear First tool tip link &amp#27;[0m&amp#27;[32m&amp#27;[1m"Score Card"&amp#27;[0m                                           &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+***************
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
++++++++++++Download Enrollment Report
++++++++++++Download Result Report
++++++++++++Score Card
++++++++++++Download Daily Appointment
++++++++++++Download Treatment Report
++++++++++++National Insurance Planning
++++++++++++Add Account
+>>>>>>>>>>>>>>0
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe system appear First tool tip link &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+***************
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
++++++++++++Download Enrollment Report
++++++++++++Download Result Report
++++++++++++Score Card
++++++++++++Download Daily Appointment
++++++++++++Download Treatment Report
++++++++++++National Insurance Planning
++++++++++++Add Account
+>>>>>>>>>>>>>>0
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe system appear First tool tip link &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+***************
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mThe system appear First tool tip link &amp#27;[0m&amp#27;[31m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (3df15a10990fa366029874f0cff9967c)] -> xpath: //*[@class='dropdown-menu dropdown-content rightMenu']//li//a] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.UgqomX}, goog:chromeOptions: {debuggerAddress: localhost:34695}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3df15a10990fa366029874f0cff9967c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pages.Dashboard.getToolTipLinksData(Dashboard.java:98)
+	at StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(DashboardSteps.java:103)
+	at ✽.The system appear First tool tip link ""(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Dashboard.feature:32)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+
+    Embedding  [image/png 84409 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 16386
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 11, 2022 9:29:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Check the buttons text and tool tip #10" classname="Runner.Test" time="67.725"/>
+  <testcase name="Check the buttons text and tool tip #11" classname="Runner.Test" time="30.344">
+    <failure message="Multiple Failures (2 failures)&#10;	no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=107.0.5304.110)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;safia-HP-Laptop-15-dw3xxx&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-46-generic&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.3QzFnC}, goog:chromeOptions: {debuggerAddress: localhost:39489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 12707902ca85b4ff3de9d60212c5a78d&#10;*** Element info: {Using=xpath, value=//*[@class=&apos;dropdown-menu dropdown-content rightMenu&apos;]//li//a}&#10;	no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=107.0.5304.110)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;safia-HP-Laptop-15-dw3xxx&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-46-generic&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.3QzFnC}, goog:chromeOptions: {debuggerAddress: localhost:39489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 12707902ca85b4ff3de9d60212c5a78d" type="org.opentest4j.MultipleFailuresError">org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.3QzFnC}, goog:chromeOptions: {debuggerAddress: localhost:39489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 12707902ca85b4ff3de9d60212c5a78d
+*** Element info: {Using=xpath, value=//*[@class='dropdown-menu dropdown-content rightMenu']//li//a}
+	no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.3QzFnC}, goog:chromeOptions: {debuggerAddress: localhost:39489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 12707902ca85b4ff3de9d60212c5a78d
+</failure>
+    <system-out><![CDATA[
+@current-implementation @important
+Scenario Outline: Check the buttons text and tool tip                                              &amp#27;[90m# src/test/java/Features/Dashboard.feature:49&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user open the login page&amp#27;[0m                                                               &amp#27;[90m# StepDefinitions.LoginSteps.the_user_open_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user enter a valid username &amp#27;[0m&amp#27;[32m&amp#27;[1m"s.mahallel99@gmail.com"&amp#27;[0m                                    &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_username(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user enter a valid password &amp#27;[0m&amp#27;[32m&amp#27;[1m"123456789a"&amp#27;[0m                                                 &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_password(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user check the remeber me check box&amp#27;[0m                                                      &amp#27;[90m# StepDefinitions.LoginSteps.the_user_check_the_remeber_me_check_box()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user click on submit button&amp#27;[0m                                                              &amp#27;[90m# StepDefinitions.LoginSteps.the_user_click_on_submit_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe system should redirect to the dashboard page with the title &amp#27;[0m&amp#27;[32m&amp#27;[1m"ACME System 1 - Dashboard"&amp#27;[0m &amp#27;[90m# StepDefinitions.LoginSteps.the_system_should_redirect_to_the_dashboard_page_with_the_title(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe system appear the button text &amp#27;[0m&amp#27;[32m&amp#27;[1m"Employees"&amp#27;[0m                                               &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_the_button_text(java.lang.String)&amp#27;[0m
+***************
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
++++++++++++Download Enrollment Report
++++++++++++Download Result Report
++++++++++++Score Card
++++++++++++Download Daily Appointment
++++++++++++Download Treatment Report
++++++++++++National Insurance Planning
++++++++++++Add Account
+>>>>>>>>>>>>>>0
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe system appear First tool tip link &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+***************
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
++++++++++++Download Enrollment Report
++++++++++++Download Result Report
++++++++++++Score Card
++++++++++++Download Daily Appointment
++++++++++++Download Treatment Report
++++++++++++National Insurance Planning
++++++++++++Add Account
+>>>>>>>>>>>>>>0
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe system appear First tool tip link &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+***************
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
++++++++++++Download Enrollment Report
++++++++++++Download Result Report
++++++++++++Score Card
++++++++++++Download Daily Appointment
++++++++++++Download Treatment Report
++++++++++++National Insurance Planning
++++++++++++Add Account
+>>>>>>>>>>>>>>0
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe system appear First tool tip link &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+***************
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
++++++++++++Download Monthly Report
++++++++++++Upload Yearly Report
++++++++++++Download Enrollment Report
++++++++++++Download Result Report
++++++++++++Score Card
++++++++++++Download Daily Appointment
++++++++++++Download Treatment Report
++++++++++++National Insurance Planning
++++++++++++Add Account
+>>>>>>>>>>>>>>0
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe system appear First tool tip link &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+***************
++++++++++++Download Client and Support
++++++++++++Reset test data
++++++++++++Change password
++++++++++++Check training assignments
++++++++++++Add account modification
++++++++++++View account history
++++++++++++Search for Check
++++++++++++Submit Check Copy
++++++++++++Search for Vendor
++++++++++++Add Vendor
++++++++++++Download Resource Report
++++++++++++Resource Order
++++++++++++Download Vendor List
++++++++++++Vendor Inventory
++++++++++++Upload Order
++++++++++++Vendors Stock
++++++++++++Create Order
++++++++++++Search for Invoice
++++++++++++Add Invoice Details
++++++++++++Delete Invoice
++++++++++++Download Monthly Invoices
++++++++++++Download Full Invoice Report
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mThe system appear First tool tip link &amp#27;[0m&amp#27;[31m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.3QzFnC}, goog:chromeOptions: {debuggerAddress: localhost:39489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 12707902ca85b4ff3de9d60212c5a78d
+*** Element info: {Using=xpath, value=//*[@class='dropdown-menu dropdown-content rightMenu']//li//a}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
+	at com.sun.proxy.$Proxy21.get(Unknown Source)
+	at Pages.Dashboard.getToolTipLinksData(Dashboard.java:98)
+	at StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(DashboardSteps.java:108)
+	at ✽.The system appear First tool tip link ""(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Dashboard.feature:31)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.3QzFnC}, goog:chromeOptions: {debuggerAddress: localhost:39489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 12707902ca85b4ff3de9d60212c5a78d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at StepDefinitions.Hooks.takeScreenShotOnFailure(Hooks.java:47)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 18090
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 11, 2022 9:31:57 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Check the buttons text and tool tip #12" classname="Runner.Test" time="8.709">
+    <failure message="Multiple Failures (2 failures)&#10;	java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4002&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;safia-HP-Laptop-15-dw3xxx&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-46-generic&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: driver.version: RemoteWebDriver&#10;	java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4002&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;safia-HP-Laptop-15-dw3xxx&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-46-generic&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.opentest4j.MultipleFailuresError">org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4002
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: driver.version: RemoteWebDriver
+	java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4002
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: driver.version: RemoteWebDriver
+</failure>
+    <system-out><![CDATA[
+@current-implementation @important
+Scenario Outline: Check the buttons text and tool tip                                              &amp#27;[90m# src/test/java/Features/Dashboard.feature:50&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user open the login page&amp#27;[0m                                                               &amp#27;[90m# StepDefinitions.LoginSteps.the_user_open_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user enter a valid username &amp#27;[0m&amp#27;[32m&amp#27;[1m"s.mahallel99@gmail.com"&amp#27;[0m                                    &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_username(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user enter a valid password &amp#27;[0m&amp#27;[32m&amp#27;[1m"123456789a"&amp#27;[0m                                                 &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_password(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user check the remeber me check box&amp#27;[0m                                                      &amp#27;[90m# StepDefinitions.LoginSteps.the_user_check_the_remeber_me_check_box()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user click on submit button&amp#27;[0m                                                              &amp#27;[90m# StepDefinitions.LoginSteps.the_user_click_on_submit_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe system should redirect to the dashboard page with the title &amp#27;[0m&amp#27;[32m&amp#27;[1m"ACME System 1 - Dashboard"&amp#27;[0m &amp#27;[90m# StepDefinitions.LoginSteps.the_system_should_redirect_to_the_dashboard_page_with_the_title(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe system appear the button text &amp#27;[0m&amp#27;[32m&amp#27;[1m"Bank"&amp#27;[0m                                                    &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_the_button_text(java.lang.String)&amp#27;[0m
+***************Add Account
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mThe system appear First tool tip link &amp#27;[0m&amp#27;[31m&amp#27;[1m"Add Account"&amp#27;[0m                                          &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4002
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at Pages.Dashboard.getToolTipLinksData(Dashboard.java:99)
+	at StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(DashboardSteps.java:60)
+	at ✽.The system appear First tool tip link "Add Account"(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Dashboard.feature:27)
+Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4002
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at Pages.Dashboard.getToolTipLinksData(Dashboard.java:99)
+	at StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(DashboardSteps.java:60)
+	at jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:142)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:117)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	... 93 more
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4002
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at StepDefinitions.Hooks.takeScreenShotOnFailure(Hooks.java:47)
+Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4002
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at StepDefinitions.Hooks.takeScreenShotOnFailure(Hooks.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:90)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:142)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:117)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	... 92 more
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 4002
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 11, 2022 9:32:27 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Check the buttons text and tool tip #13" classname="Runner.Test" time="6.674">
+    <failure message="Multiple Failures (2 failures)&#10;	no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=107.0.5304.110)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;safia-HP-Laptop-15-dw3xxx&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-46-generic&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.58wCUI}, goog:chromeOptions: {debuggerAddress: localhost:46809}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f8a1ba1a2d4db80ac35c24bd15566b51&#10;	no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=107.0.5304.110)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;safia-HP-Laptop-15-dw3xxx&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-46-generic&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.58wCUI}, goog:chromeOptions: {debuggerAddress: localhost:46809}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f8a1ba1a2d4db80ac35c24bd15566b51" type="org.opentest4j.MultipleFailuresError">org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.58wCUI}, goog:chromeOptions: {debuggerAddress: localhost:46809}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8a1ba1a2d4db80ac35c24bd15566b51
+	no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.58wCUI}, goog:chromeOptions: {debuggerAddress: localhost:46809}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8a1ba1a2d4db80ac35c24bd15566b51
+</failure>
+    <system-out><![CDATA[
+@current-implementation @important
+Scenario Outline: Check the buttons text and tool tip                                              &amp#27;[90m# src/test/java/Features/Dashboard.feature:51&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user open the login page&amp#27;[0m                                                               &amp#27;[90m# StepDefinitions.LoginSteps.the_user_open_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user enter a valid username &amp#27;[0m&amp#27;[32m&amp#27;[1m"s.mahallel99@gmail.com"&amp#27;[0m                                    &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_username(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user enter a valid password &amp#27;[0m&amp#27;[32m&amp#27;[1m"123456789a"&amp#27;[0m                                                 &amp#27;[90m# StepDefinitions.LoginSteps.the_user_enter_a_valid_password(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user check the remeber me check box&amp#27;[0m                                                      &amp#27;[90m# StepDefinitions.LoginSteps.the_user_check_the_remeber_me_check_box()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user click on submit button&amp#27;[0m                                                              &amp#27;[90m# StepDefinitions.LoginSteps.the_user_click_on_submit_button()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mThe system should redirect to the dashboard page with the title &amp#27;[0m&amp#27;[31m&amp#27;[1m"ACME System 1 - Dashboard"&amp#27;[0m &amp#27;[90m# StepDefinitions.LoginSteps.the_system_should_redirect_to_the_dashboard_page_with_the_title(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.58wCUI}, goog:chromeOptions: {debuggerAddress: localhost:46809}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8a1ba1a2d4db80ac35c24bd15566b51
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at StepDefinitions.LoginSteps.the_system_should_redirect_to_the_dashboard_page_with_the_title(LoginSteps.java:95)
+	at ✽.The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"(file:///home/safia/eclipse-workspace/ACMESystem/src/test/java/Features/Dashboard.feature:25)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mThe system appear the button text &amp#27;[0m&amp#27;[36m&amp#27;[1m"Customer Service"&amp#27;[0m                                        &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_the_button_text(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe system appear First tool tip link &amp#27;[0m&amp#27;[36m&amp#27;[1m""&amp#27;[0m                                                     &amp#27;[90m# StepDefinitions.DashboardSteps.the_system_appear_first_tool_tip_link(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'safia-HP-Laptop-15-dw3xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-46-generic', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.58wCUI}, goog:chromeOptions: {debuggerAddress: localhost:46809}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8a1ba1a2d4db80ac35c24bd15566b51
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at StepDefinitions.Hooks.takeScreenShotOnFailure(Hooks.java:47)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 3670
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 11, 2022 9:32:36 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
 </testsuite>
