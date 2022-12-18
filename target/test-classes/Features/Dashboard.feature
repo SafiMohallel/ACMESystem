@@ -25,22 +25,22 @@ Scenario Outline:  Check the buttons text and tool tip
     Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
     Then   The system appear the button text "<button text>" 
     And    The system appear First tool tip link "<first tooltip link>" for the button "<button text>" 
-    And    The system appear First tool tip link "<second tooltip link>"
-    And    The system appear First tool tip link "<third tooltip link>"
-    And    The system appear First tool tip link "<forth tooltip link>"
-    And    The system appear First tool tip link "<fifth tooltip link>"
-    And    The system appear First tool tip link "<sixth tooltip link>"
-    And    The system appear First tool tip link "<seventh tooltip link>"
-    And    The system appear First tool tip link "<eighth tooltip link>"
-    And    The system appear First tool tip link "<ninth tooltip link>" 
+    And    The system appear Second tool tip link "<second tooltip link>"
+    And    The system appear Third tool tip link "<third tooltip link>"
+    And    The system appear Forth tool tip link "<forth tooltip link>"
+    And    The system appear Fifth tool tip link "<fifth tooltip link>"
+    And    The system appear Sixth tool tip link "<sixth tooltip link>"
+    And    The system appear Seventh tool tip link "<seventh tooltip link>"
+    And    The system appear Eighth tool tip link "<eighth tooltip link>"
+    And    The system appear Ninth tool tip link "<ninth tooltip link>" 
 
     Examples: 
       | email                      | password    | button text         | first tooltip link           | second tooltip link          | third tooltip link          | forth tooltip link         | fifth tooltip link   | sixth tooltip link | seventh tooltip link | eighth tooltip link | ninth tooltip link  |                                       
       | s.mahallel99@gmail.com     | 123456789a  | User options        | Download Client and Support  | Reset test data              | Change password             | Check training assignments |                      |                    |                      |                     |                     |
       | s.mahallel99@gmail.com     | 123456789a  | Work Items          |                              |                              |                             |                            |                      |                    |                      |                     |                     |
-      #| s.mahallel99@gmail.com     | 123456789a  | Accounts            | Add account modification     | View account history         |                             |                            |                      |                    |                      |                     |                     |
-      #| s.mahallel99@gmail.com     | 123456789a  | Checks              | Search for Check             | Submit Check Copy            |                             |                            |                      |                    |                      |                     |                     |
-      #| s.mahallel99@gmail.com     | 123456789a  | Vendors             | Search for Vendor            | Add Vendor                   | Download Resource Report    | Resource Order             | Download Vendor List | Vendor Inventory   | Upload Order         |Vendors Stock        | Create Order        |
+      | s.mahallel99@gmail.com     | 123456789a  | Accounts            | Add account modification     | View account history         |                             |                            |                      |                    |                      |                     |                     |
+      | s.mahallel99@gmail.com     | 123456789a  | Checks              | Search for Check             | Submit Check Copy            |                             |                            |                      |                    |                      |                     |                     |
+      | s.mahallel99@gmail.com     | 123456789a  | Vendors             | Search for Vendor            | Add Vendor                   | Download Resource Report    | Resource Order             | Download Vendor List | Vendor Inventory   | Upload Order         |Vendors Stock        | Create Order        |
       #| s.mahallel99@gmail.com     | 123456789a  | Invoices            | Search for Invoice           | Add Invoice Details          | Delete Invoice              |                            |                      |                    |                      |                     |                     |
       #| s.mahallel99@gmail.com     | 123456789a  | Internal Invoices   | Download Monthly Invoices    | Download Full Invoice Report |                             |                            |                      |                    |                      |                     |                     |
       #| s.mahallel99@gmail.com     | 123456789a  | Reports             | Download Monthly Report      | Upload Yearly Report         |                             |                            |                      |                    |                      |                     |                     | 
@@ -68,7 +68,7 @@ Scenario Outline:  Check the buttons redirect to other page
       | s.mahallel99@gmail.com     | 123456789a  | Employees           | ACME System 1 - Employees     | 
       | s.mahallel99@gmail.com     | 123456789a  | Customer Service    | ACME System 1 - Add Account   | 
       
-@current-implementation
+@implemented 
 @important 
 Scenario:   Check the logout link
     Given  The user open the login page
@@ -85,7 +85,7 @@ Scenario:   Check the logout link
       | email                      | password    |
       | s.mahallel99@gmail.com     | 123456789a  |
       
-@not-implemented-yet
+@implemented 
 @medium 
 Scenario:   Check the home link
     Given  The user open the login page
@@ -100,7 +100,7 @@ Scenario:   Check the home link
       | email                      | password    |
       | s.mahallel99@gmail.com     | 123456789a  |
       
-@not-implemented-yet
+@implemented 
 @medium 
 Scenario:   Check the switch to old theme link
     Given  The user open the login page

@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.618">
-    <testcase classname="Dashboard" name="Check the logout link" time="21.5">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.822">
+    <testcase classname="Login" name="Enter empty value in password field" time="13.691">
         <system-out>
             <![CDATA[Given The user open the login page..........................................passed
-When The user enter a valid username "s.mahallel99@gmail.com"...............passed
-And The user enter a valid password "123456789a"............................passed
-And The user check the remeber me check box.................................passed
-And The user click on submit button.........................................passed
-Then The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard".passed
-When The user clicks on the logout link.....................................passed
-Then The system sign out....................................................passed
-And The system redirect to the login page  with the title "ACME System 1 - Log In".passed
+When The user enter empty value in password field ""........................passed
+Then The system appear an error password tooltip "<error tooltip>"..........passed
 ]]>
         </system-out>
     </testcase>

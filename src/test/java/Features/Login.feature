@@ -64,7 +64,7 @@ Scenario:  Check the label text
     Given  The user open the login page
     Then   The label texts should be "Login" and "Home" and "To continue, please authenticate here" and  "Email:" and "Password:"
        
-@not-implemented-yet
+@current-implementation
 @low 
 Scenario Outline:  Enter empty value in password field
     Given  The user open the login page

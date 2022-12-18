@@ -94,4 +94,12 @@ public class LoginSteps  {
 	 public void the_system_should_redirect_to_the_dashboard_page_with_the_title(String string){
 		 Assert.assertEquals( string, driver.getTitle());
 	 }
+	 
+	 @When("The user enter empty value in password field {string}")
+	 public void the_user_enter_empty_value_in_password_field(String string) {
+	 }
+	 
+	 @Then("The system appear an error password tooltip {string}")
+	 public void the_system_appear_an_error_password_tooltip(String string) {
+	 }
 }

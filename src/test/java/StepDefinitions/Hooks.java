@@ -54,7 +54,7 @@ public class Hooks {
 			e.printStackTrace();
 		}
 
-		//driver.quit();
+		driver.quit();
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {

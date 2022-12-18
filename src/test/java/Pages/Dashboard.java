@@ -114,4 +114,18 @@ public class Dashboard extends BaseClass{
 	public void clickLogOut() {
 		logOut.click();
 	}
+	
+	@FindBy(linkText = "Home")
+	private WebElement  home;
+	
+	public void clickHome() {
+		home.click();
+	}
+	
+	@FindBy(linkText = "Switch to new theme")
+	private WebElement  switchToNewTheme;
+	
+	public void clickSwitchToNewTheme() {
+		switchToNewTheme.click();
+	}
 }
