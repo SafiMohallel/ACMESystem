@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.822">
-    <testcase classname="Login" name="Enter empty value in password field" time="13.691">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="194.967">
+    <testcase classname="Login" name="Enter empty value in password field" time="194.842">
         <system-out>
             <![CDATA[Given The user open the login page..........................................passed
 When The user enter empty value in password field ""........................passed

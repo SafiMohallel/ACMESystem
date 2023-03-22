@@ -111,7 +111,7 @@ Scenario:   Check the switch to old theme link
     Then   The system should redirect to the dashboard page with the title "ACME System 1 - Dashboard"
     When    The user clicks on the Switch to old theme link
     Then    The system apply the new theme 
-     Examples: 
+  Examples: 
       | email                      | password    |
       | s.mahallel99@gmail.com     | 123456789a  | 
     
