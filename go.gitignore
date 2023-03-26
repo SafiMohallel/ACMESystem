@@ -1,0 +1,11 @@
+# ignore ALL .log files
+# ignore ALL files in ANY directory named .settings
+cucumber.Properties
+**/logs
+*.log
+*.txt
+.project
+.classpath
+.settings/
+build/
+nohup.out
