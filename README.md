@@ -39,3 +39,56 @@ This project will help Automation Testing Companies to test their application us
 --
 ## License:
 --
+## Tech Stack
+
+- **Language**: Java  
+- **Testing Framework**: TestNG  
+- **Build Tool**: Maven  
+- **Automation Tool**: Selenium WebDriver  
+- **Design Pattern**: Page Object Model (POM)  
+- **Reports**: TestNG HTML Report
+
+##  Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/SafiMohallel/ACMESystem.git
+cd ACMESystem
+```
+
+### 2. Prerequisites
+
+- Java 11 or higher installed
+- Maven installed
+
+### 3. Run the Tests
+
+```bash
+mvn clean test
+```
+
+### 4. Generate HTML Report
+
+Open `test-output/index.html` in your browser after test execution.
+
+## Test Coverage
+
+- [x] Login functionality  
+- [x] Search scenarios  
+- [x] UI validations  
+- [ ] API integration *(Optional to add)*  
+- [ ] Performance hooks *(Optional to add)*
+
+## Future Enhancements
+
+- GitHub Actions CI Integration  
+- Dockerized test environment  
+- Allure Reporting  
+- Multi-browser support
+
+## Author
+
+**Sofia Mohallel**  
+[GitHub Profile](https://github.com/SafiMohallel)  
+[LinkedIn](https://www.linkedin.com/in/safia-mohallel-53aa4718/)
